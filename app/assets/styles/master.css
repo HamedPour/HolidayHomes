@@ -6,3 +6,8 @@
 
 /*Everything else can be linked from modules below - Make sure to edit the old
 files before us in any new projects=========================================*/
+
+@import "modules/_wrapper";
+@import "modules/_header";
+@import "modules/_nav";
+@import "modules/_carousel";

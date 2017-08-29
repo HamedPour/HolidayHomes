@@ -6,16 +6,19 @@ html {
 
   -webkit-text-size-adjust: 100%;
 }
+
 h1 {
 
   font-size: 2em;
 
   margin: 0.67em 0;
 }
+
 main {
 
   display: block;
 }
+
 hr {
 
   box-sizing: content-box;
@@ -24,18 +27,21 @@ hr {
 
   overflow: visible;
 }
+
 pre {
 
   font-family: monospace, monospace;
 
   font-size: 1em;
 }
+
 a {
 
   background-color: transparent;
 
   -webkit-text-decoration-skip: objects;
 }
+
 abbr[title] {
 
   border-bottom: none;
@@ -44,11 +50,13 @@ abbr[title] {
 
   text-decoration: underline dotted;
 }
+
 b,
 strong {
 
   font-weight: bolder;
 }
+
 code,
 kbd,
 samp {
@@ -57,10 +65,12 @@ samp {
 
   font-size: 1em;
 }
+
 small {
 
   font-size: 80%;
 }
+
 sub,
 sup {
 
@@ -72,22 +82,27 @@ sup {
 
   vertical-align: baseline;
 }
+
 sub {
 
   bottom: -0.25em;
 }
+
 sup {
 
   top: -0.5em;
 }
+
 img {
 
   border-style: none;
 }
+
 svg:not(:root) {
 
   overflow: hidden;
 }
+
 button,
 input,
 optgroup,
@@ -96,16 +111,19 @@ textarea {
 
   margin: 0;
 }
+
 button,
 input {
 
   overflow: visible;
 }
+
 button,
 select {
 
   text-transform: none;
 }
+
 button,
 [type="button"],
 [type="reset"],
@@ -113,6 +131,7 @@ button,
 
   -webkit-appearance: button;
 }
+
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -122,6 +141,7 @@ button::-moz-focus-inner,
 
   padding: 0;
 }
+
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -129,10 +149,12 @@ button:-moz-focusring,
 
   outline: 1px dotted ButtonText;
 }
+
 fieldset {
 
   padding: 0.35em 0.75em 0.625em;
 }
+
 legend {
 
   box-sizing: border-box;
@@ -147,14 +169,17 @@ legend {
 
   white-space: normal;
 }
+
 progress {
 
   vertical-align: baseline;
 }
+
 textarea {
 
   overflow: auto;
 }
+
 [type="checkbox"],
 [type="radio"] {
 
@@ -162,104 +187,300 @@ textarea {
 
   padding: 0;
 }
+
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
 
   height: auto;
 }
+
 [type="search"] {
 
   -webkit-appearance: textfield;
 
   outline-offset: -2px;
 }
+
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
 
   -webkit-appearance: none;
 }
+
 ::-webkit-file-upload-button {
 
   -webkit-appearance: button;
 
   font: inherit;
 }
+
 details {
 
   display: block;
 }
+
 summary {
 
   display: list-item;
 }
+
 template {
 
   display: none;
 }
+
 [hidden] {
 
   display: none;
 }
+
 /*$mainBlue: #2f5572; For Example*/
+
 /*Note to User: Change width to best suit your needs*/
+
 body {
 
-  background-color: #4ff984;
+  background-color: #fff;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 *, *::after, *::before{
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: #000;
 }
+
+ul > * {
+  list-style: none;
+}
+
 /*Do not edit mdoules/_sprite directly as it is generated automatically by Gulp
 Instead edit gulp/templates/sprite.css */
+
 .icon {
       background-image: url('../../assets/images/sprites/sprite-3dc83d52.svg');
     }
+
 .no-svg . icon {
       background-image: url('../../assets/images/sprites/sprite-3dc83d52.png');
     }
+
 .icon--facebook {
     width: 23.23px;
     height: 44.01px;
     background-position: 36.89373670851341% 98.52216748768471%
   }
+
 .icon--globe {
     width: 66px;
     height: 66px;
     background-position: 0 0
   }
+
 .icon--instagram {
     width: 44.01px;
     height: 44.01px;
     background-position: 61.61292903432275% 98.52216748768471%
   }
+
 .icon--mail {
     width: 66px;
     height: 50px;
     background-position: 64.07766990291262% 0
   }
+
 .icon--twitter {
     width: 53.78px;
     height: 44.06px;
     background-position: 0 98.59575739468181%
   }
+
 .icon--youtube {
     width: 36.75px;
     height: 44px;
     background-position: 99.8109640831758% 0
   }
+
 .icon {
   display: block;
 }
+
 /*Everything else can be linked from modules below - Make sure to edit the old
 files before us in any new projects=========================================*/
+
+.wrapper {
+  border: 1px solid #ccc;
+  height: 100vh;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  height: 155px;
+  width: 100%;
+  background-color: #9B8361;
+  background: linear-gradient(-30deg, rgba(155,131,97, 0.6) 0%, rgba(155,131,97, 0.9) 100%);
+  position: relative;
+}
+
+.header-contact{
+    color: #fff;
+    border: 1px solid yellow;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+
+.header-logo{
+
+    border: 1px solid green;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    right: 60px;
+    bottom: 30px;
+  }
+
+.nav {
+  width: 100%;
+
+  border: 1px solid green;
+}
+
+.nav-menu {
+    border: 1px solid yellow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    height: 45px;
+
+
+  }
+
+.nav-menu li {
+      -webkit-transition: All 0.5s ease-in-out;
+      transition: All 0.5s ease-in-out;
+      padding-top: 8px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+.nav-menu li:hover{
+        background-color: rgba(184,160,126, 0.2);
+      }
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

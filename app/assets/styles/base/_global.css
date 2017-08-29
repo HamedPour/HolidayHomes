@@ -1,6 +1,6 @@
 body {
 
-  background-color: #4ff984;
+  background-color: #fff;
 }
 
 img {
@@ -17,4 +17,8 @@ img {
 a {
   text-decoration: none;
   color: #000;
+}
+
+ul > * {
+  list-style: none;
 }
