@@ -11,3 +11,13 @@ files before us in any new projects=========================================*/
 @import "modules/_header";
 @import "modules/_nav";
 @import "modules/_carousel";
+
+
+
+
+.row {
+  background-color: mistyrose;
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+}

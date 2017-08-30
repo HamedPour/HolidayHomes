@@ -384,6 +384,8 @@ files before us in any new projects=========================================*/
         background-color: rgba(184,160,126, 0.2);
       }
 
+* {-webkit-box-sizing:border-box;box-sizing:border-box}
+
 /* Slideshow container */
 
 .slideshow-container {
@@ -483,4 +485,11 @@ files before us in any new projects=========================================*/
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.row {
+  background-color: mistyrose;
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
 }
