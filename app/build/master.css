@@ -384,112 +384,108 @@ files before us in any new projects=========================================*/
         background-color: rgba(184,160,126, 0.2);
       }
 
-* {-webkit-box-sizing:border-box;box-sizing:border-box}
-
-/* Slideshow container */
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+.slides{
+  border: 1px solid red;
   width: 100%;
-  text-align: center;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+
 }
 
-/* Number text (1/3 etc) */
+.slides-arrow {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    top: 45%;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    opacity: 0.7;
+    -webkit-transition: All 0.5s ease-in-out;
+    transition: All 0.5s ease-in-out;
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+  }
 
-/* The dots/bullets/indicators */
+.slides-arrow:hover{
+      -webkit-transform: scale(1.6);
+              transform: scale(1.6);
+      opacity: 1;
+      font-weight: bolder;
+    }
 
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
-}
+.slides-arrowRight{
+    right: 10px;
+  }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
+.slides-arrowLeft{
+    left: 10px;
+  }
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .7}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .7}
   to {opacity: 1}
 }
 
-.row {
-  background-color: mistyrose;
-  overflow: hidden;
-  height: 300px;
-  width: 100%;
-}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media (min-width: 800px){
+
+    .row__medium-6 {
+      float: left;
+      width: 50%;
+    }
+
+    .row__medium-3 {
+      float: left;
+      width: 25%;
+    }
+  }
+
+.row--gutter {
+    margin-right: -35px;
+  }
+
+.row--gutter > div {
+    padding-right: 35px;
+  }
+
+/*Begin flexbox to sortout hight issues*/
+
+@media (min-width: 800px){
+
+.row--flexbox-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }
+  }
+
+.row--flexbox-at-medium > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }

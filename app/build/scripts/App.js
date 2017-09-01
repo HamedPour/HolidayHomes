@@ -63,12 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10328,17 +10327,98 @@ return jQuery;
 
 
 /***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _jquery = __webpack_require__(1);
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Carousel(containerID) {
+	this.container = document.getElementById(containerID) || document.body;
+	this.slides = this.container.querySelectorAll('.carousel');
+	this.total = this.slides.length - 1;
+	this.current = 0;
+
+	// start on slide 1
+	this.slide(this.current);
+}
+// NEXT
+Carousel.prototype.next = function (interval) {
+	this.current === this.total ? this.current = 0 : this.current += 1;
+
+	this.stop();
+	this.slide(this.current);
+
+	if (typeof interval === 'number' && interval % 1 === 0) {
+		var context = this;
+		this.run = setTimeout(function () {
+			context.next(interval);
+		}, interval);
+	}
+};
+// PREVIOUS
+Carousel.prototype.prev = function (interval) {
+	this.current === 0 ? this.current = this.total : this.current -= 1;
+
+	this.stop();
+	this.slide(this.current);
+
+	if (typeof interval === 'number' && interval % 1 === 0) {
+		var context = this;
+		this.run = setTimeout(function () {
+			context.prev(interval);
+		}, interval);
+	}
+};
+// STOP PLAYING
+Carousel.prototype.stop = function () {
+	clearTimeout(this.run);
+};
+// SELECT SLIDE
+Carousel.prototype.slide = function (index) {
+	if (index >= 0 && index <= this.total) {
+		this.stop();
+		for (var s = 0; s <= this.total; s++) {
+			if (s === index) {
+				this.slides[s].style.display = "inline-block";
+			} else {
+				this.slides[s].style.display = 'none';
+			}
+		}
+	} else {
+		alert("Index " + index + " doesn't exist. Available : 0 - " + this.total);
+	}
+};
+
+exports.default = Carousel;
+
+/***/ }),
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _Carousel = __webpack_require__(1);
+
+var _Carousel2 = _interopRequireDefault(_Carousel);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10347,38 +10427,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // new RevealOnScroll($(".SOME-CLASS-NAME"), "85%");
 //
 
+// BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
+
+var slides = new _Carousel2.default("siteSlides");
+slides.next(5500);
+// document.querySelector(".slides-arrowLeft").addEventListener("click", function(){
+//   slides.prev();
+// });
 //
-var slideIndex = 1; // BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
+//
+// document.querySelector(".slides-arrowRight").addEventListener("click", function(){
+//   slides.next();
 
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+// });
 
 /***/ })
 /******/ ]);
