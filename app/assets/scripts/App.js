@@ -11,13 +11,17 @@ import Carousel from './modules/Carousel';
 //
 
 var slides = new Carousel("siteSlides")
-slides.next(5500);
-// document.querySelector(".slides-arrowLeft").addEventListener("click", function(){
-//   slides.prev();
-// });
-//
-//
-// document.querySelector(".slides-arrowRight").addEventListener("click", function(){
-//   slides.next();
+slides.next(5000);
 
-// });
+
+document.querySelector(".slides-arrowLeft").addEventListener("click", function(){
+  // slides.prev();
+  slides.prev(5000);
+});
+
+
+document.querySelector(".slides-arrowRight").addEventListener("click", function(){
+  // slides.next();
+  slides.next(5000);
+
+});

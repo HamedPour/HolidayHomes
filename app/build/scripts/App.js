@@ -10337,68 +10337,95 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Carousel(containerID) {
-	this.container = document.getElementById(containerID) || document.body;
-	this.slides = this.container.querySelectorAll('.carousel');
-	this.total = this.slides.length - 1;
-	this.current = 0;
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	// start on slide 1
-	this.slide(this.current);
-}
-// NEXT
-Carousel.prototype.next = function (interval) {
-	this.current === this.total ? this.current = 0 : this.current += 1;
+var Carousel = function () {
+	function Carousel(containerID) {
+		_classCallCheck(this, Carousel);
 
-	this.stop();
-	this.slide(this.current);
+		this.container = document.getElementById(containerID) || document.body;
+		this.slides = this.container.querySelectorAll('.carousel');
+		this.total = this.slides.length - 1;
+		this.current = 0;
 
-	if (typeof interval === 'number' && interval % 1 === 0) {
-		var context = this;
-		this.run = setTimeout(function () {
-			context.next(interval);
-		}, interval);
+		// start on slide 1
+		this.slide(this.current);
 	}
-};
-// PREVIOUS
-Carousel.prototype.prev = function (interval) {
-	this.current === 0 ? this.current = this.total : this.current -= 1;
 
-	this.stop();
-	this.slide(this.current);
+	// NEXT
 
-	if (typeof interval === 'number' && interval % 1 === 0) {
-		var context = this;
-		this.run = setTimeout(function () {
-			context.prev(interval);
-		}, interval);
-	}
-};
-// STOP PLAYING
-Carousel.prototype.stop = function () {
-	clearTimeout(this.run);
-};
-// SELECT SLIDE
-Carousel.prototype.slide = function (index) {
-	if (index >= 0 && index <= this.total) {
-		this.stop();
-		for (var s = 0; s <= this.total; s++) {
-			if (s === index) {
-				this.slides[s].style.display = "inline-block";
-			} else {
-				this.slides[s].style.display = 'none';
+
+	_createClass(Carousel, [{
+		key: 'next',
+		value: function next(interval) {
+			this.current === this.total ? this.current = 0 : this.current += 1;
+
+			this.stop();
+			this.slide(this.current);
+
+			if (typeof interval === 'number' && interval % 1 === 0) {
+				var context = this;
+				this.run = setTimeout(function () {
+					context.next(interval);
+				}, interval);
 			}
 		}
-	} else {
-		alert("Index " + index + " doesn't exist. Available : 0 - " + this.total);
-	}
-};
+	}, {
+		key: 'prev',
+
+		// PREVIOUS
+		value: function prev(interval) {
+			this.current === 0 ? this.current = this.total : this.current -= 1;
+
+			this.stop();
+			this.slide(this.current);
+
+			if (typeof interval === 'number' && interval % 1 === 0) {
+				var context = this;
+				this.run = setTimeout(function () {
+					context.prev(interval);
+				}, interval);
+			}
+		}
+	}, {
+		key: 'stop',
+
+		// STOP PLAYING
+		value: function stop() {
+			clearTimeout(this.run);
+		}
+	}, {
+		key: 'slide',
+
+		// SELECT SLIDE
+		value: function slide(index) {
+			if (index >= 0 && index <= this.total) {
+				this.stop();
+				for (var s = 0; s <= this.total; s++) {
+					if (s === index) {
+						this.slides[s].style.display = "inline-block";
+					} else {
+						this.slides[s].style.display = 'none';
+					}
+				}
+			} else {
+				alert("Index " + index + " doesn't exist. Available : 0 - " + this.total);
+			}
+		}
+	}]);
+
+	return Carousel;
+}();
+
+;
 
 exports.default = Carousel;
 
@@ -10430,16 +10457,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
 
 var slides = new _Carousel2.default("siteSlides");
-slides.next(5500);
-// document.querySelector(".slides-arrowLeft").addEventListener("click", function(){
-//   slides.prev();
-// });
-//
-//
-// document.querySelector(".slides-arrowRight").addEventListener("click", function(){
-//   slides.next();
+slides.next(5000);
 
-// });
+document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
+  // slides.prev();
+  slides.prev(5000);
+});
+
+document.querySelector(".slides-arrowRight").addEventListener("click", function () {
+  // slides.next();
+  slides.next(5000);
+});
 
 /***/ })
 /******/ ]);

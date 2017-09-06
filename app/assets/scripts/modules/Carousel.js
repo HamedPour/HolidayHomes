@@ -1,16 +1,18 @@
 import $ from "jquery";
 
-function Carousel(containerID) {
-	this.container = document.getElementById(containerID) || document.body;
-	this.slides = this.container.querySelectorAll('.carousel');
-	this.total = this.slides.length - 1;
-	this.current = 0;
+class Carousel{
+	constructor(containerID){
+		this.container = document.getElementById(containerID) || document.body;
+		this.slides = this.container.querySelectorAll('.carousel');
+		this.total = this.slides.length - 1;
+		this.current = 0;
 
-	// start on slide 1
-	this.slide(this.current);
+		// start on slide 1
+		this.slide(this.current);
 }
+
 // NEXT
-Carousel.prototype.next = function (interval) {
+ next(interval) {
 	(this.current === this.total) ? this.current = 0 : this.current += 1;
 
 	this.stop();
@@ -24,7 +26,7 @@ Carousel.prototype.next = function (interval) {
 	}
 };
 // PREVIOUS
-Carousel.prototype.prev = function (interval) {
+prev(interval) {
 	(this.current === 0) ? this.current = this.total : this.current -= 1;
 
 	this.stop();
@@ -38,11 +40,11 @@ Carousel.prototype.prev = function (interval) {
 	}
 };
 // STOP PLAYING
-Carousel.prototype.stop = function () {
+stop() {
 	clearTimeout(this.run);
 };
 // SELECT SLIDE
-Carousel.prototype.slide = function (index) {
+slide(index) {
 	if (index >= 0 && index <= this.total) {
 		this.stop();
 		for (var s = 0; s <= this.total; s++) {
@@ -58,6 +60,6 @@ Carousel.prototype.slide = function (index) {
 
 };
 
-
+};
 
 export default Carousel;
