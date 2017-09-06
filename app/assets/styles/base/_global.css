@@ -1,6 +1,8 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Raleway:200,300,300i,400,400i,500,600,700,800');
 
+body {
   background-color: #fff;
+  font-family: 'Raleway', sans-serif;
 }
 
 img {

@@ -1,1 +1,1 @@
-# Information Website for a holiday home in England.
+# Website for a holiday home in England.

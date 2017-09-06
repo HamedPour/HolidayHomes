@@ -1,404 +1,215 @@
-html {
-
+html{
   line-height: 1.15;
-
   -ms-text-size-adjust: 100%;
-
   -webkit-text-size-adjust: 100%;
-}
-
-
-h1 {
-
+}h1{
   font-size: 2em;
-
   margin: 0.67em 0;
-}
-
-
-main {
-
+}main{
   display: block;
-}
-
-
-hr {
-
+}hr{
   box-sizing: content-box;
-
   height: 0;
-
   overflow: visible;
-}
-
-
-pre {
-
+}pre{
   font-family: monospace, monospace;
-
   font-size: 1em;
-}
-
-
-a {
-
+}a{
   background-color: transparent;
-
   -webkit-text-decoration-skip: objects;
-}
-
-
-abbr[title] {
-
+}abbr[title]{
   border-bottom: none;
-
   text-decoration: underline;
-
   text-decoration: underline dotted;
-}
-
-
-b,
-strong {
-
+}b,
+strong{
   font-weight: bolder;
-}
-
-
-code,
+}code,
 kbd,
-samp {
-
+samp{
   font-family: monospace, monospace;
-
   font-size: 1em;
-}
-
-
-small {
-
+}small{
   font-size: 80%;
-}
-
-
-sub,
-sup {
-
+}sub,
+sup{
   font-size: 75%;
-
   line-height: 0;
-
   position: relative;
-
   vertical-align: baseline;
-}
-
-
-sub {
-
+}sub{
   bottom: -0.25em;
-}
-
-
-sup {
-
+}sup{
   top: -0.5em;
-}
-
-
-img {
-
+}img{
   border-style: none;
-}
-
-
-svg:not(:root) {
-
+}svg:not(:root){
   overflow: hidden;
-}
-
-
-button,
+}button,
 input,
 optgroup,
 select,
-textarea {
-
+textarea{
   margin: 0;
-}
-
-
-button,
-input {
-
+}button,
+input{
   overflow: visible;
-}
-
-
-button,
-select {
-
+}button,
+select{
   text-transform: none;
-}
-
-
-button,
+}button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
-
+[type="submit"]{
   -webkit-appearance: button;
-}
-
-
-button::-moz-focus-inner,
+}button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-
+[type="submit"]::-moz-focus-inner{
   border-style: none;
-
   padding: 0;
-}
-
-
-button:-moz-focusring,
+}button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-
+[type="submit"]:-moz-focusring{
   outline: 1px dotted ButtonText;
-}
-
-
-fieldset {
-
+}fieldset{
   padding: 0.35em 0.75em 0.625em;
-}
-
-
-legend {
-
+}legend{
   box-sizing: border-box;
-
   color: inherit;
-
   display: table;
-
   max-width: 100%;
-
   padding: 0;
-
   white-space: normal;
-}
-
-
-progress {
-
+}progress{
   vertical-align: baseline;
-}
-
-
-textarea {
-
+}textarea{
   overflow: auto;
-}
-
-
-[type="checkbox"],
-[type="radio"] {
-
+}[type="checkbox"],
+[type="radio"]{
   box-sizing: border-box;
-
   padding: 0;
-}
-
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-
+}[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button{
   height: auto;
-}
-
-
-[type="search"] {
-
+}[type="search"]{
   -webkit-appearance: textfield;
-
   outline-offset: -2px;
-}
-
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-
+}[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration{
   -webkit-appearance: none;
-}
-
-
-::-webkit-file-upload-button {
-
+}::-webkit-file-upload-button{
   -webkit-appearance: button;
-
   font: inherit;
-}
-
-
-details {
-
+}details{
   display: block;
-}
-
-
-summary {
-
+}summary{
   display: list-item;
-}
-
-
-template {
-
+}template{
   display: none;
-}
-
-
-[hidden] {
-
+}[hidden]{
   display: none;
-}
-
-
-/*$mainBlue: #2f5572; For Example*/
-
-
-/*Note to User: Change width to best suit your needs*/
-
-
-body {
-
+}@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Raleway:200,300,300i,400,400i,500,600,700,800');/*$mainBlue: #2f5572; For Example*//*Note to User: Change width to best suit your needs*/body {
   background-color: #fff;
-}
-
-
-img {
+  font-family: 'Raleway', sans-serif;
+}img {
   max-width: 100%;
   height: auto;
-}
-
-
-*, *::after, *::before{
+}*, *::after, *::before{
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-
-a {
+}a {
   text-decoration: none;
   color: #000;
-}
-
-
-ul > * {
+}ul > * {
   list-style: none;
-}
-
-
-/*Do not edit mdoules/_sprite directly as it is generated automatically by Gulp
-Instead edit gulp/templates/sprite.css */
-
-
-.icon {
+}/*Do not edit mdoules/_sprite directly as it is generated automatically by Gulp
+Instead edit gulp/templates/sprite.css */.icon {
       background-image: url('../../assets/images/sprites/sprite-3dc83d52.svg');
-    }
-
-
-.no-svg . icon {
+    }.no-svg . icon {
       background-image: url('../../assets/images/sprites/sprite-3dc83d52.png');
-    }
-
-
-.icon--facebook {
+    }.icon--facebook {
     width: 23.23px;
     height: 44.01px;
     background-position: 36.89373670851341% 98.52216748768471%
-  }
-
-
-.icon--globe {
+  }.icon--globe {
     width: 66px;
     height: 66px;
     background-position: 0 0
-  }
-
-
-.icon--instagram {
+  }.icon--instagram {
     width: 44.01px;
     height: 44.01px;
     background-position: 61.61292903432275% 98.52216748768471%
-  }
-
-
-.icon--mail {
+  }.icon--mail {
     width: 66px;
     height: 50px;
     background-position: 64.07766990291262% 0
-  }
-
-
-.icon--twitter {
+  }.icon--twitter {
     width: 53.78px;
     height: 44.06px;
     background-position: 0 98.59575739468181%
-  }
-
-
-.icon--youtube {
+  }.icon--youtube {
     width: 36.75px;
     height: 44px;
     background-position: 99.8109640831758% 0
-  }
-
-
-.icon {
+  }.icon {
   display: block;
-}
-
-
-/*Everything else can be linked from modules below - Make sure to edit the old
-files before us in any new projects=========================================*/
-
-
-.wrapper {
+}/*Everything else can be linked from modules below - Make sure to edit the old
+files before us in any new projects=========================================*/.wrapper {
   border: 1px solid #ccc;
   height: 100vh;
-  max-width: 980px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-}
-
-
-.header {
+}.header {
   height: 20vh;
   width: 100%;
+  max-height: 150px;
   background-color: #ccbe9a;
-  /*background: linear-gradient(-30deg, rgba(#9B8361, 0.6) 0%, rgba(#9B8361, 0.9) 100%);*/
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(204,190,154, 0.85)), to(rgba(204,190,154, 1)));
+  background: linear-gradient(0deg, rgba(204,190,154, 0.85) 0%, rgba(204,190,154, 1) 100%);
   position: relative;
-
-
-
-}
-
-
-.nav {
+  text-align: center;
+}.header-title {
+    padding-top: 25px;
+    font-size: 1.7rem;
+    letter-spacing: .6rem;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 4px #000;
+  }@media (min-width: 800px){.header-title {
+      padding-top: 25px;
+      font-size: 2.7rem;
+      letter-spacing: 1rem
+  }
+  }.header-subtitle{
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    letter-spacing: .4rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0, 0.8);
+  }@media (min-width: 800px){.header-subtitle{
+      font-size: 1.6rem;
+      letter-spacing: .6rem
+  }
+  }.header-email{
+    text-shadow: 1px 1px 4px rgba(0,0,0, 1);
+    padding-top: 6px;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.8;
+  }@media (min-width: 800px){.header-email{
+      font-size: 1.2rem;
+      letter-spacing: .3rem
+  }
+  }.nav {
   width: 100%;
 
   border: 1px solid green;
-}
-
-
-.nav-menu {
+}.nav-menu {
     border: 1px solid yellow;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -407,10 +218,7 @@ files before us in any new projects=========================================*/
     height: 45px;
 
 
-  }
-
-
-.nav-menu li {
+  }.nav-menu li {
       -webkit-transition: All 0.5s ease-in-out;
       transition: All 0.5s ease-in-out;
       padding-top: 8px;
@@ -419,25 +227,16 @@ files before us in any new projects=========================================*/
               flex: 1;
       font-size: 1.3rem;
       cursor: pointer;
-    }
-
-
-.nav-menu li:hover{
+    }.nav-menu li:hover{
         /*background-color: $mistyHover;*/
-      }
-
-
-.slides{
+      }.slides{
   border: 1px solid red;
   width: 100%;
   height: 80vh;
   overflow: hidden;
   position: relative;
 
-}
-
-
-.slides-arrow {
+}.slides-arrow {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -453,57 +252,33 @@ files before us in any new projects=========================================*/
     -webkit-transition: All 0.5s ease-in-out;
     transition: All 0.5s ease-in-out;
 
-  }
-
-
-.slides-arrow:hover{
+  }.slides-arrow:hover{
       -webkit-transform: scale(1.6);
               transform: scale(1.6);
       opacity: 1;
       font-weight: bolder;
-    }
-
-
-.slides-arrowRight{
+    }.slides-arrowRight{
     right: 10px;
-  }
-
-
-.slides-arrowLeft{
+  }.slides-arrowLeft{
     left: 10px;
-  }
-
-
-.fade {
+  }.fade {
     -webkit-animation-name: fade;
             animation-name: fade;
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
     animation-name: fade;
     animation-duration: 2s;
-}
-
-
-@-webkit-keyframes fade {
+}@-webkit-keyframes fade {
   from {opacity: .7}
   to {opacity: 1}
-}
-
-
-@keyframes fade {
+}@keyframes fade {
   from {opacity: .7}
   to {opacity: 1}
-}
-
-
-.row::after {
+}.row::after {
     content: "";
     clear: both;
     display: table;
-  }
-
-
-@media (min-width: 800px){
+  }@media (min-width: 800px){
 
     .row__medium-6 {
       float: left;
@@ -514,36 +289,41 @@ files before us in any new projects=========================================*/
       float: left;
       width: 25%;
     }
-  }
-
-
-.row--gutter {
+  }.row--gutter {
     margin-right: -35px;
-  }
-
-
-.row--gutter > div {
+  }.row--gutter > div {
     padding-right: 35px;
-  }
-
-
-/*Begin flexbox to sortout hight issues*/
-
-
-@media (min-width: 800px){
-
-
-.row--flexbox-at-medium {
+  }/*Begin flexbox to sortout hight issues*/@media (min-width: 800px){.row--flexbox-at-medium {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex
   }
-  }
-
-
-.row--flexbox-at-medium > div {
+  }.row--flexbox-at-medium > div {
       float: none;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-    }
+    }.textAnimate h2 > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}.textAnimate h2 > a:hover {
+  color: #000;
+}.textAnimate h2 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.8);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.8s ease-in-out 0s;
+  transition: all 0.8s ease-in-out 0s;
+}.textAnimate h2 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
