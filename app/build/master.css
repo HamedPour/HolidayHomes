@@ -7,6 +7,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+
 h1 {
 
   font-size: 2em;
@@ -14,10 +15,12 @@ h1 {
   margin: 0.67em 0;
 }
 
+
 main {
 
   display: block;
 }
+
 
 hr {
 
@@ -28,6 +31,7 @@ hr {
   overflow: visible;
 }
 
+
 pre {
 
   font-family: monospace, monospace;
@@ -35,12 +39,14 @@ pre {
   font-size: 1em;
 }
 
+
 a {
 
   background-color: transparent;
 
   -webkit-text-decoration-skip: objects;
 }
+
 
 abbr[title] {
 
@@ -51,11 +57,13 @@ abbr[title] {
   text-decoration: underline dotted;
 }
 
+
 b,
 strong {
 
   font-weight: bolder;
 }
+
 
 code,
 kbd,
@@ -66,10 +74,12 @@ samp {
   font-size: 1em;
 }
 
+
 small {
 
   font-size: 80%;
 }
+
 
 sub,
 sup {
@@ -83,25 +93,30 @@ sup {
   vertical-align: baseline;
 }
 
+
 sub {
 
   bottom: -0.25em;
 }
+
 
 sup {
 
   top: -0.5em;
 }
 
+
 img {
 
   border-style: none;
 }
 
+
 svg:not(:root) {
 
   overflow: hidden;
 }
+
 
 button,
 input,
@@ -112,17 +127,20 @@ textarea {
   margin: 0;
 }
 
+
 button,
 input {
 
   overflow: visible;
 }
 
+
 button,
 select {
 
   text-transform: none;
 }
+
 
 button,
 [type="button"],
@@ -131,6 +149,7 @@ button,
 
   -webkit-appearance: button;
 }
+
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -142,6 +161,7 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
+
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -150,10 +170,12 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
+
 fieldset {
 
   padding: 0.35em 0.75em 0.625em;
 }
+
 
 legend {
 
@@ -170,15 +192,18 @@ legend {
   white-space: normal;
 }
 
+
 progress {
 
   vertical-align: baseline;
 }
 
+
 textarea {
 
   overflow: auto;
 }
+
 
 [type="checkbox"],
 [type="radio"] {
@@ -188,11 +213,13 @@ textarea {
   padding: 0;
 }
 
+
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
 
   height: auto;
 }
+
 
 [type="search"] {
 
@@ -201,11 +228,13 @@ textarea {
   outline-offset: -2px;
 }
 
+
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
 
   -webkit-appearance: none;
 }
+
 
 ::-webkit-file-upload-button {
 
@@ -214,39 +243,48 @@ textarea {
   font: inherit;
 }
 
+
 details {
 
   display: block;
 }
+
 
 summary {
 
   display: list-item;
 }
 
+
 template {
 
   display: none;
 }
+
 
 [hidden] {
 
   display: none;
 }
 
+
 /*$mainBlue: #2f5572; For Example*/
 
+
 /*Note to User: Change width to best suit your needs*/
+
 
 body {
 
   background-color: #fff;
 }
 
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 
 *, *::after, *::before{
   margin: 0;
@@ -255,25 +293,31 @@ img {
           box-sizing: border-box;
 }
 
+
 a {
   text-decoration: none;
   color: #000;
 }
 
+
 ul > * {
   list-style: none;
 }
 
+
 /*Do not edit mdoules/_sprite directly as it is generated automatically by Gulp
 Instead edit gulp/templates/sprite.css */
+
 
 .icon {
       background-image: url('../../assets/images/sprites/sprite-3dc83d52.svg');
     }
 
+
 .no-svg . icon {
       background-image: url('../../assets/images/sprites/sprite-3dc83d52.png');
     }
+
 
 .icon--facebook {
     width: 23.23px;
@@ -281,11 +325,13 @@ Instead edit gulp/templates/sprite.css */
     background-position: 36.89373670851341% 98.52216748768471%
   }
 
+
 .icon--globe {
     width: 66px;
     height: 66px;
     background-position: 0 0
   }
+
 
 .icon--instagram {
     width: 44.01px;
@@ -293,11 +339,13 @@ Instead edit gulp/templates/sprite.css */
     background-position: 61.61292903432275% 98.52216748768471%
   }
 
+
 .icon--mail {
     width: 66px;
     height: 50px;
     background-position: 64.07766990291262% 0
   }
+
 
 .icon--twitter {
     width: 53.78px;
@@ -305,18 +353,22 @@ Instead edit gulp/templates/sprite.css */
     background-position: 0 98.59575739468181%
   }
 
+
 .icon--youtube {
     width: 36.75px;
     height: 44px;
     background-position: 99.8109640831758% 0
   }
 
+
 .icon {
   display: block;
 }
 
+
 /*Everything else can be linked from modules below - Make sure to edit the old
 files before us in any new projects=========================================*/
+
 
 .wrapper {
   border: 1px solid #ccc;
@@ -326,37 +378,25 @@ files before us in any new projects=========================================*/
   margin-right: auto;
 }
 
+
 .header {
-  height: 155px;
+  height: 20vh;
   width: 100%;
-  background-color: #9B8361;
-  background: linear-gradient(-30deg, rgba(155,131,97, 0.6) 0%, rgba(155,131,97, 0.9) 100%);
+  background-color: #ccbe9a;
+  /*background: linear-gradient(-30deg, rgba(#9B8361, 0.6) 0%, rgba(#9B8361, 0.9) 100%);*/
   position: relative;
+
+
+
 }
 
-.header-contact{
-    color: #fff;
-    border: 1px solid yellow;
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-  }
-
-.header-logo{
-
-    border: 1px solid green;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    right: 60px;
-    bottom: 30px;
-  }
 
 .nav {
   width: 100%;
 
   border: 1px solid green;
 }
+
 
 .nav-menu {
     border: 1px solid yellow;
@@ -369,6 +409,7 @@ files before us in any new projects=========================================*/
 
   }
 
+
 .nav-menu li {
       -webkit-transition: All 0.5s ease-in-out;
       transition: All 0.5s ease-in-out;
@@ -380,116 +421,129 @@ files before us in any new projects=========================================*/
       cursor: pointer;
     }
 
+
 .nav-menu li:hover{
-        background-color: rgba(184,160,126, 0.2);
+        /*background-color: $mistyHover;*/
       }
 
-* {-webkit-box-sizing:border-box;box-sizing:border-box}
 
-/* Slideshow container */
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+.slides{
+  border: 1px solid red;
   width: 100%;
-  text-align: center;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+
 }
 
-/* Number text (1/3 etc) */
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+.slides-arrow {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    top: 45%;
+    text-align: center;
+    font-size: 2rem;
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    opacity: 0.7;
+    -webkit-transition: All 0.5s ease-in-out;
+    transition: All 0.5s ease-in-out;
 
-/* The dots/bullets/indicators */
+  }
 
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
-}
 
-.active, .dot:hover {
-  background-color: #717171;
-}
+.slides-arrow:hover{
+      -webkit-transform: scale(1.6);
+              transform: scale(1.6);
+      opacity: 1;
+      font-weight: bolder;
+    }
 
-/* Fading animation */
+
+.slides-arrowRight{
+    right: 10px;
+  }
+
+
+.slides-arrowLeft{
+    left: 10px;
+  }
+
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
 }
+
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .7}
   to {opacity: 1}
 }
+
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .7}
   to {opacity: 1}
 }
 
-.row {
-  background-color: mistyrose;
-  overflow: hidden;
-  height: 300px;
-  width: 100%;
-}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+@media (min-width: 800px){
+
+    .row__medium-6 {
+      float: left;
+      width: 50%;
+    }
+
+    .row__medium-3 {
+      float: left;
+      width: 25%;
+    }
+  }
+
+
+.row--gutter {
+    margin-right: -35px;
+  }
+
+
+.row--gutter > div {
+    padding-right: 35px;
+  }
+
+
+/*Begin flexbox to sortout hight issues*/
+
+
+@media (min-width: 800px){
+
+
+.row--flexbox-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }
+  }
+
+
+.row--flexbox-at-medium > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }

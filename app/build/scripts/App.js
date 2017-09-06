@@ -63,12 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10328,17 +10327,125 @@ return jQuery;
 
 
 /***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _jquery = __webpack_require__(1);
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Carousel = function () {
+	function Carousel(containerID) {
+		_classCallCheck(this, Carousel);
+
+		this.container = document.getElementById(containerID) || document.body;
+		this.slides = this.container.querySelectorAll('.carousel');
+		this.total = this.slides.length - 1;
+		this.current = 0;
+
+		// start on slide 1
+		this.slide(this.current);
+	}
+
+	// NEXT
+
+
+	_createClass(Carousel, [{
+		key: 'next',
+		value: function next(interval) {
+			this.current === this.total ? this.current = 0 : this.current += 1;
+
+			this.stop();
+			this.slide(this.current);
+
+			if (typeof interval === 'number' && interval % 1 === 0) {
+				var context = this;
+				this.run = setTimeout(function () {
+					context.next(interval);
+				}, interval);
+			}
+		}
+	}, {
+		key: 'prev',
+
+		// PREVIOUS
+		value: function prev(interval) {
+			this.current === 0 ? this.current = this.total : this.current -= 1;
+
+			this.stop();
+			this.slide(this.current);
+
+			if (typeof interval === 'number' && interval % 1 === 0) {
+				var context = this;
+				this.run = setTimeout(function () {
+					context.prev(interval);
+				}, interval);
+			}
+		}
+	}, {
+		key: 'stop',
+
+		// STOP PLAYING
+		value: function stop() {
+			clearTimeout(this.run);
+		}
+	}, {
+		key: 'slide',
+
+		// SELECT SLIDE
+		value: function slide(index) {
+			if (index >= 0 && index <= this.total) {
+				this.stop();
+				for (var s = 0; s <= this.total; s++) {
+					if (s === index) {
+						this.slides[s].style.display = "inline-block";
+					} else {
+						this.slides[s].style.display = 'none';
+					}
+				}
+			} else {
+				alert("Index " + index + " doesn't exist. Available : 0 - " + this.total);
+			}
+		}
+	}]);
+
+	return Carousel;
+}();
+
+;
+
+exports.default = Carousel;
+
+/***/ }),
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _Carousel = __webpack_require__(1);
+
+var _Carousel2 = _interopRequireDefault(_Carousel);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10347,38 +10454,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // new RevealOnScroll($(".SOME-CLASS-NAME"), "85%");
 //
 
-//
-var slideIndex = 1; // BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
+// BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
 
-showSlides(slideIndex);
+var slides = new _Carousel2.default("siteSlides");
+slides.next(5000);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
+  // slides.prev();
+  slides.prev(5000);
+});
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+document.querySelector(".slides-arrowRight").addEventListener("click", function () {
+  // slides.next();
+  slides.next(5000);
+});
 
 /***/ })
 /******/ ]);
