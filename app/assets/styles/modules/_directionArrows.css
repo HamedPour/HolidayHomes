@@ -1,0 +1,43 @@
+.directArrow{
+  width: 35px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.6;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: All 0.5s ease-in;
+  border: 2px solid #000;
+
+
+  &:hover{
+    opacity: 1;
+    background-color: #000;
+    color: $mainGold;
+  }
+
+  &-down{
+    transform: rotate(-90deg);
+    font-size: 2.1rem;
+    padding-right: 5px;
+
+
+    &:hover{
+      transform: scale(1.1) rotate(-90deg);
+    }
+
+    &--carousel{
+      top: 85%;
+      left: 44%;
+
+      @mixin atMedium {
+        top: 90%;
+        left: 48.5%;
+        &:hover{
+          transform: scale(1.3) rotate(-90deg);
+        }
+      }
+    }
+  }
+
+}

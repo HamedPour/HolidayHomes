@@ -209,7 +209,6 @@ files before us in any new projects=========================================*/.w
     font-weight: 300;
     font-style: italic;
     opacity: 0.8;
-    z-index: 100;
   }@media (min-width: 700px){.header-email{
       font-size: 1.2rem;
       letter-spacing: .3rem
@@ -239,7 +238,7 @@ files before us in any new projects=========================================*/.w
     }.nav-menu li:hover{
         /*background-color: $mistyHover;*/
       }.slides{
-  z-index: 1;
+  
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -339,4 +338,42 @@ files before us in any new projects=========================================*/.w
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-}
+}.directArrow{
+  width: 35px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.6;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: All 0.5s ease-in;
+  transition: All 0.5s ease-in;
+  border: 2px solid #000;
+
+}.directArrow:hover{
+    opacity: 1;
+    background-color: #000;
+    color: #ccbe9a;
+  }.directArrow-down{
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    font-size: 2.1rem;
+    padding-right: 5px;
+  }.directArrow-down:hover{
+      -webkit-transform: scale(1.1) rotate(-90deg);
+              transform: scale(1.1) rotate(-90deg);
+    }.directArrow-down--carousel{
+      top: 85%;
+      left: 44%;
+    }@media (min-width: 700px){.directArrow-down--carousel{
+        top: 90%;
+        left: 48.5%
+    }
+        .directArrow-down--carousel:hover{
+          -webkit-transform: scale(1.3) rotate(-90deg);
+                  transform: scale(1.3) rotate(-90deg);
+        }
+  }
