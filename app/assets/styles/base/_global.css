@@ -3,6 +3,7 @@
 body {
   background-color: #fff;
   font-family: 'Raleway', sans-serif;
+  /*Min With for all divs should be 340px*/
 }
 
 img {

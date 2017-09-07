@@ -2,6 +2,7 @@
   display: none;
 
   @mixin atMedium {
+    
     display: block;
     width: 100%;
     background-color: $lightGold;

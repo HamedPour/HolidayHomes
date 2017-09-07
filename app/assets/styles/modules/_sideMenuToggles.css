@@ -1,0 +1,35 @@
+.menu_burger {
+  z-index: 999;
+  right: 0px;
+  top: 115px;
+  opacity: 0.6;
+  position: fixed;
+  font-size: 1.6rem;
+  color: #000;
+  margin: 10px 20px;
+  transform: scale(0.9);
+  transition: ALL .8s;
+  cursor: pointer;
+}
+
+.menu_burger:hover{
+  transform: scale(1.3);
+  opacity: 1;
+
+}
+
+
+.menu_burger_close{
+  color: #000;
+  font-size: 1.6rem;
+  margin: 10px 20px;
+  float: right;
+  transform: scale(0.9);
+  transition: ALL .8s;
+  opacity: 0.8;
+}
+
+.menu_burger_close:hover{
+  transform: scale(1.3);
+
+}

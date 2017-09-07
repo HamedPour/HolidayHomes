@@ -2,6 +2,7 @@
 
 import $ from 'jquery';
 import Carousel from './modules/Carousel';
+import toggleMenu from './modules/toggleMenu';
 
 
 
