@@ -175,7 +175,7 @@ files before us in any new projects=========================================*/.w
   background: linear-gradient(0deg, rgba(204,190,154, 0.85) 0%, rgba(204,190,154, 1) 100%);
   position: relative;
   text-align: center;
-}@media (min-width: 700px){.header {
+}@media (min-width: 641px){.header {
     // height: 20vh;
     height: 150px
 }
@@ -189,7 +189,7 @@ files before us in any new projects=========================================*/.w
     letter-spacing: .6rem;
     font-variant: small-caps;
     text-shadow: 1px 1px 4px #000;
-  }@media (min-width: 700px){.header-title {
+  }@media (min-width: 641px){.header-title {
       padding-top: 13px;
       font-size: 2.7rem;
       letter-spacing: 1rem
@@ -199,19 +199,20 @@ files before us in any new projects=========================================*/.w
     font-variant: small-caps;
     letter-spacing: .4rem;
     text-shadow: 1px 1px 4px rgba(0,0,0, 0.8);
-  }@media (min-width: 700px){.header-subtitle{
+  }@media (min-width: 641px){.header-subtitle{
       font-size: 1.6rem;
       letter-spacing: .6rem
   }
   }.header-email{
     text-shadow: 1px 1px 4px rgba(0,0,0, 1);
-    padding-top: 12px;
-    font-size: 1rem;
+    padding-top: 8px;
+    font-size: 0.8rem;
     letter-spacing: .1rem;
     font-weight: 300;
     font-style: italic;
     opacity: 0.8;
-  }@media (min-width: 700px){.header-email{
+  }@media (min-width: 641px){.header-email{
+      padding-top: 12px;
       font-size: 1.2rem;
       letter-spacing: .3rem
   }
@@ -223,11 +224,11 @@ files before us in any new projects=========================================*/.w
 
 
 
-}@media (min-width: 700px){.nav {
+}@media (min-width: 641px){.nav {
 
     display: block;
     width: 100%;
-    background-color: #f3efe4
+    background-color: #ccbe9a
 
 
 
@@ -245,20 +246,25 @@ files before us in any new projects=========================================*/.w
       .nav-menu li {
         font-weight: 400;
         text-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
-        border-right: 2px solid rgba(0,0,0, 0.6);
+        border-bottom: 1px solid rgba(0,0,0, 0.6);
         -webkit-transition: All 0.5s ease-in-out;
         transition: All 0.5s ease-in-out;
         padding-top: 9px;
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 10px;
         cursor: pointer;
       }
-        .nav-menu li:last-child {border-right: none;}
+        @media (min-width: 1010px){
+      .nav-menu li {
+          font-size: 1.2rem
+      }
+  }
+
         .nav-menu li:hover{
-        background-color: rgba(204,190,154, 0.8);
+        background-color: rgba(255,255,255, 0.3);
         }
   }.slides{
   z-index: 50;
@@ -268,7 +274,7 @@ files before us in any new projects=========================================*/.w
   overflow: hidden;
   position: relative;
 
-}@media (min-width: 700px){.slides{
+}@media (min-width: 641px){.slides{
     height: 80vh
 
 }
@@ -314,7 +320,7 @@ files before us in any new projects=========================================*/.w
     content: "";
     clear: both;
     display: table;
-  }@media (min-width: 700px){
+  }@media (min-width: 641px){
 
     .row__medium-6 {
       float: left;
@@ -329,17 +335,7 @@ files before us in any new projects=========================================*/.w
     margin-right: -35px;
   }.row--gutter > div {
     padding-right: 35px;
-  }/*Begin flexbox to sortout hight issues*/@media (min-width: 700px){.row--flexbox-at-medium {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex
-  }
-  }.row--flexbox-at-medium > div {
-      float: none;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-    }.textAnimate h2 > a {
+  }.textAnimate h2 > a {
   position: relative;
   color: #000;
   text-decoration: none;
@@ -362,8 +358,33 @@ files before us in any new projects=========================================*/.w
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-}.directArrow{
-  width: 35px;
+}.textAnimate--red h2 > a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }.textAnimate--red h2 > a:hover {
+    color: #000;
+  }.textAnimate--red h2 > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,0,0, 0.8);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: all 0.8s ease-in-out 0s;
+    transition: all 0.8s ease-in-out 0s;
+  }.textAnimate--red h2 > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }.directArrow{
+  width: 40px;
+  height: auto;
+  font-size: 2.2rem;
   border-radius: 50%;
   position: absolute;
   opacity: 0.6;
@@ -375,33 +396,42 @@ files before us in any new projects=========================================*/.w
           user-select: none;
   -webkit-transition: All 0.5s ease-in;
   transition: All 0.5s ease-in;
-  border: 2px solid #000;
+  border: 3px solid #000;
+  background-color: rgba(0,0,0, 0.9);
+  color: #fff;
 
 }.directArrow:hover{
     opacity: 1;
-    background-color: #000;
     color: #ccbe9a;
+    background-color: #000;
+
+  }.directArrow-up{
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    padding-right: 3px;
+    margin-left: 46px;
   }.directArrow-down{
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
-    font-size: 2.1rem;
     padding-right: 5px;
-  }.directArrow-down:hover{
-      -webkit-transform: scale(1.1) rotate(-90deg);
-              transform: scale(1.1) rotate(-90deg);
-    }.directArrow-down--carousel{
+  }.directArrow-down--carousel{
       display: none;
       top: 85%;
       left: 44%;
-    }@media (min-width: 700px){.directArrow-down--carousel{
+    }@media (min-width: 641px){.directArrow-down--carousel{
         display: block;
         top: 90%;
         left: 48.5%
     }
         .directArrow-down--carousel:hover{
-          -webkit-transform: scale(1.3) rotate(-90deg);
-                  transform: scale(1.3) rotate(-90deg);
+          -webkit-transform: scale(1.1) rotate(-90deg);
+                  transform: scale(1.1) rotate(-90deg);
         }
+  }.arrowGroup{
+  display: none;
+}@media (min-width: 641px){.arrowGroup{
+    display: block
+}
   }.side_menu{
   z-index: 1000;
 
@@ -422,7 +452,7 @@ files before us in any new projects=========================================*/.w
       -ms-user-select: none;
           user-select: none;
   font-variant: small-caps;
-}@media (min-width: 700px){.side_menu{
+}@media (min-width: 641px){.side_menu{
     display: none
 }
   }.side_menu--title {
@@ -430,7 +460,7 @@ files before us in any new projects=========================================*/.w
     margin-top: 30px;
     font-size: 1.3rem;
     font-weight: bold;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-right: 10px;
     padding: 10px 10px 10px 10px;
     border: 3px solid #000;
@@ -459,28 +489,61 @@ files before us in any new projects=========================================*/.w
   opacity: 1;
   right: 0;
 }.menu_burger_Button {
-
-  right: 0px;
-  top: 0px;
-  opacity: 0.8;
+  z-index: 999;
+  right: 5px;
+  top: 5px;
+  opacity: 0.3;
   position: fixed;
   font-size: 1.6rem;
   color: #000;
-  margin: 10px 20px;
+  // margin: 10px 20px;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   -webkit-transition: ALL .8s;
   transition: ALL .8s;
   cursor: pointer;
-}@media (min-width: 700px){.menu_burger_Button {
+}@media (min-width: 641px){.menu_burger_Button {
     display: none
 }
   }.menu_burger_closeButton{
   color: #000;
   font-size: 1.7rem;
-  margin: 10px 20px;
+  margin: 5px 5px;
   float: right;
   -webkit-transition: ALL .8s;
   transition: ALL .8s;
   opacity: 0.8;
+}.priceSection {
+  height: 760px;
+}.headline {
+  font-variant: small-caps;
+
+
+}@media (min-width: 641px){.headline {
+    font-size: 2rem
+
+
+}
+  }@media (min-width: 1010px){.headline {
+    font-size: 2.3rem
+
+
+}
+  }.para {
+  width: 330px;
+  text-shadow: 0px 0px 3px rgba(0,0,0, 0.3);
+  word-spacing: 2px;
+  line-height: 20px;
+}@media (min-width: 641px){.para {
+    width: 340px
+}
+  }@media (min-width: 1010px){.para {
+    width: 340px;
+    line-height: 22px
+}
+  }.link {
+  font-size: 1rem;
+  font-variant: small-caps;
+  font-weight: bold;
+  letter-spacing: 2.5px;
 }

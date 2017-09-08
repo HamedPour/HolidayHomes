@@ -16,3 +16,7 @@ files before us in any new projects=========================================*/
 @import "modules/_directionArrows";
 @import "modules/_sideMenu";
 @import "modules/_sideMenuToggles";
+@import "modules/_priceSection";
+@import "modules/_headline";
+@import "modules/_para";
+@import "modules/_link";

@@ -19,8 +19,6 @@
   }
 
 
-
-
   &-title {
     padding-top: 20px;
     font-size: 1.7rem;
@@ -49,8 +47,8 @@
 
   &-email{
     text-shadow: 1px 1px 4px rgba(#000, 1);
-    padding-top: 12px;
-    font-size: 1rem;
+    padding-top: 8px;
+    font-size: 0.8rem;
     letter-spacing: .1rem;
     font-weight: 300;
     font-style: italic;
@@ -58,6 +56,7 @@
 
 
     @mixin atMedium {
+      padding-top: 12px;
       font-size: 1.2rem;
       letter-spacing: .3rem;
     }
