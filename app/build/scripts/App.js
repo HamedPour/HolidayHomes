@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10430,10 +10430,46 @@ var Carousel = function () {
 exports.default = Carousel;
 
 /***/ }),
-/* 2 */,
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var BurgerToggle = function BurgerToggle() {
+  _classCallCheck(this, BurgerToggle);
+
+  (0, _jquery2.default)(".menu_burger_closeButton").click(function () {
+    (0, _jquery2.default)(".menu_burger").removeClass("hideBurger");
+    (0, _jquery2.default)(".side_menu").removeClass("side_menu_open");
+  });
+
+  (0, _jquery2.default)(".menu_burger_Button").click(function () {
+    console.log("burgerBottonClicked");
+    (0, _jquery2.default)(this).addClass("hideBurger");
+    (0, _jquery2.default)(".side_menu").toggleClass("side_menu_open");
+  });
+};
+
+exports.default = BurgerToggle;
+
+/***/ }),
 /* 3 */,
 /* 4 */,
-/* 5 */
+/* 5 */,
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10447,27 +10483,32 @@ var _Carousel = __webpack_require__(1);
 
 var _Carousel2 = _interopRequireDefault(_Carousel);
 
+var _toggleMenu = __webpack_require__(2);
+
+var _toggleMenu2 = _interopRequireDefault(_toggleMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //
 // import RevealOnScroll from './modules/RevealOnScroll';//
 // new RevealOnScroll($(".SOME-CLASS-NAME"), "85%");
 //
+var toggleMenu = new _toggleMenu2.default();
 
+// START CAROUSEL ==============================================================
 // BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
 
 var slides = new _Carousel2.default("siteSlides");
 slides.next(5000);
-
 document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
   // slides.prev();
   slides.prev(5000);
 });
-
 document.querySelector(".slides-arrowRight").addEventListener("click", function () {
   // slides.next();
   slides.next(5000);
 });
+// end CAROUSEL ================================================================
 
 /***/ })
 /******/ ]);

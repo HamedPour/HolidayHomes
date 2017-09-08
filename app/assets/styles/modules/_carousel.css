@@ -1,6 +1,7 @@
 .slides{
-  
+  z-index: 50;
   width: 100%;
+  min-width: 340px;
   height: 300px;
   overflow: hidden;
   position: relative;

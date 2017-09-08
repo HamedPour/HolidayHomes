@@ -9,6 +9,7 @@ class Carousel{
 
 		// start on slide 1
 		this.slide(this.current);
+
 }
 
 // NEXT

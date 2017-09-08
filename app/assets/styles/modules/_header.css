@@ -2,6 +2,7 @@
   height: 120px;
   width: 100%;
   max-height: 150px;
+  min-width: 340px;
   background-color: $mainGold;
   background: linear-gradient(0deg, rgba(#ccbe9a, 0.85) 0%, rgba(#ccbe9a, 1) 100%);
   position: relative;
@@ -54,7 +55,7 @@
     font-weight: 300;
     font-style: italic;
     opacity: 0.8;
-    
+
 
     @mixin atMedium {
       font-size: 1.2rem;
