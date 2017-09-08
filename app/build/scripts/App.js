@@ -10436,21 +10436,34 @@ exports.default = Carousel;
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery2.default)(".menu_burger_close").click(function () {
-  (0, _jquery2.default)(".menu_burger").removeClass("hideBurger");
-  (0, _jquery2.default)(".side_menu").removeClass("side_menu_open");
-});
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-(0, _jquery2.default)(".menu_burger").click(function () {
-  (0, _jquery2.default)(this).addClass("hideBurger");
-  (0, _jquery2.default)(".side_menu").toggleClass("side_menu_open");
-});
+var BurgerToggle = function BurgerToggle() {
+  _classCallCheck(this, BurgerToggle);
+
+  (0, _jquery2.default)(".menu_burger_closeButton").click(function () {
+    (0, _jquery2.default)(".menu_burger").removeClass("hideBurger");
+    (0, _jquery2.default)(".side_menu").removeClass("side_menu_open");
+  });
+
+  (0, _jquery2.default)(".menu_burger_Button").click(function () {
+    console.log("burgerBottonClicked");
+    (0, _jquery2.default)(this).addClass("hideBurger");
+    (0, _jquery2.default)(".side_menu").toggleClass("side_menu_open");
+  });
+};
+
+exports.default = BurgerToggle;
 
 /***/ }),
 /* 3 */,
@@ -10480,20 +10493,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import RevealOnScroll from './modules/RevealOnScroll';//
 // new RevealOnScroll($(".SOME-CLASS-NAME"), "85%");
 //
+var toggleMenu = new _toggleMenu2.default();
 
-var slides = new _Carousel2.default("siteSlides"); // BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
+// START CAROUSEL ==============================================================
+// BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
 
+var slides = new _Carousel2.default("siteSlides");
 slides.next(5000);
-
 document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
   // slides.prev();
   slides.prev(5000);
 });
-
 document.querySelector(".slides-arrowRight").addEventListener("click", function () {
   // slides.next();
   slides.next(5000);
 });
+// end CAROUSEL ================================================================
 
 /***/ })
 /******/ ]);

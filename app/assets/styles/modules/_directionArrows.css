@@ -27,10 +27,12 @@
     }
 
     &--carousel{
+      display: none;
       top: 85%;
       left: 44%;
 
       @mixin atMedium {
+        display: block;
         top: 90%;
         left: 48.5%;
         &:hover{
