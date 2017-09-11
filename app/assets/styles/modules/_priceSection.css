@@ -1,3 +1,79 @@
 .priceSection {
-  height: 760px;
+
+  border: 1px solid red;
+
+
+  &-leftContainer{
+    height: 700px;
+
+    &--headline{
+      border: 1px solid green;
+      width: 60%;
+      margin:0 auto;
+      margin-top: 20px;
+      margin-bottom: 10px;
+
+      @mixin atMedium {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      @mixin atLarge {
+        margin-top: 50px;
+        margin-left: 90px;
+        margin-bottom: 35px;
+      }
+    }
+
+
+
+    &--para{
+      border: 1px solid purple;
+      margin-bottom: 10px;
+      // position: relative;
+
+      @mixin atMedium {
+        margin-left: 100px;
+        margin-bottom: 20px;
+
+      }
+      @mixin atLarge {
+        width: 450px;
+        margin-left: 150px;
+      }
+    }
+
+
+
+    &--priceTag{
+
+      // position: relative;
+      border: 1px solid gold;
+      font-weight: bold;
+      margin-top: 50px;
+      @mixin atMedium {
+        margin-left: 100px;
+      }
+      @mixin atLarge {
+        font-size: 1.1rem;
+        margin-left: 150px;
+      }
+
+      & > a {
+        color: rgba(#F00, 0.8);
+        font-weight: 400;
+      }
+    }
+
+    &--checkAvailability{
+      display: inline-block;
+
+      @mixin atMedium {
+        margin-left: 55px;
+
+      }
+      border: 1px solid green;
+    }
+  }
+
+
 }

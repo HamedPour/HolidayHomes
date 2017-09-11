@@ -1,17 +1,17 @@
 .para {
-  width: 330px;
+
   text-shadow: 0px 0px 3px rgba(#000, 0.3);
   word-spacing: 2px;
   line-height: 20px;
-
+  font-size: responsive;
 
   @mixin atMedium {
-    width: 340px;
+
   }
 
 
   @mixin atLarge {
-    width: 340px;
+    
     line-height: 22px;
   }
 }

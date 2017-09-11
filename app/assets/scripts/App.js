@@ -14,7 +14,7 @@ var toggleMenu = new BurgerToggle();
 
 // START CAROUSEL ==============================================================
 var slides = new Carousel("siteSlides")
-slides.next(5000);
+// slides.next(5000);
 document.querySelector(".slides-arrowLeft").addEventListener("click", function(){
   // slides.prev();
   slides.prev(5000);
