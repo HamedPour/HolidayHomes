@@ -10,10 +10,10 @@
   user-select: none;
   transition: All 0.5s ease-in;
   border: 3px solid #000;
-  background-color: rgba(#000, 0.9);
-  color: #fff;
+  color: #000;
 
   &:hover{
+    background-color: rgba(#000, 0.9);
     opacity: 1;
     color: $mainGold;
 
@@ -49,6 +49,6 @@
 .arrowGroup{
   display: none;
   @mixin atMedium {
-    display: block;
+    display: inline-block;
   }
 }
