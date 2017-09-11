@@ -1,7 +1,7 @@
 .directArrow{
-  width: 40px;
+  width: 25px;
   height: auto;
-  font-size: 2.2rem;
+  font-size: 1.3rem;
   border-radius: 50%;
   position: absolute;
   opacity: 0.6;
@@ -10,24 +10,23 @@
   user-select: none;
   transition: All 0.5s ease-in;
   border: 3px solid #000;
-  background-color: rgba(#000, 0.9);
-  color: #fff;
+  color: #000;
 
   &:hover{
+    background-color: rgba(#000, 0.9);
     opacity: 1;
     color: $mainGold;
-    background-color: #000;
 
   }
   &-up{
     transform: rotate(90deg);
-    padding-right: 3px;
-    margin-left: 46px;
+    padding-right: 2px;
+    margin-left: 30px;
   }
 
   &-down{
     transform: rotate(-90deg);
-    padding-right: 5px;
+    padding-right: 2px;
 
     &--carousel{
       display: none;
@@ -50,6 +49,6 @@
 .arrowGroup{
   display: none;
   @mixin atMedium {
-    display: block;
+    display: inline-block;
   }
 }

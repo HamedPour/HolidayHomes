@@ -1,21 +1,24 @@
+
+
 .priceSection {
+  overflow: hidden;
 
-  border: 1px solid red;
 
+  height: 600px;
 
   &-leftContainer{
-    height: 700px;
+    text-align: center;
 
     &--headline{
-      border: 1px solid green;
-      width: 60%;
-      margin:0 auto;
+      text-align: center;
       margin-top: 20px;
       margin-bottom: 10px;
 
       @mixin atMedium {
-        margin-top: 20px;
+        text-align: justify;
+        margin-top: 30px;
         margin-bottom: 20px;
+        margin-left: 70px;
       }
       @mixin atLarge {
         margin-top: 50px;
@@ -24,56 +27,148 @@
       }
     }
 
+    &--textContainer{
+          z-index: 12;
+          position: relative;
+          min-width: 400px;
+          @mixin atMedium {
+            text-align: left;
+            margin-left: 100px;
+          }@mixin atLarge {
+            margin-left: 150px;
+
+          }
+          &--para{
+            z-index: 3;
+            margin-bottom: 10px;
+
+            @mixin atMedium {
+              margin-bottom: 30px;
+
+            }
+            @mixin atLarge {
+            }
+          }
+
+          &--priceTag{
+            font-weight: bold;
+            @mixin atMedium {
+              display: inline-block;
+
+            }
+            @mixin atLarge {
+              font-size: 1.1rem;
+
+            }
+
+            & > a {
+              color: rgba(#F00, 0.8);
+              font-weight: 400;
+            }
+          }
 
 
-    &--para{
-      border: 1px solid purple;
-      margin-bottom: 10px;
-      // position: relative;
+          &--checkAvailability{
 
-      @mixin atMedium {
-        margin-left: 100px;
-        margin-bottom: 20px;
 
-      }
-      @mixin atLarge {
-        width: 450px;
-        margin-left: 150px;
-      }
+            @mixin atMedium {
+              display: inline-block;
+              margin-top: 10px;
+              padding-left: 50px;
+            }
+            @mixin atLarge {
+              padding-left: 60px;
+            }
+
+          }
+
     }
 
 
 
-    &--priceTag{
-
-      // position: relative;
-      border: 1px solid gold;
-      font-weight: bold;
-      margin-top: 50px;
+    &--viewImage{
+      z-index: 0;
+      display: none;
+      width: 400px;
+      height: auto;
+      margin-top: 20px;
       @mixin atMedium {
+        display: block;
         margin-left: 100px;
       }
       @mixin atLarge {
-        font-size: 1.1rem;
         margin-left: 150px;
       }
-
-      & > a {
-        color: rgba(#F00, 0.8);
-        font-weight: 400;
-      }
-    }
-
-    &--checkAvailability{
-      display: inline-block;
-
-      @mixin atMedium {
-        margin-left: 55px;
-
-      }
-      border: 1px solid green;
     }
   }
 
+  &-rightContainer {
+    text-align: center;
 
+    &--islandImage{
+      opacity: 0.7;
+      @mixin atMedium {
+        position: static;
+        opacity: 0.4;
+        margin-top: 30px;
+      }
+      @mixin atLarge {
+        margin-top: 50px;
+      }
+
+    }
+
+    &--toLocation > a{
+      transition: All 0.5s ease-in;
+      display: inline-block;
+      position: relative;
+      top: -100px;
+      @mixin atMedium {
+        text-shadow: 2px 2px 2px rgba(#000, 0.8);
+        color: $mainGold;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        left: 70px;
+        top: -80px;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+      @mixin atLarge {
+        left: 100px;
+        top: -90px;
+      }
+    }
+
+    &--houseLink > h2 > a{
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-shadow: 1px 1px 3px rgba(#000, 0.8);
+      letter-spacing: 8px;
+
+      @mixin atMedium {
+        position: relative;
+        right: -30px;
+        top: 140px;
+      }
+      @mixin atLarge {
+        right: 130px;
+        top: 30px;
+        font-size: 1.4rem;
+      }
+    }
+
+    &--arrowGroup {
+      text-align: right;
+      position: relative;
+      @mixin atMedium {
+        right: -100px;
+        bottom: -220px;
+      }
+      @mixin atLarge {
+        right: -190px;
+        bottom: -30px;
+      }
+    }
+  }
 }
