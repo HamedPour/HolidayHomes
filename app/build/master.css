@@ -129,36 +129,51 @@ select{
   list-style: none;
 }/*Do not edit mdoules/_sprite directly as it is generated automatically by Gulp
 Instead edit gulp/templates/sprite.css */.icon {
-      background-image: url('../../assets/images/sprites/sprite-3dc83d52.svg');
+      background-image: url('../../assets/images/sprites/sprite-564635a6.svg');
     }.no-svg . icon {
-      background-image: url('../../assets/images/sprites/sprite-3dc83d52.png');
-    }.icon--facebook {
-    width: 23.23px;
-    height: 44.01px;
-    background-position: 36.89373670851341% 98.52216748768471%
-  }.icon--globe {
-    width: 66px;
-    height: 66px;
+      background-image: url('../../assets/images/sprites/sprite-564635a6.png');
+    }.icon--arrowDown {
+    width: 68px;
+    height: 68px;
     background-position: 0 0
-  }.icon--instagram {
-    width: 44.01px;
-    height: 44.01px;
-    background-position: 61.61292903432275% 98.52216748768471%
+  }.icon--arrowUp {
+    width: 68px;
+    height: 68px;
+    background-position: 50% 0
+  }.icon--bathtub {
+    width: 68px;
+    height: 68px;
+    background-position: 0 50%
+  }.icon--bed {
+    width: 68px;
+    height: 68px;
+    background-position: 50% 50%
   }.icon--mail {
-    width: 66px;
-    height: 50px;
-    background-position: 64.07766990291262% 0
-  }.icon--twitter {
-    width: 53.78px;
-    height: 44.06px;
-    background-position: 0 98.59575739468181%
-  }.icon--youtube {
-    width: 36.75px;
-    height: 44px;
-    background-position: 99.8109640831758% 0
+    width: 68px;
+    height: 68px;
+    background-position: 100% 0
+  }.icon--minAge {
+    width: 68px;
+    height: 68px;
+    background-position: 100% 50%
+  }.icon--moon {
+    width: 68px;
+    height: 68px;
+    background-position: 0 100%
+  }.icon--oldPhone {
+    width: 68px;
+    height: 68px;
+    background-position: 50% 100%
+  }.icon--person {
+    width: 68px;
+    height: 68px;
+    background-position: 100% 100%
   }.icon {
-  display: block;
-}/*Everything else can be linked from modules below - Make sure to edit the old
+  display: inline-block;
+  border: 1px solid orange;
+
+}.icon--person{
+  }/*Everything else can be linked from modules below - Make sure to edit the old
 files before us in any new projects=========================================*/.wrapper {
   min-width: 340px;
   height: 100vh;
@@ -766,6 +781,7 @@ files before us in any new projects=========================================*/.w
   }.detailBubble{
   text-align: center;
 }.detailBubble > ul > li{
+    
     width: 80px;
     height: 80px;
     margin: 0 auto;
