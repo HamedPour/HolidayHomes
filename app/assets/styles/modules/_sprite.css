@@ -2,11 +2,11 @@
 Instead edit gulp/templates/sprite.css */
 
     .icon {
-      background-image: url('../../assets/images/sprites/sprite-564635a6.svg');
+      background-image: url('../../assets/images/sprites/sprite-d252ff5b.svg');
     }
 
     .no-svg . icon {
-      background-image: url('../../assets/images/sprites/sprite-564635a6.png');
+      background-image: url('../../assets/images/sprites/sprite-d252ff5b.png');
     }
   .icon--arrowDown {
     width: 68px;
@@ -16,7 +16,7 @@ Instead edit gulp/templates/sprite.css */
   .icon--arrowUp {
     width: 68px;
     height: 68px;
-    background-position: 50% 0
+    background-position: 33.663366336633665% 0
   }
   .icon--bathtub {
     width: 68px;
@@ -26,17 +26,22 @@ Instead edit gulp/templates/sprite.css */
   .icon--bed {
     width: 68px;
     height: 68px;
-    background-position: 50% 50%
+    background-position: 33.663366336633665% 50%
+  }
+  .icon--globe {
+    width: 66px;
+    height: 66px;
+    background-position: 100% 0
   }
   .icon--mail {
     width: 68px;
     height: 68px;
-    background-position: 100% 0
+    background-position: 67.32673267326733% 0
   }
   .icon--minAge {
     width: 68px;
     height: 68px;
-    background-position: 100% 50%
+    background-position: 67.32673267326733% 50%
   }
   .icon--moon {
     width: 68px;
@@ -46,10 +51,10 @@ Instead edit gulp/templates/sprite.css */
   .icon--oldPhone {
     width: 68px;
     height: 68px;
-    background-position: 50% 100%
+    background-position: 33.663366336633665% 100%
   }
   .icon--person {
     width: 68px;
     height: 68px;
-    background-position: 100% 100%
+    background-position: 67.32673267326733% 100%
   }
