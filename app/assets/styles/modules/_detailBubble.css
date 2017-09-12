@@ -1,10 +1,12 @@
 .detailBubble{
   text-align: center;
   & > ul > li{
-    
-    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
     border: 1px solid black;
     @mixin atMedium {
+      display: inline-block;
       width: 80px;
       height: 80px;
     }
