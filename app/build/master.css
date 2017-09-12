@@ -325,12 +325,16 @@ files before us in any new projects=========================================*/.w
     .row__medium-6 {
       float: left;
       width: 50%;
-      
+
     }
 
     .row__medium-3 {
       float: left;
       width: 25%;
+    }
+    .row__medium-9 {
+      float: left;
+      width: 75%;
     }
   }.row--gutter {
     margin-right: -35px;
@@ -534,9 +538,6 @@ files before us in any new projects=========================================*/.w
   opacity: 0.8;
 }.priceSection {
   overflow: hidden;
-
-
-  height: 600px;
 }.priceSection-leftContainer{
     text-align: center;
   }.priceSection-leftContainer--headline{
@@ -605,7 +606,7 @@ files before us in any new projects=========================================*/.w
 
           }
   }.priceSection-leftContainer--viewImage{
-      z-index: 0;
+      z-index: 100;
       display: none;
       width: 400px;
       height: auto;
@@ -710,4 +711,96 @@ files before us in any new projects=========================================*/.w
   font-variant: small-caps;
   font-weight: bold;
   letter-spacing: 2.5px;
+}.houseSection{
+  background-color: #e5decc;
+  text-align: center;
+
+
+}.houseSection--title{
+    padding: 20px 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }.houseSection--para{
+    padding: 10px;
+  }@media (min-width: 641px){.houseSection{
+    text-align: left
+
+
 }
+
+    .houseSection--title{
+      letter-spacing: 5px;
+      padding: 30px 0px 50px 50px;
+      text-shadow: 1px 1px 3px rgba(0,0,0, 0.3);
+
+    }
+    .houseSection--para{
+      width: 50%;
+      font-size: 0.9rem;
+      padding: 30px 30px 20px 10px;
+    }
+
+    .houseSection .detailBubble{
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }@media (min-width: 1025px){
+
+    .houseSection--title{
+      width: 40%;
+      font-size: 1.6rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0, 0.3);
+      padding: 50px 0px 50px 70px;
+
+    }
+    .houseSection--para{
+      width: 60%;
+      font-size: 1.1rem;
+      padding: 80px 80px 70px 80px;
+
+    }
+
+    .houseSection .detailBubble {
+      margin-bottom: 70px;
+    }
+  }.detailBubble{
+  text-align: center;
+}.detailBubble > ul > li{
+    
+    display: inline-block;
+    border: 1px solid black;
+  }@media (min-width: 641px){.detailBubble > ul > li{
+      width: 80px;
+      height: 80px
+  }
+  }.roomFeatures img {
+    left: 0;
+    position: absolute;
+    z-index: 20;
+  }.roomFeatures--textContent{
+    z-index: 22;
+    position: relative;
+  }@media (min-width: 641px){
+    .roomFeatures img {
+      position: static;
+      width: 450px;
+      height: 300px;
+    }
+    .roomFeatures--textContent{
+      position: static;
+      background-color: #fff;
+      width: 250px;
+      height: 300px;
+    }
+  }@media (min-width: 1025px){
+
+    .roomFeatures img {
+      width: 700px;
+      height: 460px;
+
+    }
+    .roomFeatures--textContent{
+      width: 350px;
+      height: 460px;
+    }
+  }

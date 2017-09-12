@@ -1,0 +1,42 @@
+.roomFeatures{
+  
+  & img {
+    left: 0;
+    position: absolute;
+    z-index: 20;
+  }
+
+  &--textContent{
+    z-index: 22;
+    position: relative;
+  }
+
+  @mixin atMedium {
+    & img {
+      position: static;
+      width: 450px;
+      height: 300px;
+    }
+    &--textContent{
+      position: static;
+      background-color: #fff;
+      width: 250px;
+      height: 300px;
+    }
+  }
+
+  @mixin atLarge {
+
+    & img {
+      width: 700px;
+      height: 460px;
+
+    }
+    &--textContent{
+      width: 350px;
+      height: 460px;
+    }
+  }
+
+
+}

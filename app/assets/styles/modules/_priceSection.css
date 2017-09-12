@@ -4,7 +4,6 @@
   overflow: hidden;
 
 
-  height: 600px;
 
   &-leftContainer{
     text-align: center;
@@ -93,7 +92,7 @@
 
 
     &--viewImage{
-      z-index: 0;
+      z-index: 100;
       display: none;
       width: 400px;
       height: auto;

@@ -7,12 +7,16 @@
     &__medium-6 {
       float: left;
       width: 50%;
-      
+
     }
 
     &__medium-3 {
       float: left;
       width: 25%;
+    }
+    &__medium-9 {
+      float: left;
+      width: 75%;
     }
   }
 
