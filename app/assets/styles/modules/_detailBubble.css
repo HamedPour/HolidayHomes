@@ -1,15 +1,34 @@
 .detailBubble{
   text-align: center;
-  & > ul > li{
-    
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    border: 1px solid black;
-    @mixin atMedium {
-      display: inline-block;
-      width: 80px;
-      height: 80px;
+  border: 1px solid purple;
+  display: none;
+  @mixin atMedium {
+    display: block;
+    & > ul > li{
+        border: 1px solid green;
+        display: inline-block;
+        width: 100px;
+
+        @mixin atLarge {
+          width: 140px;
+        }
+      }
     }
+
+}
+
+
+.MobileBubble{
+
+  & > ul {
+    display: flex;
+    & > li {
+      border: 1px solid purple;
+      flex: 1;
+    }
+  }
+
+  @mixin atMedium {
+    display: none;
   }
 }
