@@ -2,114 +2,79 @@
 Instead edit gulp/templates/sprite.css */
 
     .icon {
-      background-image: url('../../assets/images/sprites/sprite-5fac6e44.svg');
+      background-image: url('../../assets/images/sprites/sprite-e694d0a5.svg');
     }
 
     .no-svg . icon {
-      background-image: url('../../assets/images/sprites/sprite-5fac6e44.png');
+      background-image: url('../../assets/images/sprites/sprite-e694d0a5.png');
     }
-  .icon--bathtub {
-    width: 68px;
-    height: 68px;
-    background-position: 0 0
-  }
   .icon--bathtub-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 30.63063063063063% 87.25490196078431%
+    background-position: 100% 70.58823529411765%
   }
   .icon--bathtub-small {
     width: 42px;
     height: 42px;
-    background-position: 74.50980392156863% 73.11827956989248%
-  }
-  .icon--bed {
-    width: 68px;
-    height: 68px;
-    background-position: 38.20224719101124% 0
+    background-position: 0 100%
   }
   .icon--bed-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 63.06306306306306% 87.25490196078431%
+    background-position: 100% 23.529411764705884%
   }
   .icon--bed-small {
     width: 42px;
     height: 42px;
-    background-position: 100% 0
-  }
-  .icon--mail {
-    width: 68px;
-    height: 68px;
-    background-position: 38.20224719101124% 42.5%
+    background-position: 38.888888888888886% 50%
   }
   .icon--mail-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 52.252252252252255% 87.25490196078431%
+    background-position: 71.42857142857143% 82.3529411764706%
   }
   .icon--mail-small {
     width: 42px;
     height: 42px;
-    background-position: 53.92156862745098% 73.11827956989248%
-  }
-  .icon--minAge {
-    width: 68px;
-    height: 68px;
-    background-position: 76.40449438202248% 0
+    background-position: 77.77777777777777% 50%
   }
   .icon--minAge-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 0 100%
+    background-position: 33.333333333333336% 82.3529411764706%
   }
   .icon--minAge-small {
     width: 42px;
     height: 42px;
-    background-position: 100% 22.580645161290324%
-  }
-  .icon--moon {
-    width: 68px;
-    height: 68px;
-    background-position: 0 85%
+    background-position: 0 0
   }
   .icon--moon-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 91.89189189189189% 82.3529411764706%
+    background-position: 52.38095238095238% 82.3529411764706%
   }
   .icon--moon-small {
     width: 42px;
     height: 42px;
-    background-position: 100% 67.74193548387096%
-  }
-  .icon--oldPhone {
-    width: 68px;
-    height: 68px;
-    background-position: 76.40449438202248% 42.5%
+    background-position: 77.77777777777777% 0
   }
   .icon--oldPhone-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 41.44144144144144% 87.25490196078431%
+    background-position: 100% 0
   }
   .icon--oldPhone-small {
     width: 42px;
     height: 42px;
-    background-position: 33.333333333333336% 73.11827956989248%
-  }
-  .icon--person {
-    width: 68px;
-    height: 68px;
-    background-position: 0 42.5%
+    background-position: 0 50%
   }
   .icon--person-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 73.87387387387388% 87.25490196078431%
+    background-position: 100% 47.05882352941177%
   }
   .icon--person-small {
     width: 42px;
     height: 42px;
-    background-position: 100% 45.16129032258065%
+    background-position: 38.888888888888886% 0
   }
