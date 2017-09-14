@@ -858,33 +858,97 @@ files before us in any new projects=========================================*/.w
     display: none
 }
   }.roomFeatures img {
+    width: 100%;
+    height: 240px;
     left: 0;
     position: absolute;
     z-index: 20;
   }.roomFeatures--textContent{
     z-index: 22;
     position: relative;
-  }@media (min-width: 641px){
+    text-align: left;
+  }.roomFeatures--textContent-title{
+      width: 270px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding-left: 10px;
+    }.roomFeatures--textContent-line{
+      width: 170px;
+      border: 1px solid #000;
+      margin-left: 20px;
+    }.roomFeatures--textContent-para{
+      text-shadow: 1px 1px 9px #fff;
+      margin-left: 10px;
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      width: 220px;
+    }@media (min-width: 641px){.roomFeatures{
+    margin-left: 25px
+}
     .roomFeatures img {
       position: static;
       width: 450px;
       height: 300px;
     }
     .roomFeatures--textContent{
+      padding-top: 20px;
+      padding-left: 15px;
+      background-color: rgba(243,239,228, 0.4);
       position: static;
-      background-color: #fff;
       width: 250px;
       height: 300px;
     }
-  }@media (min-width: 1025px){
-
+      .roomFeatures--textContent-title{
+        width: 260px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+      }
+      .roomFeatures--textContent-line{
+        border: 1px solid #ccbe9a;
+      }
+      .roomFeatures--textContent-para{
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+  }@media (min-width: 1025px){.roomFeatures{
+    margin-left: 70px
+}
     .roomFeatures img {
-      width: 700px;
-      height: 460px;
+      width: 660px;
+      height: 420px;
 
     }
     .roomFeatures--textContent{
-      width: 350px;
-      height: 460px;
+      padding-top: 50px;
+      padding-left: 70px;
+      width: 420px;
+      height: 420px;
+    }
+
+      .roomFeatures--textContent-title{
+        width: 340px;
+      }
+      .roomFeatures--textContent-line{
+        margin-left: 50px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+      }
+      .roomFeatures--textContent-para{
+        width: 290px;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+      }
+  }.roomFeatures--extension{
+    margin-top: 70px;
+  }@media (min-width: 641px){.roomFeatures--extension{
+      margin-top: 0px
+  }
+  }.roomFeatures--extension > .row {
+      margin-top: 30px;
+    }@media (min-width: 641px){.roomFeatures--extension > .row {
+        margin-top: 50px
     }
   }
