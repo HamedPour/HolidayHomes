@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10436,6 +10436,29 @@ exports.default = Carousel;
 "use strict";
 
 
+var navWrapper = document.querySelector("#nav-wrapper");
+var nav = document.querySelector(".nav");
+
+function stickyNav() {
+  var TopOfNav = nav.offsetTop;
+  if (window.scrollY >= TopOfNav) {
+    //add class stickyNav
+    document.body.classList.add("stickyNav");
+  } else {
+    // remove class stickyNav
+    document.body.classList.remove("stickyNav");
+  }
+};
+
+window.addEventListener("scroll", stickyNav);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -10466,10 +10489,10 @@ var BurgerToggle = function BurgerToggle() {
 exports.default = BurgerToggle;
 
 /***/ }),
-/* 3 */,
 /* 4 */,
 /* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10483,9 +10506,13 @@ var _Carousel = __webpack_require__(1);
 
 var _Carousel2 = _interopRequireDefault(_Carousel);
 
-var _toggleMenu = __webpack_require__(2);
+var _toggleMenu = __webpack_require__(3);
 
 var _toggleMenu2 = _interopRequireDefault(_toggleMenu);
+
+var _StickyNav = __webpack_require__(2);
+
+var _StickyNav2 = _interopRequireDefault(_StickyNav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10493,11 +10520,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import RevealOnScroll from './modules/RevealOnScroll';//
 // new RevealOnScroll($(".SOME-CLASS-NAME"), "85%");
 //
+// BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
+
 var toggleMenu = new _toggleMenu2.default();
 
 // START CAROUSEL ==============================================================
-// BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
-
 var slides = new _Carousel2.default("siteSlides");
 // slides.next(5000);
 document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
