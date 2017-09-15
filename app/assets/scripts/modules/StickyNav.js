@@ -1,17 +1,17 @@
 
-
-
 const navWrapper = document.querySelector("#nav-wrapper");
 const nav = document.querySelector(".nav");
 
 function stickyNav() {
-  const TopOfNav = nav.offsetTop;
+  const TopOfNav = navWrapper.offsetTop;
   if (window.scrollY >= TopOfNav) {
     //add class stickyNav
-    document.body.classList.add("stickyNav");
+    navWrapper.style.minHeight = nav.clientHeight + "px";
+    nav.classList.add("stickyNav");
   } else {
     // remove class stickyNav
-    document.body.classList.remove("stickyNav");
+    navWrapper.style.minHeight = 0;
+    nav.classList.remove("stickyNav");
   }
 };
 

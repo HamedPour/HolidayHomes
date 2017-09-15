@@ -10440,13 +10440,15 @@ var navWrapper = document.querySelector("#nav-wrapper");
 var nav = document.querySelector(".nav");
 
 function stickyNav() {
-  var TopOfNav = nav.offsetTop;
+  var TopOfNav = navWrapper.offsetTop;
   if (window.scrollY >= TopOfNav) {
     //add class stickyNav
-    document.body.classList.add("stickyNav");
+    navWrapper.style.minHeight = nav.clientHeight + "px";
+    nav.classList.add("stickyNav");
   } else {
     // remove class stickyNav
-    document.body.classList.remove("stickyNav");
+    navWrapper.style.minHeight = 0;
+    nav.classList.remove("stickyNav");
   }
 };
 
