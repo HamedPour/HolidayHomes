@@ -324,11 +324,20 @@ files before us in any new projects=========================================*/.w
         background-color: rgba(255,255,255, 0.3);
         }
   }.stickyNav {
+  -webkit-transition: All 0.5s ease-in;
+  transition: All 0.5s ease-in;
   position: fixed;
   top: 0px;
-  opacity: 1;
   z-index: 20000;
-}.slides{
+}.stickyNav:hover{
+    opacity: 1;
+  }.stickyNav li {
+    opacity: 0.6;
+    text-shadow: none;
+  }.stickyNav li:hover{
+      opacity: 1;
+      text-shadow: 0px 0px 1px rgba(0,0,0, 0.4);
+    }.slides{
   // z-index: 50;
   width: 100%;
 
@@ -985,4 +994,11 @@ files before us in any new projects=========================================*/.w
     }@media (min-width: 641px){.roomFeatures--extension > .row {
         margin-top: 50px
     }
+  }.availability {
+  background-color: rgba(204,190,154, 0.8);
+  margin-top: 70px;
+}@media (min-width: 641px){.availability {
+    margin-top: 50px
+}
+  }@media (min-width: 1025px){
   }

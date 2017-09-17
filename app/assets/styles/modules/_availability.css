@@ -1,0 +1,11 @@
+.availability {
+  background-color: $mistyGold;
+  margin-top: 70px;
+
+  @mixin atMedium {
+    margin-top: 50px;
+  }
+  @mixin atLarge {
+
+  }
+}
