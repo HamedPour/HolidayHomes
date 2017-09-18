@@ -2,16 +2,16 @@
 Instead edit gulp/templates/sprite.css */
 
     .icon {
-      background-image: url('../../assets/images/sprites/sprite-e694d0a5.svg');
+      background-image: url('../../assets/images/sprites/sprite-0a575ff5.svg');
     }
 
     .no-svg . icon {
-      background-image: url('../../assets/images/sprites/sprite-e694d0a5.png');
+      background-image: url('../../assets/images/sprites/sprite-0a575ff5.png');
     }
   .icon--bathtub-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 100% 70.58823529411765%
+    background-position: 100% 67.9245283018868%
   }
   .icon--bathtub-small {
     width: 42px;
@@ -21,42 +21,42 @@ Instead edit gulp/templates/sprite.css */
   .icon--bed-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 100% 23.529411764705884%
+    background-position: 100% 22.641509433962263%
   }
   .icon--bed-small {
     width: 42px;
     height: 42px;
-    background-position: 38.888888888888886% 50%
+    background-position: 36.206896551724135% 52.27272727272727%
   }
   .icon--mail-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 71.42857142857143% 82.3529411764706%
+    background-position: 67.16417910447761% 83.01886792452831%
   }
   .icon--mail-small {
-    width: 42px;
-    height: 42px;
-    background-position: 77.77777777777777% 50%
+    width: 46px;
+    height: 46px;
+    background-position: 41.07142857142857% 0
   }
   .icon--minAge-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 33.333333333333336% 82.3529411764706%
+    background-position: 31.34328358208955% 83.01886792452831%
   }
   .icon--minAge-small {
     width: 42px;
     height: 42px;
-    background-position: 0 0
+    background-position: 0 52.27272727272727%
   }
   .icon--moon-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 52.38095238095238% 82.3529411764706%
+    background-position: 49.25373134328358% 83.01886792452831%
   }
   .icon--moon-small {
     width: 42px;
     height: 42px;
-    background-position: 77.77777777777777% 0
+    background-position: 79.3103448275862% 0
   }
   .icon--oldPhone-Xsmall {
     width: 24px;
@@ -64,17 +64,17 @@ Instead edit gulp/templates/sprite.css */
     background-position: 100% 0
   }
   .icon--oldPhone-small {
-    width: 42px;
-    height: 42px;
-    background-position: 0 50%
+    width: 46px;
+    height: 46px;
+    background-position: 0 0
   }
   .icon--person-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 100% 47.05882352941177%
+    background-position: 100% 45.283018867924525%
   }
   .icon--person-small {
     width: 42px;
     height: 42px;
-    background-position: 38.888888888888886% 0
+    background-position: 79.3103448275862% 47.72727272727273%
   }

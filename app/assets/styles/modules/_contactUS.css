@@ -1,0 +1,59 @@
+.contactUS{
+  // border: 1px solid red;
+  @mixin atMedium {
+
+  }
+  @mixin atLarge {
+
+  }
+  &--title{
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $darkGold;
+    @mixin atMedium {
+      font-size: 2rem;
+      padding-bottom: 20px;
+    }
+  }
+
+  &--mail{
+    display: flex;
+    & p {
+      cursor: pointer;
+      padding-left: 10px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      @mixin atMedium {
+        letter-spacing: 1px;
+      }
+      @mixin atLarge {
+        padding-left: 20px;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+      }
+    }
+    & div {
+      position: relative;
+      top: -12px;
+    }
+  }
+  &--phone{
+    display: flex;
+    & p {
+      letter-spacing: 3px;
+      padding-left: 10px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      @mixin atLarge {
+        padding-left: 20px;
+      }
+
+    }
+    & div {
+      position: relative;
+      top: -10px;
+    }
+  }
+}

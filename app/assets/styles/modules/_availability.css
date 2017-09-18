@@ -108,7 +108,7 @@
     display: none;
     @mixin atLarge {
       display: inline-block;
-      padding-left: 10px;
+      padding-left: 25px;
     }
   }
 
@@ -122,15 +122,5 @@
   height: 250px;
   @mixin atLarge {
     display: none;
-  }
-}
-
-.contactUS{
-  border: 1px solid red;
-  @mixin atMedium {
-
-  }
-  @mixin atLarge {
-
   }
 }
