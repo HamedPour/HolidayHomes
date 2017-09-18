@@ -995,10 +995,105 @@ files before us in any new projects=========================================*/.w
         margin-top: 50px
     }
   }.availability {
-  background-color: rgba(204,190,154, 0.8);
+  background-color: #f3efe4;
   margin-top: 70px;
+  height: 760px;
+
+
 }@media (min-width: 641px){.availability {
     margin-top: 50px
+
+
 }
+  }@media (min-width: 1025px){
+  }.availability .textContent {
+    // border: 1px solid black;
+  }@media (min-width: 641px){.availability .textContent {
+      padding-top: 70px;
+      padding-left: 30px
+  }
+  }@media (min-width: 1025px){.availability .textContent {
+      padding: 120px 0px 0px 130px
+  }
+  }.availability--leftTitle{
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }@media (min-width: 641px){.availability--leftTitle{
+      letter-spacing: 5px;
+      text-align: left;
+      color: #ad9f7c
+  }
+  }@media (min-width: 1025px){
+  }.availability--leftSubtitle{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }@media (min-width: 641px){.availability--leftSubtitle{
+      text-align: left;
+      font-size: 1.7rem;
+      width: 200px
+  }
+  }@media (min-width: 1025px){.availability--leftSubtitle{
+      font-size: 2.3rem
+  }
+  }.availability--leftPara{
+    margin-top: 10px;
+    padding-bottom: 50px;
+  }@media (min-width: 641px){.availability--leftPara{
+      margin-top: 35px
+  }
+  }@media (min-width: 1025px){.availability--leftPara{
+      text-shadow: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 40px;
+      max-width: 470px
+  }
+  }.availability--widget{
+    text-align: center;
+    padding-bottom: 20px;
+  }@media (min-width: 641px){.availability--widget{
+      padding-top: 130px;
+      padding-bottom: 40px
+  }
+  }@media (min-width: 1025px){.availability--widget{
+      padding-top: 180px;
+      padding-bottom: 50px
+  }
+  }.availability--widget--title{
+      color: #ad9f7c;
+      letter-spacing: 3px;
+      padding-bottom: 5px;
+      font-size: 1.8rem;
+    }@media (min-width: 641px){.availability--widget--title{
+        letter-spacing: 5px
+    }
+  }@media (min-width: 1025px){.availability--widget--title{
+        font-weight: 300;
+        font-size: 3.5rem;
+        letter-spacing: 7px
+    }
+  }.availability--widget--para{
+      padding-top: 10px;
+    }.availability--calendar {
+    display: none;
+  }@media (min-width: 1025px){.availability--calendar {
+      display: inline-block;
+      padding-left: 10px
+  }
+  }.SmallerCalendar {
+  display: inline-block;
+  width: 204px;
+  height: 250px;
+}@media (min-width: 1025px){.SmallerCalendar {
+    display: none
+}
+  }.contactUS{
+  border: 1px solid red;
+}@media (min-width: 641px){
   }@media (min-width: 1025px){
   }

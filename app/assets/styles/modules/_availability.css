@@ -1,9 +1,134 @@
 .availability {
-  background-color: $mistyGold;
+  background-color: $lightGold;
   margin-top: 70px;
+  height: 760px;
 
   @mixin atMedium {
     margin-top: 50px;
+  }
+  @mixin atLarge {
+
+  }
+  & .textContent {
+    // border: 1px solid black;
+    @mixin atMedium {
+      padding-top: 70px;
+      padding-left: 30px;
+
+    }
+    @mixin atLarge {
+      padding: 120px 0px 0px 130px;
+    }
+  }
+  &--leftTitle{
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    @mixin atMedium {
+      letter-spacing: 5px;
+      text-align: left;
+      color: $darkGold;
+
+    }
+    @mixin atLarge {
+
+    }
+  }
+
+  &--leftSubtitle{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    @mixin atMedium {
+      text-align: left;
+      font-size: 1.7rem;
+      width: 200px;
+
+    }
+    @mixin atLarge {
+      font-size: 2.3rem;
+
+    }
+  }
+
+  &--leftPara{
+    margin-top: 10px;
+    padding-bottom: 50px;
+    @mixin atMedium {
+      margin-top: 35px;
+
+    }
+    @mixin atLarge {
+      text-shadow: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 40px;
+      max-width: 470px;
+    }
+  }
+
+  &--widget{
+    text-align: center;
+    padding-bottom: 20px;
+    @mixin atMedium {
+      padding-top: 130px;
+      padding-bottom: 40px;
+    }
+    @mixin atLarge {
+      padding-top: 180px;
+      padding-bottom: 50px;
+
+    }
+    &--title{
+      color: $darkGold;
+      letter-spacing: 3px;
+      padding-bottom: 5px;
+      font-size: 1.8rem;
+      @mixin atMedium {
+        letter-spacing: 5px;
+
+      }
+      @mixin atLarge {
+        font-weight: 300;
+        font-size: 3.5rem;
+        letter-spacing: 7px;
+
+      }
+    }
+    &--para{
+      padding-top: 10px;
+    }
+  }
+
+
+  &--calendar {
+    display: none;
+    @mixin atLarge {
+      display: inline-block;
+      padding-left: 10px;
+    }
+  }
+
+
+}
+
+
+.SmallerCalendar {
+  display: inline-block;
+  width: 204px;
+  height: 250px;
+  @mixin atLarge {
+    display: none;
+  }
+}
+
+.contactUS{
+  border: 1px solid red;
+  @mixin atMedium {
+
   }
   @mixin atLarge {
 
