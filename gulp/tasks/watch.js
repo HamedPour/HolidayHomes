@@ -23,7 +23,7 @@ gulp.task('watch', function(){
     gulp.start('scriptsRefresh');
   });
 // ======================================================INDEX.HTML========WATCH
-  watch('./app/index.html', function(){
+  watch('./app/*.html', function(){
     browserSync.reload();
   });
 

@@ -6,10 +6,7 @@ import BurgerToggle from './modules/toggleMenu';
 import StickyNav from './modules/StickyNav';
 
 
-//
-// import RevealOnScroll from './modules/RevealOnScroll';//
-// new RevealOnScroll($(".SOME-CLASS-NAME"), "85%");
-//
+
 var toggleMenu = new BurgerToggle();
 
 // START CAROUSEL ==============================================================

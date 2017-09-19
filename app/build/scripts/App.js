@@ -10450,9 +10450,9 @@ function stickyNav() {
     navWrapper.style.minHeight = 0;
     nav.classList.remove("stickyNav");
   }
-};
-
-window.addEventListener("scroll", stickyNav);
+}
+addEventListener("scroll", stickyNav);
+// ============================================================================
 
 /***/ }),
 /* 3 */
@@ -10518,10 +10518,6 @@ var _StickyNav2 = _interopRequireDefault(_StickyNav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
-// import RevealOnScroll from './modules/RevealOnScroll';//
-// new RevealOnScroll($(".SOME-CLASS-NAME"), "85%");
-//
 // BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
 
 var toggleMenu = new _toggleMenu2.default();

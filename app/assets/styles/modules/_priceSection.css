@@ -154,25 +154,12 @@
       @mixin atMedium {
         position: relative;
         right: -30px;
-        top: 140px;
+        top: 200px;
       }
       @mixin atLarge {
-        right: 130px;
-        top: 30px;
-        font-size: 1.4rem;
-      }
-    }
-
-    &--arrowGroup {
-      text-align: right;
-      position: relative;
-      @mixin atMedium {
-        right: -100px;
-        bottom: -220px;
-      }
-      @mixin atLarge {
-        right: -190px;
-        bottom: -30px;
+        right: 100px;
+        top: 110px;
+        font-size: 1.8rem;
       }
     }
   }

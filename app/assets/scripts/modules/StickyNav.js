@@ -1,6 +1,8 @@
 
+
 const navWrapper = document.querySelector("#nav-wrapper");
 const nav = document.querySelector(".nav");
+
 
 function stickyNav() {
   const TopOfNav = navWrapper.offsetTop;
@@ -13,7 +15,6 @@ function stickyNav() {
     navWrapper.style.minHeight = 0;
     nav.classList.remove("stickyNav");
   }
-};
-
-
-window.addEventListener("scroll", stickyNav);
+}
+addEventListener("scroll", stickyNav);
+// ============================================================================

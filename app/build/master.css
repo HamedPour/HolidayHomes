@@ -493,15 +493,14 @@ files before us in any new projects=========================================*/.w
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: All 0.5s ease-in;
-  transition: All 0.5s ease-in;
-  border: 3px solid #000;
-  color: #000;
+  -webkit-transition: All 0.3s ease-in;
+  transition: All 0.3s ease-in;
+  color: #fff;
 
 }.directArrow:hover{
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(255,255,255, 0.9);
     opacity: 1;
-    color: #ccbe9a;
+    color: #000;
 
   }.directArrow-up{
     -webkit-transform: rotate(90deg);
@@ -514,11 +513,10 @@ files before us in any new projects=========================================*/.w
     padding-right: 2px;
   }.directArrow-down--carousel{
       display: none;
-      top: 85%;
-      left: 44%;
     }@media (min-width: 641px){.directArrow-down--carousel{
+        border: 3px solid #fff;
         display: block;
-        top: 90%;
+        top: 93%;
         left: 48.5%
     }
         .directArrow-down--carousel:hover{
@@ -738,23 +736,12 @@ files before us in any new projects=========================================*/.w
     }@media (min-width: 641px){.priceSection-rightContainer--houseLink > h2 > a{
         position: relative;
         right: -30px;
-        top: 140px
+        top: 200px
     }
   }@media (min-width: 1025px){.priceSection-rightContainer--houseLink > h2 > a{
-        right: 130px;
-        top: 30px;
-        font-size: 1.4rem
-    }
-  }.priceSection-rightContainer--arrowGroup {
-      text-align: right;
-      position: relative;
-    }@media (min-width: 641px){.priceSection-rightContainer--arrowGroup {
-        right: -100px;
-        bottom: -220px
-    }
-  }@media (min-width: 1025px){.priceSection-rightContainer--arrowGroup {
-        right: -190px;
-        bottom: -30px
+        right: 100px;
+        top: 110px;
+        font-size: 1.8rem
     }
   }.headline {
   font-variant: small-caps;
@@ -901,7 +888,7 @@ files before us in any new projects=========================================*/.w
     display: none
 }
   }.roomFeatures img {
-    width: 100%;
+    width: 400px;
     height: 240px;
     left: 0;
     position: absolute;
@@ -956,17 +943,17 @@ files before us in any new projects=========================================*/.w
         line-height: 1.5rem;
       }
   }@media (min-width: 1025px){.roomFeatures{
-    margin-left: 70px
+    margin-left: 50px
 }
     .roomFeatures img {
-      width: 660px;
+      width: 620px;
       height: 420px;
 
     }
     .roomFeatures--textContent{
       padding-top: 50px;
-      padding-left: 70px;
-      width: 420px;
+      padding-left: 50px;
+      width: 380px;
       height: 420px;
     }
 
@@ -997,7 +984,7 @@ files before us in any new projects=========================================*/.w
   }.availability {
   background-color: #f3efe4;
   margin-top: 70px;
-  height: 760px;
+  height: 800px;
 
 
 }@media (min-width: 641px){.availability {
