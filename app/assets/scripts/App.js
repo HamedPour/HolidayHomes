@@ -4,7 +4,7 @@ import $ from 'jquery';
 import Carousel from './modules/Carousel';
 import BurgerToggle from './modules/toggleMenu';
 import StickyNav from './modules/StickyNav';
-import smoothScroll from './modules/smoothScroll';
+import SmoothScroll from './modules/smoothScroll';
 
 
 
