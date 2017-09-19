@@ -9,12 +9,12 @@
   cursor: pointer;
   user-select: none;
   transition: All 0.3s ease-in;
-  color: #fff;
+
 
   &:hover{
-    background-color: rgba(#fff, 0.9);
+    /*background-color: #000;*/
     opacity: 1;
-    color: #000;
+    color: $mainGold;
 
   }
   &-up{
@@ -30,7 +30,7 @@
     &--carousel{
       display: none;
       @mixin atMedium {
-        border: 3px solid #fff;
+        border: 3px solid #000;
         display: block;
         top: 93%;
         left: 48.5%;

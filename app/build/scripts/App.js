@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10461,6 +10461,13 @@ addEventListener("scroll", stickyNav);
 "use strict";
 
 
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -10491,10 +10498,10 @@ var BurgerToggle = function BurgerToggle() {
 exports.default = BurgerToggle;
 
 /***/ }),
-/* 4 */,
 /* 5 */,
 /* 6 */,
-/* 7 */
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10508,7 +10515,7 @@ var _Carousel = __webpack_require__(1);
 
 var _Carousel2 = _interopRequireDefault(_Carousel);
 
-var _toggleMenu = __webpack_require__(3);
+var _toggleMenu = __webpack_require__(4);
 
 var _toggleMenu2 = _interopRequireDefault(_toggleMenu);
 
@@ -10516,13 +10523,17 @@ var _StickyNav = __webpack_require__(2);
 
 var _StickyNav2 = _interopRequireDefault(_StickyNav);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _smoothScroll = __webpack_require__(3);
 
-// BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
+var _smoothScroll2 = _interopRequireDefault(_smoothScroll);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var toggleMenu = new _toggleMenu2.default();
 
 // START CAROUSEL ==============================================================
+// BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
+
 var slides = new _Carousel2.default("siteSlides");
 // slides.next(5000);
 document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
