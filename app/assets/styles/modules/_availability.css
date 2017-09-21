@@ -7,7 +7,7 @@
     margin-top: 50px;
   }
   @mixin atLarge {
-    height: 850px;
+    height: 800px;
 
   }
   & .textContent {

@@ -2,79 +2,99 @@
 Instead edit gulp/templates/sprite.css */
 
     .icon {
-      background-image: url('../../assets/images/sprites/sprite-0a575ff5.svg');
+      background-image: url('../../assets/images/sprites/sprite-4a9b0352.svg');
     }
 
     .no-svg . icon {
-      background-image: url('../../assets/images/sprites/sprite-0a575ff5.png');
+      background-image: url('../../assets/images/sprites/sprite-4a9b0352.png');
     }
+  .icon--arrowDown {
+    width: 68px;
+    height: 68px;
+    background-position: 0 0
+  }
   .icon--bathtub-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 100% 67.9245283018868%
+    background-position: 90.47619047619048% 53.89221556886228%
   }
   .icon--bathtub-small {
     width: 42px;
     height: 42px;
-    background-position: 0 100%
+    background-position: 49.12280701754386% 83.89261744966443%
   }
   .icon--bed-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 100% 22.641509433962263%
+    background-position: 90.47619047619048% 39.52095808383233%
   }
   .icon--bed-small {
     width: 42px;
     height: 42px;
-    background-position: 36.206896551724135% 52.27272727272727%
+    background-position: 0 83.89261744966443%
+  }
+  .icon--camera {
+    width: 57px;
+    height: 57px;
+    background-position: 36.53846153846154% 50.74626865671642%
+  }
+  .icon--coffeeCup {
+    width: 57px;
+    height: 57px;
+    background-position: 0 50.74626865671642%
+  }
+  .icon--compass {
+    width: 57px;
+    height: 57px;
+    background-position: 43.58974358974359% 0
   }
   .icon--mail-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 67.16417910447761% 83.01886792452831%
+    background-position: 90.47619047619048% 82.63473053892216%
   }
   .icon--mail-small {
     width: 46px;
     height: 46px;
-    background-position: 41.07142857142857% 0
+    background-position: 74.8502994011976% 31.724137931034484%
   }
   .icon--minAge-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 31.34328358208955% 83.01886792452831%
+    background-position: 90.47619047619048% 25.149700598802394%
   }
   .icon--minAge-small {
     width: 42px;
     height: 42px;
-    background-position: 0 52.27272727272727%
+    background-position: 100% 0
   }
   .icon--moon-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 49.25373134328358% 83.01886792452831%
+    background-position: 0 100%
   }
   .icon--moon-small {
     width: 42px;
     height: 42px;
-    background-position: 79.3103448275862% 0
+    background-position: 73.6842105263158% 83.89261744966443%
   }
   .icon--oldPhone-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 100% 0
+    background-position: 90.47619047619048% 68.26347305389221%
   }
   .icon--oldPhone-small {
     width: 46px;
     height: 46px;
-    background-position: 0 0
+    background-position: 74.8502994011976% 0
   }
   .icon--person-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 100% 45.283018867924525%
+    background-position: 66.13756613756614% 55.08982035928144%
   }
   .icon--person-small {
     width: 42px;
     height: 42px;
-    background-position: 79.3103448275862% 47.72727272727273%
+    background-position: 24.56140350877193% 83.89261744966443%
   }

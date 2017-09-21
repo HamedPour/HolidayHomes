@@ -15,3 +15,15 @@ readjusted the carousel setting to get a crisper picture resolution in smaller v
 The Nav gave us a hard time with it’s “position: fixed” since it seemed to have a bug with
 chrome. It has been resolved.  
 ```
+
+
+## Sep 16, 2017 - Dev Notes:
+```
+The bulk of the main page styling is finished. Notable changes were made to font
+sizes and margins - After having a chat with the client we decided to increase
+the size by 20% for better readability. From here I’ll be focusing on the second
+html page for room details. After which comes mobile optimization. Notable issues
+to overcome are currently section heights, navbar hrefs, and failure to use App.js
+for the second html without it flagging errors.
+
+```
