@@ -25,4 +25,5 @@ files before us in any new projects=========================================*/
 @import "modules/_roomFeatures";
 @import "modules/_availability";
 @import "modules/_contactUS";
+@import "modules/_services";
 @import "modules/_footer";

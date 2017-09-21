@@ -1,3 +1,4 @@
+
 .houseSection{
   background-color: $backgroundGold;
   text-align: center;
@@ -44,7 +45,8 @@
     }
     &--para{
       width: 60%;
-      font-size: 1.1rem;
+      font-size: 1.6rem;
+      line-height: 1.8rem;
       padding: 80px 80px 40px 80px;
 
     }

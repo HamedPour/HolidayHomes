@@ -36,6 +36,7 @@
   }
 
   @mixin atMedium {
+
     margin-left: 25px;
     & img {
       position: static;

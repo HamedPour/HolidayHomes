@@ -7,6 +7,7 @@
     margin-top: 50px;
   }
   @mixin atLarge {
+    height: 850px;
 
   }
   & .textContent {
@@ -62,8 +63,10 @@
 
     }
     @mixin atLarge {
+
       text-shadow: none;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
       font-weight: bold;
       margin-top: 40px;
       max-width: 470px;
@@ -83,7 +86,7 @@
 
     }
     &--title{
-      color: $darkGold;
+      color: #000;
       letter-spacing: 3px;
       padding-bottom: 5px;
       font-size: 1.8rem;

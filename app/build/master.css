@@ -296,11 +296,11 @@ files before us in any new projects=========================================*/.w
       display: -ms-flexbox;
       display: flex;
       text-align: center;
-      height: 30px;
+      height: 40px;
     }
       .nav-menu a {
         font-weight: 400;
-        text-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
+        text-shadow: 0px 0px 2px rgba(0,0,0, 0.4);
         border-bottom: 1px solid rgba(0,0,0, 0.6);
         border-left: 1px solid rgba(0,0,0, 0.6);
         -webkit-transition: All 0.5s ease-in-out;
@@ -310,17 +310,18 @@ files before us in any new projects=========================================*/.w
             -ms-flex: 1;
                 flex: 1;
         font-size: 1rem;
-        line-height: 10px;
-        cursor: pointer;
       }
         .nav-menu a:last-child {border-right: 1px solid rgba(0,0,0, 0.6);}
         @media (min-width: 1025px){
       .nav-menu a {
-          font-size: 1.2rem
+          font-size: 1.1rem
       }
   }
 
         .nav-menu a:hover{
+          font-weight: bold;
+          letter-spacing: 1px;
+          font-size: 1.2rem;
         background-color: rgba(255,255,255, 0.3);
         }
   }.stickyNav {
@@ -612,6 +613,7 @@ files before us in any new projects=========================================*/.w
   opacity: 0.8;
 }.priceSection {
   overflow: hidden;
+  background-color: #f3efe4;
 }.priceSection-leftContainer{
     text-align: center;
   }.priceSection-leftContainer--headline{
@@ -661,22 +663,28 @@ files before us in any new projects=========================================*/.w
   }.priceSection-leftContainer--textContainer--priceTag{
             font-weight: bold;
           }@media (min-width: 641px){.priceSection-leftContainer--textContainer--priceTag{
-              display: inline-block
+              display: inline-block;
+              font-size: 1.3rem
           }
   }@media (min-width: 1025px){.priceSection-leftContainer--textContainer--priceTag{
-              font-size: 1.1rem
+              font-size: 1.5rem
           }
   }.priceSection-leftContainer--textContainer--priceTag > a {
               color: rgba(255,0,0, 0.8);
               font-weight: 400;
+              margin-right: 10px;
             }@media (min-width: 641px){.priceSection-leftContainer--textContainer--checkAvailability{
               display: inline-block;
               margin-top: 10px;
-              padding-left: 50px
+              padding-left: 0px
 
           }
+
+              .priceSection-leftContainer--textContainer--checkAvailability  h2  a{
+                font-size: 1.5rem;
+              }
   }@media (min-width: 1025px){.priceSection-leftContainer--textContainer--checkAvailability{
-              padding-left: 60px
+              padding-left: 0px
 
           }
   }.priceSection-leftContainer--viewImage{
@@ -712,11 +720,11 @@ files before us in any new projects=========================================*/.w
       transition: All 0.5s ease-in;
       display: inline-block;
       position: relative;
-      top: -100px;
+      top: -80px;
     }@media (min-width: 641px){.priceSection-rightContainer--toLocation > a{
         text-shadow: 2px 2px 2px rgba(0,0,0, 0.8);
         color: #ccbe9a;
-        font-size: 1.2rem;
+        font-size: 2rem;
         letter-spacing: 2px;
         left: 70px;
         top: -80px
@@ -726,8 +734,8 @@ files before us in any new projects=========================================*/.w
                   transform: scale(1.1);
         }
   }@media (min-width: 1025px){.priceSection-rightContainer--toLocation > a{
-        left: 100px;
-        top: -90px
+        left: 90px;
+        top: -120px
     }
   }.priceSection-rightContainer--houseLink > h2 > a{
       font-size: 1.3rem;
@@ -741,7 +749,7 @@ files before us in any new projects=========================================*/.w
     }
   }@media (min-width: 1025px){.priceSection-rightContainer--houseLink > h2 > a{
         right: 100px;
-        top: 110px;
+        top: 100px;
         font-size: 1.8rem
     }
   }.headline {
@@ -818,7 +826,8 @@ files before us in any new projects=========================================*/.w
     }
     .houseSection--para{
       width: 60%;
-      font-size: 1.1rem;
+      font-size: 1.6rem;
+      line-height: 1.8rem;
       padding: 80px 80px 40px 80px;
 
     }
@@ -915,6 +924,7 @@ files before us in any new projects=========================================*/.w
       font-weight: bold;
       width: 220px;
     }@media (min-width: 641px){.roomFeatures{
+
     margin-left: 25px
 }
     .roomFeatures img {
@@ -925,7 +935,7 @@ files before us in any new projects=========================================*/.w
     .roomFeatures--textContent{
       padding-top: 20px;
       padding-left: 15px;
-      background-color: rgba(243,239,228, 0.4);
+      background-color: #f9f7ef;
       position: static;
       width: 250px;
       height: 300px;
@@ -993,7 +1003,11 @@ files before us in any new projects=========================================*/.w
 
 
 }
-  }@media (min-width: 1025px){
+  }@media (min-width: 1025px){.availability {
+    height: 850px
+
+
+}
   }.availability .textContent {
     // border: 1px solid black;
   }@media (min-width: 641px){.availability .textContent {
@@ -1035,8 +1049,10 @@ files before us in any new projects=========================================*/.w
       margin-top: 35px
   }
   }@media (min-width: 1025px){.availability--leftPara{
+
       text-shadow: none;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
       font-weight: bold;
       margin-top: 40px;
       max-width: 470px
@@ -1053,7 +1069,7 @@ files before us in any new projects=========================================*/.w
       padding-bottom: 50px
   }
   }.availability--widget--title{
-      color: #ad9f7c;
+      color: #000;
       letter-spacing: 3px;
       padding-bottom: 5px;
       font-size: 1.8rem;
@@ -1131,7 +1147,55 @@ files before us in any new projects=========================================*/.w
   }.contactUS--phone div {
       position: relative;
       top: -10px;
-    }.footer {
+    }.services {
+  text-align: center;
+  background-color: #f3efe4;
+}@media (min-width: 641px){
+  }.services--header{
+    // background-color: #f9f7ef;
+    background-color: #000;
+    color: #ccbe9a;
+    padding: 20px 0px 20px 0px;
+    // background-color: #ccbe9a;
+  }@media (min-width: 641px){
+      .services--header h2 {
+        padding-left: 40px;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 300;
+      }
+  }.services--list ul li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 80%;
+      margin: 0 auto;
+    }.services--list ul li h2 {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        padding-bottom: 15px;
+      }.services--list ul li p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+      }@media (min-width: 641px){
+      .services--list ul {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+        .services--list ul li {
+          padding: 0px 20px 20px 20px;
+        }
+          .services--list ul li h2  {
+            padding-bottom: 15px;
+          }
+            @media (min-width: 1025px){
+          .services--list ul li h2  {
+              font-size: 2rem
+          }
+  }
+  }.footer {
   background-color: #ccbe9a;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(204,190,154, 0.85)), to(rgba(204,190,154, 1)));
   background: linear-gradient(0deg, rgba(204,190,154, 0.85) 0%, rgba(204,190,154, 1) 100%);
@@ -1170,7 +1234,7 @@ files before us in any new projects=========================================*/.w
     padding-top: 4px;
     font-size: 0.7rem;
   }.footer--devLink{
-    padding-top: 6px;
+    padding-top: 8px;
     font-size: 0.7rem;
   }.footer--devLink a {
 
