@@ -1265,22 +1265,22 @@ files before us in any new projects=========================================*/.w
     padding: 20px 0px 40px 0px;
     font-size: 1.4rem;
   }.parallax--island {
-    background: url('docs/assets/images/parallax/island.JPG') no-repeat center;
+    background-image: url('docs/assets/images/parallax/island.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--lounge {
-    background: url('docs/images/parallax/lounge.JPG') no-repeat center;
+    background-image: url('docs/images/parallax/lounge.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--kitchen {
-    background: url('../../assets/images/parallax/kitchen.JPG') no-repeat center;
+    background-image: url('../../assets/images/parallax/kitchen.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--bedroom {
-    background: url('../../docs/assets/images/parallax/bedroom.jpg') no-repeat center;
+    background-image: url('../../docs/assets/images/parallax/bedroom.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
@@ -1290,7 +1290,7 @@ files before us in any new projects=========================================*/.w
     background-attachment: fixed;
     height: 400px;
   }.parallax--bathroom {
-    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/bathroom.JPG') no-repeat center;
+    background-image: url('https://hamedpour.github.io/HolidayHomes/docs/assets/images/parallax/bathroom.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
