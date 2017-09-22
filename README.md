@@ -27,3 +27,9 @@ to overcome are currently section heights, navbar hrefs, and failure to use App.
 for the second html without it flagging errors.
 
 ```
+
+## Set 22, 2017 - Dev Notes:
+```
+The Parallax gave us a very hard time. It was an issue with the docs folder not
+rendering the images for some reason. It was mostly an issue with relative referencing.
+```
