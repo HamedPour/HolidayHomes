@@ -1268,42 +1268,42 @@ files before us in any new projects=========================================*/.w
     background: url('../../assets/images/parallaxFolder/islandPicture.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 300px;
   }.parallax--lounge {
     background: url('../../assets/images/parallaxFolder/lounge.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
   }.parallax--kitchen {
     background: url('../../assets/images/parallaxFolder/kitchen.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
   }.parallax--bedroom {
     background: url('../../assets/images/parallaxFolder/bedroom.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
   }.parallax--bedroom2 {
     background: url('../../assets/images/parallaxFolder/bedroom2.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
   }.parallax--bathroom {
     background: url('../../assets/images/parallaxFolder/bathroom.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
   }.parallax--bathroom2 {
     background: url('../../assets/images/parallaxFolder/bathroom2.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
   }.parallax--house {
     background: url('../../assets/images/parallaxFolder/house.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
   }.footer {
   background-color: #ccbe9a;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(204,190,154, 0.85)), to(rgba(204,190,154, 1)));
