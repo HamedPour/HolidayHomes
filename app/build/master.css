@@ -1265,22 +1265,22 @@ files before us in any new projects=========================================*/.w
     padding: 20px 0px 40px 0px;
     font-size: 1.4rem;
   }.parallax--island {
-    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/island.JPG') no-repeat center;
+    background: url('docs/assets/images/parallax/island.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--lounge {
-    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/lounge.JPG') no-repeat center;
+    background: url('docs/images/parallax/lounge.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--kitchen {
-    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/kitchen.JPG') no-repeat center;
+    background: url('../../assets/images/parallax/kitchen.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--bedroom {
-    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/bedroom.JPG') no-repeat center;
+    background: url('../../assets/images/parallax/bedroom.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
