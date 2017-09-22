@@ -19,7 +19,7 @@
 .parallax {
 
   &--island {
-    background: url('../../assets/images/parallaxFolder/island.jpg') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/islandPicture.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;

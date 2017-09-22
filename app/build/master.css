@@ -1265,7 +1265,7 @@ files before us in any new projects=========================================*/.w
     padding: 20px 0px 40px 0px;
     font-size: 1.4rem;
   }.parallax--island {
-    background: url('../../assets/images/parallaxFolder/island.jpg') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/islandPicture.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
