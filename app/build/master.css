@@ -1280,12 +1280,12 @@ files before us in any new projects=========================================*/.w
     background-attachment: fixed;
     height: 400px;
   }.parallax--bedroom {
-    background: url('../../assets/images/parallax/bedroom.JPG') no-repeat center;
+    background: url('../../docs/assets/images/parallax/bedroom.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--bedroom2 {
-    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/bedroom2.JPG') no-repeat center;
+    background: url('../docs/assets/images/parallax/bedroom2.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
