@@ -1285,17 +1285,17 @@ files before us in any new projects=========================================*/.w
     background-attachment: fixed;
     height: 400px;
   }.parallax--bedroom2 {
-    background: url('../../assets/images/parallax/bedroom2.JPG') no-repeat center;
+    background: url('../assets/images/parallax/bedroom2.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--bathroom {
-    background: url('../../assets/images/parallax/bathroom.JPG') no-repeat center;
+    background: url('../images/parallax/bathroom.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--bathroom2 {
-    background: url('../../assets/images/parallax/bathroom2.JPG') no-repeat center;
+    background: url('/docs/assets/images/parallax/bathroom2.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
