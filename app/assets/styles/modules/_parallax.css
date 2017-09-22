@@ -37,7 +37,7 @@
     height: 400px;
   }
   &--bedroom {
-    background: url('../../docs/assets/images/parallax/bedroom.JPG') no-repeat center;
+    background: url('../../docs/assets/images/parallax/bedroom.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
@@ -61,7 +61,7 @@
     height: 400px;
   }
   &--house {
-    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/house.JPG') no-repeat center;
+    background: url('../../assets/images/slideFolder/windowView-Xlarge.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
