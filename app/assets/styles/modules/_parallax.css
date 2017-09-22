@@ -19,49 +19,49 @@
 .parallax {
 
   &--island {
-    background: url('../../assets/images/parallax/island.JPG') no-repeat center;
+    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/island.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }
   &--lounge {
-    background: url('../../assets/images/parallax/lounge.JPG') no-repeat center;
+    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/lounge.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }
   &--kitchen {
-    background: url('../../assets/images/parallax/kitchen.JPG') no-repeat center;
+    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/kitchen.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }
   &--bedroom {
-    background: url('../../assets/images/parallax/bedroom.JPG') no-repeat center;
+    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/bedroom.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }
   &--bedroom2 {
-    background: url('../assets/images/parallax/bedroom2.JPG') no-repeat center;
+    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/bedroom2.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }
   &--bathroom {
-    background: url('../images/parallax/bathroom.JPG') no-repeat center;
+    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/bathroom.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }
   &--bathroom2 {
-    background: url('/docs/assets/images/parallax/bathroom2.JPG') no-repeat center;
+    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/bathroom2.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }
   &--house {
-    background: url('../../assets/images/parallax/house.JPG') no-repeat center;
+    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/house.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
