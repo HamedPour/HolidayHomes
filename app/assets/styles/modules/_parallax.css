@@ -19,19 +19,19 @@
 .parallax {
 
   &--island {
-    background: url('../../assets/images/parallaxFolder/island.JPG') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/island.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }
   &--lounge {
-    background: url('../../assets/images/parallaxFolder/lounge.JPG') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/lounge.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }
   &--kitchen {
-    background: url('../../assets/images/parallaxFolder/kitchen.JPG') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/kitchen.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
@@ -61,7 +61,7 @@
     height: 400px;
   }
   &--house {
-    background: url('../../assets/images/slideFolder/windowView-Xlarge.jpg') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/house.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
