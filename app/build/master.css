@@ -1265,37 +1265,37 @@ files before us in any new projects=========================================*/.w
     padding: 20px 0px 40px 0px;
     font-size: 1.4rem;
   }.parallax--island {
-    background-image: url('docs/assets/images/parallax/island.JPG') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/island.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--lounge {
-    background-image: url('docs/images/parallax/lounge.JPG') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/lounge.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--kitchen {
-    background-image: url('../../assets/images/parallax/kitchen.JPG') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/kitchen.JPG') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--bedroom {
-    background-image: url('../../docs/assets/images/parallax/bedroom.jpg') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/bedroom.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--bedroom2 {
-    background: url('../docs/assets/images/parallax/bedroom2.JPG') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/bedroom2.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--bathroom {
-    background-image: url('https://hamedpour.github.io/HolidayHomes/docs/assets/images/parallax/bathroom.JPG') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/bathroom.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
   }.parallax--bathroom2 {
-    background: url('https://hamedpour.github.io/HolidayHomes/assets/images/parallax/bathroom2.JPG') no-repeat center;
+    background: url('../../assets/images/parallaxFolder/bathroom2.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
