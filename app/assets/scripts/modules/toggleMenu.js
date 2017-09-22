@@ -1,6 +1,6 @@
 import $ from "jquery"
 
-
+// what the class/function does in a nutshell
 class BurgerToggle {
   constructor(){
       $(".menu_burger_closeButton").click(function() {

@@ -320,6 +320,7 @@ files before us in any new projects=========================================*/.w
         font-weight: 400;
         text-shadow: 0px 0px 2px rgba(0,0,0, 0.4);
         border-bottom: 1px solid rgba(0,0,0, 0.6);
+        border-top: 1px solid rgba(0,0,0, 0.6);
         border-left: 1px solid rgba(0,0,0, 0.6);
         font-variant: small-caps;
         -webkit-transition: All 0.5s ease-in-out;
@@ -357,7 +358,11 @@ files before us in any new projects=========================================*/.w
   }.stickyNav li:hover{
       opacity: 1;
       text-shadow: 0px 0px 1px rgba(0,0,0, 0.4);
-    }.slides{
+    }.activeNav  {
+  background-color: #f3efe4;
+}.activeNav li {
+    font-weight: bold;
+  }.slides{
   // z-index: 50;
   width: 100%;
 
@@ -1008,6 +1013,35 @@ files before us in any new projects=========================================*/.w
     }@media (min-width: 641px){.roomFeatures--extension > .row {
         margin-top: 50px
     }
+  }.roomFeatures--roomDetailsBtn{
+    font-variant: small-caps;
+    text-align: center;
+    position: relative;
+    top: 50px;
+  }@media (min-width: 641px){.roomFeatures--roomDetailsBtn{
+      top: 30px;
+      margin-top: 10px;
+      padding-bottom: 20px
+  }
+  }.roomFeatures--roomDetailsBtn a {
+      opacity: 0.7;
+      -webkit-transition: all 0.9s ease;
+      transition: all 0.9s ease;
+      border-radius: 10px;
+      border: 2px solid #000;
+      font-size: 1.3rem;
+      padding: 5px 9px 6px 9px;
+      font-weight: normal;
+      background: -webkit-gradient(linear,left top, right top,color-stop(20%, #ccbe9a), color-stop(110%, #f3efe4));
+      background: linear-gradient(90deg,#ccbe9a 20%, #f3efe4 110%);
+    }.roomFeatures--roomDetailsBtn a:hover{
+        opacity: 1;
+      }@media (min-width: 641px){.roomFeatures--roomDetailsBtn a {
+        font-size: 1.6rem
+    }
+  }@media (min-width: 1025px){.roomFeatures--roomDetailsBtn a {
+        font-size: 2rem
+    }
   }.availability {
   background-color: #f3efe4;
   margin-top: 70px;
@@ -1217,6 +1251,59 @@ files before us in any new projects=========================================*/.w
           .services--list ul li p {
             margin-bottom: 0px;
           }
+  }.parallaxContainer{
+  margin: 0 auto;
+  background: #f3efe4;
+  padding: 0px;
+}.parallaxContainer h2 {
+    text-align: center;
+    padding-top: 40px;
+  }.parallaxContainer p {
+    text-align: justify;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0px 40px 0px;
+    font-size: 1.4rem;
+  }.parallax--island {
+    background: url('../../../assets/images/parallax/island.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }.parallax--lounge {
+    background: url('../../../assets/images/parallax/lounge.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }.parallax--kitchen {
+    background: url('../../../assets/images/parallax/kitchen.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }.parallax--bedroom {
+    background: url('../../../assets/images/parallax/bedroom.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }.parallax--bedroom2 {
+    background: url('../../../assets/images/parallax/bedroom2.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }.parallax--bathroom {
+    background: url('../../../assets/images/parallax/bathroom.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }.parallax--bathroom2 {
+    background: url('../../../assets/images/parallax/bathroom2.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }.parallax--house {
+    background: url('../../../assets/images/parallax/house.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
   }.footer {
   background-color: #ccbe9a;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(204,190,154, 0.85)), to(rgba(204,190,154, 1)));

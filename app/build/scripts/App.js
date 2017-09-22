@@ -10495,6 +10495,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+// what the class/function does in a nutshell
 var BurgerToggle = function BurgerToggle() {
   _classCallCheck(this, BurgerToggle);
 
@@ -10546,20 +10547,26 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var toggleMenu = new _toggleMenu2.default();
 
-// START CAROUSEL ==============================================================
+// This if statement is to run for index.html only
 // BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
 
-var slides = new _Carousel2.default("siteSlides");
-// slides.next(5000);
-document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
-  // slides.prev();
-  slides.prev(5000);
-});
-document.querySelector(".slides-arrowRight").addEventListener("click", function () {
-  // slides.next();
-  slides.next(5000);
-});
-// end CAROUSEL ================================================================
+if ((0, _jquery2.default)("body").data("pages") === "indexPage") {
+  // START CAROUSEL ==============================================================
+  var slides = new _Carousel2.default("siteSlides");
+  // slides.next(5000);
+  document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
+    // slides.prev();
+    slides.prev(5000);
+  });
+  document.querySelector(".slides-arrowRight").addEventListener("click", function () {
+    // slides.next();
+    slides.next(5000);
+  });
+  // end CAROUSEL ================================================================
+};
+
+// this if statement is to run for house.html only
+if ((0, _jquery2.default)("body").data("pages") === "housePage") {};
 
 /***/ }),
 /* 9 */,

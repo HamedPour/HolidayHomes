@@ -11,15 +11,23 @@ import SmoothScroll from './modules/smoothScroll';
 
 var toggleMenu = new BurgerToggle();
 
-// START CAROUSEL ==============================================================
-var slides = new Carousel("siteSlides")
-// slides.next(5000);
-document.querySelector(".slides-arrowLeft").addEventListener("click", function(){
-  // slides.prev();
-  slides.prev(5000);
-});
-document.querySelector(".slides-arrowRight").addEventListener("click", function(){
-  // slides.next();
-  slides.next(5000);
-});
-// end CAROUSEL ================================================================
+// This if statement is to run for index.html only
+if($("body").data("pages") === "indexPage") {
+  // START CAROUSEL ==============================================================
+  var slides = new Carousel("siteSlides")
+  // slides.next(5000);
+  document.querySelector(".slides-arrowLeft").addEventListener("click", function(){
+    // slides.prev();
+    slides.prev(5000);
+  });
+  document.querySelector(".slides-arrowRight").addEventListener("click", function(){
+    // slides.next();
+    slides.next(5000);
+  });
+  // end CAROUSEL ================================================================
+};
+
+// this if statement is to run for house.html only
+if($("body").data("pages") === "housePage") {
+
+};
