@@ -250,6 +250,7 @@ files before us in any new projects=========================================*/.w
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+
 }.header {
   height: 120px;
   width: 100%;
@@ -422,15 +423,31 @@ files before us in any new projects=========================================*/.w
     display: table;
   }@media (min-width: 641px){
 
-    .row__medium-6 {
-      float: left;
-      width: 50%;
-
-    }
 
     .row__medium-3 {
       float: left;
       width: 25%;
+    }
+    .row__medium-4 {
+      float: left;
+      width: 33%;
+    }
+    .row__medium-5 {
+      float: left;
+      width: 41.65%;
+    }
+    .row__medium-6 {
+      float: left;
+      width: 50%;
+    }
+
+    .row__medium-7 {
+      float: left;
+      width: 58.31%;
+    }
+    .row__medium-8 {
+      float: left;
+      width: 67%;
     }
     .row__medium-9 {
       float: left;
@@ -1251,59 +1268,6 @@ files before us in any new projects=========================================*/.w
           .services--list ul li p {
             margin-bottom: 0px;
           }
-  }.parallaxContainer{
-  margin: 0 auto;
-  background: #f3efe4;
-  padding: 0px;
-}.parallaxContainer h2 {
-    text-align: center;
-    padding-top: 40px;
-  }.parallaxContainer p {
-    text-align: justify;
-    width: 70%;
-    margin: 0 auto;
-    padding: 20px 0px 40px 0px;
-    font-size: 1.4rem;
-  }.parallax--island {
-    background: url('../../assets/images/parallaxFolder/islandPicture.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 300px;
-  }.parallax--lounge {
-    background: url('../../assets/images/parallaxFolder/lounge.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-  }.parallax--kitchen {
-    background: url('../../assets/images/parallaxFolder/kitchen.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-  }.parallax--bedroom {
-    background: url('../../assets/images/parallaxFolder/bedroom.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-  }.parallax--bedroom2 {
-    background: url('../../assets/images/parallaxFolder/bedroom2.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-  }.parallax--bathroom {
-    background: url('../../assets/images/parallaxFolder/bathroom.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-  }.parallax--bathroom2 {
-    background: url('../../assets/images/parallaxFolder/bathroom2.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-  }.parallax--house {
-    background: url('../../assets/images/parallaxFolder/house.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
   }.footer {
   background-color: #ccbe9a;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(204,190,154, 0.85)), to(rgba(204,190,154, 1)));
@@ -1347,4 +1311,105 @@ files before us in any new projects=========================================*/.w
     font-size: 0.7rem;
   }.footer--devLink a {
 
+    }/*house.html styling*/.houseTopContent{
+  margin-bottom: 20px;
+}.houseTopContent img {
+    width: 100%;
+    height: 300px;
+  }.houseTopContent--title {
+    text-align: center;
+  }.houseTopContent--para{
+    font-size: 1.1rem;
+    text-align: justify;
+  }@media (min-width: 641px){.houseTopContent--para{
+      font-size: 1.3rem
+  }
+  }.houseDetails img {
+    // width: 400px;
+    // height: 240px;
+    // left: 0;
+    float: left;
+    // position: absolute;
+    // z-index: 20;
+    margin-bottom: 20px;
+  }.houseDetails--textContent{
+    // border: 1px solid green;
+    z-index: 22;
+    position: relative;
+  }.houseDetails--textContent-title{
+      color: #ad9f7c;
+      width: 270px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding-left: 10px;
+    }.houseDetails--textContent-line{
+      width: 170px;
+      border: 1px solid #000;
+      margin-left: 15px;
+    }.houseDetails--textContent-para{
+      padding-left: 15px;
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      width: 100%;
+    }@media (min-width: 641px){
+    .houseDetails img {
+      position: static;
+      // width: 450px;
+      // height: 300px;
+      margin-bottom: 0px;
+
     }
+    .houseDetails--textContent{
+      padding-top: 20px;
+      padding-left: 15px;
+      background-color: #f9f7ef;
+      position: static;
+      width: 50%;
+      height: 300px;
+    }
+      .houseDetails--textContent-title{
+        width: 260px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+      }
+      .houseDetails--textContent-line{
+        border: 1px solid #ccbe9a;
+      }
+      .houseDetails--textContent-para{
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding-right: 20px;
+      }
+  }@media (min-width: 1025px){.houseDetails{
+    // margin-left: 50px
+}
+    .houseDetails img {
+      width: 620px;
+      height: 420px;
+
+    }
+    .houseDetails--textContent{
+      padding-top: 50px;
+      padding-left: 50px;
+      height: 420px;
+    }
+
+      .houseDetails--textContent-title{
+        width: 340px;
+      }
+      .houseDetails--textContent-line{
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+      }
+      .houseDetails--textContent-para{
+        // border: 1px solid red;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        padding-right: 0px;
+      }
+  }.bufferTop{
+  margin-top: 40px;
+}
