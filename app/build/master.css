@@ -423,7 +423,6 @@ files before us in any new projects=========================================*/.w
     display: table;
   }@media (min-width: 641px){
 
-
     .row__medium-3 {
       float: left;
       width: 25%;
@@ -657,7 +656,10 @@ files before us in any new projects=========================================*/.w
   background-color: #f3efe4;
 }.priceSection-leftContainer{
     text-align: center;
-  }.priceSection-leftContainer--headline{
+  }.priceSection-leftContainer--viewImage{
+      position: relative;
+      z-index: 22;
+    }.priceSection-leftContainer--headline{
       text-align: center;
       margin-top: 20px;
       margin-bottom: 10px;
@@ -744,6 +746,7 @@ files before us in any new projects=========================================*/.w
   }.priceSection-rightContainer {
     text-align: center;
   }/*opacity: 0.9;*/@media (min-width: 641px){.priceSection-rightContainer--islandImage{
+        z-index: 12;
         position: static;
         /*opacity: 0.7;*/
         margin-top: 30px
@@ -936,7 +939,7 @@ files before us in any new projects=========================================*/.w
     display: none
 }
   }.roomFeatures img {
-    width: 400px;
+    min-width: 360px;
     height: 240px;
     left: 0;
     position: absolute;
@@ -1318,55 +1321,53 @@ files before us in any new projects=========================================*/.w
     height: 300px;
   }.houseTopContent--title {
     text-align: center;
+    font-size: 2rem;
   }.houseTopContent--para{
     font-size: 1.1rem;
     text-align: justify;
   }@media (min-width: 641px){.houseTopContent--para{
       font-size: 1.3rem
   }
+  }.houseDetails{
+  margin-bottom: 30px;
+}.houseDetails--imageHolder{
+    border: 1px solid purple;
+
   }.houseDetails img {
-    // width: 400px;
-    // height: 240px;
-    // left: 0;
+    width: 100%;
     float: left;
-    // position: absolute;
-    // z-index: 20;
     margin-bottom: 20px;
   }.houseDetails--textContent{
-    // border: 1px solid green;
+    border: 1px solid purple;
+    display: inline-block;
     z-index: 22;
     position: relative;
+    text-align: center;
   }.houseDetails--textContent-title{
       color: #ad9f7c;
-      width: 270px;
       font-size: 1.8rem;
       font-weight: bold;
-      padding-left: 10px;
     }.houseDetails--textContent-line{
-      width: 170px;
-      border: 1px solid #000;
-      margin-left: 15px;
+      display: none;
     }.houseDetails--textContent-para{
-      padding-left: 15px;
+      border: 1px solid red;
       margin-top: 10px;
       font-size: 1.2rem;
-      font-weight: bold;
       width: 100%;
+      text-align: justify;
     }@media (min-width: 641px){
     .houseDetails img {
       position: static;
-      // width: 450px;
-      // height: 300px;
+      width: 100%;
       margin-bottom: 0px;
 
     }
     .houseDetails--textContent{
-      padding-top: 20px;
       padding-left: 15px;
       background-color: #f9f7ef;
       position: static;
-      width: 50%;
-      height: 300px;
+      width: 100%;
+      text-align: left;
     }
       .houseDetails--textContent-title{
         width: 260px;
@@ -1374,6 +1375,8 @@ files before us in any new projects=========================================*/.w
         padding-bottom: 10px;
       }
       .houseDetails--textContent-line{
+        display: block;
+        width: 170px;
         border: 1px solid #ccbe9a;
       }
       .houseDetails--textContent-para{
@@ -1382,18 +1385,17 @@ files before us in any new projects=========================================*/.w
         line-height: 1.5rem;
         padding-right: 20px;
       }
-  }@media (min-width: 1025px){.houseDetails{
-    // margin-left: 50px
-}
+  }@media (min-width: 1025px){
     .houseDetails img {
-      width: 620px;
-      height: 420px;
+      margin-top: 20px;
+      max-width: 450px;
+      max-height: 300px;
 
     }
     .houseDetails--textContent{
-      padding-top: 50px;
-      padding-left: 50px;
+      padding-left: 30px;
       height: 420px;
+      width: 50%;
     }
 
       .houseDetails--textContent-title{
@@ -1405,7 +1407,6 @@ files before us in any new projects=========================================*/.w
 
       }
       .houseDetails--textContent-para{
-        // border: 1px solid red;
         font-size: 1.5rem;
         line-height: 1.8rem;
         padding-right: 0px;
