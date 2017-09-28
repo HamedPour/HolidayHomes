@@ -2,7 +2,6 @@
   margin-bottom: 20px;
   & img {
     width: 100%;
-    height: 300px;
   }
   &--title {
     text-align: center;
@@ -20,10 +19,11 @@
 
 
 .houseDetails{
+  padding-top: 30px;
   margin-bottom: 30px;
 
   &--imageHolder{
-    border: 1px solid purple;
+    // border: 1px solid purple;
 
   }
   & img {
@@ -33,7 +33,7 @@
   }
 
   &--textContent{
-    border: 1px solid purple;
+    // border: 1px solid purple;
     display: inline-block;
     z-index: 22;
     position: relative;
@@ -48,7 +48,7 @@
       display: none;
     }
     &-para{
-      border: 1px solid red;
+      // border: 1px solid red;
       margin-top: 10px;
       font-size: 1.2rem;
       width: 100%;
@@ -64,7 +64,7 @@
 
     }
     &--textContent{
-      padding-left: 15px;
+      padding-left: 5px;
       background-color: $lighterGold;
       position: static;
       width: 100%;
@@ -90,12 +90,14 @@
   @mixin atLarge {
     & img {
       margin-top: 20px;
-      max-width: 450px;
-      max-height: 300px;
+      width: 450px;
+      height: 300px;
 
     }
     &--textContent{
-      padding-left: 30px;
+      // padding-left: 30px;
+      margin-top: 20px;
+      margin-left: 50px;
       height: 420px;
       width: 50%;
 
@@ -114,9 +116,4 @@
       }
     }
   }
-}
-
-
-.bufferTop{
-  margin-top: 40px;
 }
