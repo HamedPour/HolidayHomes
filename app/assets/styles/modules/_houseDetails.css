@@ -6,13 +6,34 @@
   &--title {
     text-align: center;
     font-size: 2rem;
+    @mixin atLarge {
+      // border: 1px solid red;
+    }
+  }
+  &--second-title{
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(155deg, $mainGold, $lightGold);
+    color: #000;
+    margin-top: 20px;
+    padding: 10px;
+    @mixin atLarge {
+      margin-top: 25px;
+      padding: 20px;
+    }
   }
   &--para{
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: center;
+    padding: 10px;
     @mixin atMedium {
       font-size: 1.3rem;
-
+      padding: 20px;
+      width: 85%;
+      margin: 0 auto;
+    }
+    @mixin atLarge {
+      font-size: 1.5rem;
     }
   }
 }
@@ -20,7 +41,6 @@
 
 .houseDetails{
   padding-top: 30px;
-  /*margin-bottom: 30px;*/
 
   &--imageHolder{
     // border: 1px solid purple;
@@ -53,6 +73,7 @@
       font-size: 1.2rem;
       width: 100%;
       text-align: justify;
+      margin-bottom: 25px;
     }
   }
 
@@ -89,16 +110,14 @@
   }
   @mixin atLarge {
     & img {
-      margin-top: 20px;
       width: 450px;
       height: 300px;
+      border-radius: 5%;
 
     }
     &--textContent{
-      // padding-left: 30px;
-      margin-top: 20px;
       margin-left: 50px;
-      height: 420px;
+      height: 350px;
       width: 50%;
 
       &-title{
@@ -116,4 +135,8 @@
       }
     }
   }
+}
+
+.buffer--bottom {
+  margin-bottom: 30px;
 }

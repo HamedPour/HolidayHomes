@@ -1321,15 +1321,36 @@ files before us in any new projects=========================================*/.w
   }.houseTopContent--title {
     text-align: center;
     font-size: 2rem;
+  }@media (min-width: 1025px){.houseTopContent--title {
+      // border: 1px solid red
+  }
+  }.houseTopContent--second-title{
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(155deg, #ccbe9a, #f3efe4);
+    color: #000;
+    margin-top: 20px;
+    padding: 10px;
+  }@media (min-width: 1025px){.houseTopContent--second-title{
+      margin-top: 25px;
+      padding: 20px
+  }
   }.houseTopContent--para{
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: center;
+    padding: 10px;
   }@media (min-width: 641px){.houseTopContent--para{
-      font-size: 1.3rem
+      font-size: 1.3rem;
+      padding: 20px;
+      width: 85%;
+      margin: 0 auto
+  }
+  }@media (min-width: 1025px){.houseTopContent--para{
+      font-size: 1.5rem
   }
   }.houseDetails{
   padding-top: 30px;
-}/*margin-bottom: 30px;*/.houseDetails--imageHolder{
+}.houseDetails--imageHolder{
     // border: 1px solid purple;
 
   }.houseDetails img {
@@ -1354,6 +1375,7 @@ files before us in any new projects=========================================*/.w
       font-size: 1.2rem;
       width: 100%;
       text-align: justify;
+      margin-bottom: 25px;
     }@media (min-width: 641px){
     .houseDetails img {
       position: static;
@@ -1386,16 +1408,14 @@ files before us in any new projects=========================================*/.w
       }
   }@media (min-width: 1025px){
     .houseDetails img {
-      margin-top: 20px;
       width: 450px;
       height: 300px;
+      border-radius: 5%;
 
     }
     .houseDetails--textContent{
-      // padding-left: 30px;
-      margin-top: 20px;
       margin-left: 50px;
-      height: 420px;
+      height: 350px;
       width: 50%;
     }
 
@@ -1412,4 +1432,6 @@ files before us in any new projects=========================================*/.w
         line-height: 1.8rem;
         padding-right: 0px;
       }
-  }
+  }.buffer--bottom {
+  margin-bottom: 30px;
+}
