@@ -20,7 +20,7 @@
 
 .houseDetails{
   padding-top: 30px;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 
   &--imageHolder{
     // border: 1px solid purple;

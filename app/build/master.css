@@ -1329,8 +1329,7 @@ files before us in any new projects=========================================*/.w
   }
   }.houseDetails{
   padding-top: 30px;
-  margin-bottom: 30px;
-}.houseDetails--imageHolder{
+}/*margin-bottom: 30px;*/.houseDetails--imageHolder{
     // border: 1px solid purple;
 
   }.houseDetails img {
