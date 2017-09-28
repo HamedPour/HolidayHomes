@@ -34,3 +34,12 @@ The Parallax gave us a very hard time. It was an issue with the docs folder not
 rendering the images for some reason. It was mostly an issue with relative referencing.
 In the end after consulting with the client we decided not to include the parallax. It was nonetheless a valuable learning experience.  
 ```
+
+## Set 28, 2017 - Dev Notes:
+```
+We've completed the second and last html for our holiday home. Distancing from
+the Parallax module and using a more traditional, comfy style instead.
+Due to RL issues it took longer than expected and the grid system gave us a lot
+of trouble when it came to resizing for mobile rotation. Once the client is
+satisfied with the design, we'll begin optimization.
+```
