@@ -10,7 +10,7 @@
   @mixin atMedium {
     height: 80vh;
     & picture > * {
-      height:80vh;
+      height:80%;
       width: 100%;
     }
   }
@@ -30,9 +30,11 @@
     transition: All 0.5s ease-in-out;
 
     &:hover{
-      transform: scale(1.6);
-      opacity: 1;
-      font-weight: bolder;
+      @mixin atLarge {
+        transform: scale(1.6);
+        opacity: 1;
+        font-weight: bolder;
+      }
     }
 
   }

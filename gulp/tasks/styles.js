@@ -8,14 +8,15 @@ mixins = require('postcss-mixins'),
 normalize = require('postcss-normalize'),
 sourcemaps = require('gulp-sourcemaps'),
 lost = require('lost'),
-rucksack = require('rucksack-css');
+rucksack = require('rucksack-css'),
+responsiveImage = require('postcss-responsive-images');
 // =============================================================================
 
 
 gulp.task('styles', function(){
   var plugins = [
                 postimport, mixins, lost, rucksack,
-                simpleVars, nested, autoprefixer, normalize
+                simpleVars, nested, autoprefixer, normalize, responsiveImage
               ]
   return gulp.src('./app/assets/styles/master.css')
     .pipe(sourcemaps.init())

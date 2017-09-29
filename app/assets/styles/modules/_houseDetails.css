@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 .houseTopContent{
+  font-family: 'Oswald', sans-serif;
   margin-bottom: 20px;
   & img {
     width: 100%;
@@ -34,16 +37,17 @@
     }
     @mixin atLarge {
       font-size: 1.5rem;
+      line-height: 27px;
     }
   }
 }
 
 
 .houseDetails{
+  font-family: 'Oswald', sans-serif;
   padding-top: 30px;
 
   &--imageHolder{
-    // border: 1px solid purple;
 
   }
   & img {
@@ -53,7 +57,6 @@
   }
 
   &--textContent{
-    // border: 1px solid purple;
     display: inline-block;
     z-index: 22;
     position: relative;
@@ -68,7 +71,6 @@
       display: none;
     }
     &-para{
-      // border: 1px solid red;
       margin-top: 10px;
       font-size: 1.2rem;
       width: 100%;

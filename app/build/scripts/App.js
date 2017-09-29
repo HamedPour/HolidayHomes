@@ -10436,48 +10436,56 @@ exports.default = Carousel;
 "use strict";
 
 
-var navWrapper = document.querySelector("#nav-wrapper");
-var nav = document.querySelector(".nav");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-function stickyNav() {
-  var TopOfNav = navWrapper.offsetTop;
-  if (window.scrollY >= TopOfNav) {
-    //add class stickyNav
-    navWrapper.style.minHeight = nav.clientHeight + "px";
-    nav.classList.add("stickyNav");
-  } else {
-    // remove class stickyNav
-    navWrapper.style.minHeight = 0;
-    nav.classList.remove("stickyNav");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var StickyNav = function () {
+  function StickyNav(wrapperSelector, navSelector, stickyClass) {
+    _classCallCheck(this, StickyNav);
+
+    this.wrapperElement = document.querySelector(wrapperSelector);
+    this.navElement = document.querySelector(navSelector);
+    this.stickyClass = stickyClass;
+
+    var that = this;
+    this.scrollHandler = function () {
+      var TopOfNav = that.wrapperElement.offsetTop;
+      if (window.scrollY >= TopOfNav) {
+        //add class stickyNav
+        that.wrapperElement.style.minHeight = that.navElement.clientHeight + "px";
+        that.navElement.classList.add(that.stickyClass);
+      } else {
+        // remove class stickyNav
+        that.wrapperElement.style.minHeight = 0;
+        that.navElement.classList.remove(that.stickyClass);
+      }
+    };
   }
-}
-addEventListener("scroll", stickyNav);
-// ============================================================================
+
+  _createClass(StickyNav, [{
+    key: "attach",
+    value: function attach() {
+      addEventListener("scroll", this.scrollHandler);
+    }
+  }, {
+    key: "detach",
+    value: function detach() {
+      removeEventListener("scroll", this.scrollHandler);
+    }
+  }]);
+
+  return StickyNav;
+}();
+
+exports.default = StickyNav;
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jquerySmoothScroll = __webpack_require__(10);
-
-var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(0, _jquery2.default)(".smoothScroll").smoothScroll({
-  easing: 'swing',
-  speed: 900
-});
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10514,63 +10522,8 @@ var BurgerToggle = function BurgerToggle() {
 exports.default = BurgerToggle;
 
 /***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _Carousel = __webpack_require__(1);
-
-var _Carousel2 = _interopRequireDefault(_Carousel);
-
-var _toggleMenu = __webpack_require__(4);
-
-var _toggleMenu2 = _interopRequireDefault(_toggleMenu);
-
-var _StickyNav = __webpack_require__(2);
-
-var _StickyNav2 = _interopRequireDefault(_StickyNav);
-
-var _smoothScroll = __webpack_require__(3);
-
-var _smoothScroll2 = _interopRequireDefault(_smoothScroll);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var toggleMenu = new _toggleMenu2.default();
-
-// This if statement is to run for index.html only
-// BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
-
-if ((0, _jquery2.default)("body").data("pages") === "indexPage") {
-  // START CAROUSEL ==============================================================
-  var slides = new _Carousel2.default("siteSlides");
-  // slides.next(5000);
-  document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
-    // slides.prev();
-    slides.prev(5000);
-  });
-  document.querySelector(".slides-arrowRight").addEventListener("click", function () {
-    // slides.next();
-    slides.next(5000);
-  });
-  // end CAROUSEL ================================================================
-};
-
-// this if statement is to run for house.html only
-if ((0, _jquery2.default)("body").data("pages") === "housePage") {};
-
-/***/ }),
-/* 9 */,
-/* 10 */
+/* 4 */,
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10935,6 +10888,68 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }));
 
 
+
+/***/ }),
+/* 6 */,
+/* 7 */,
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _Carousel = __webpack_require__(1);
+
+var _Carousel2 = _interopRequireDefault(_Carousel);
+
+var _toggleMenu = __webpack_require__(3);
+
+var _toggleMenu2 = _interopRequireDefault(_toggleMenu);
+
+var _StickyNav = __webpack_require__(2);
+
+var _StickyNav2 = _interopRequireDefault(_StickyNav);
+
+var _jquerySmoothScroll = __webpack_require__(5);
+
+var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var stickyNav = new _StickyNav2.default("#nav-wrapper", ".nav", "stickyNav"); // BABEL & WEBPACK WILL TAKE CARE OF EVERYTHING, ES5 away.
+
+stickyNav.attach();
+
+var toggleMenu = new _toggleMenu2.default();
+
+// This if statement is to run for index.html only
+if ((0, _jquery2.default)("body").data("pages") === "indexPage") {
+  // START CAROUSEL ==============================================================
+  var slides = new _Carousel2.default("siteSlides");
+  // slides.next(5000);
+  document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
+    // slides.prev();
+    slides.prev(5000);
+  });
+  document.querySelector(".slides-arrowRight").addEventListener("click", function () {
+    // slides.next();
+    slides.next(5000);
+  });
+  // end CAROUSEL ===============================================================
+};
+
+// this if statement is to run for house.html only
+if ((0, _jquery2.default)("body").data("pages") === "housePage") {};
+
+// ================================================================ SmoothScroll
+(0, _jquery2.default)(".smoothScroll").smoothScroll({
+  easing: 'swing',
+  speed: 900
+});
 
 /***/ })
 /******/ ]);

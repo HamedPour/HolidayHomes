@@ -58,7 +58,9 @@
   &--leftPara{
     margin-top: 10px;
     padding-bottom: 50px;
+    text-align: center;
     @mixin atMedium {
+      text-align: left;
       margin-top: 35px;
 
     }

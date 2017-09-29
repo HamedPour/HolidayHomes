@@ -5,13 +5,22 @@ usemin = require('gulp-usemin'),
 rev = require('gulp-rev'),
 cssnano = require('gulp-cssnano'),
 uglify = require('gulp-uglify'),
+htmlmin = require('gulp-htmlmin'),
+hash = require('gulp-hash'),
 browserSync = require('browser-sync').create();
 
 
 // ============================================================================
 
 
-gulp.task('build', ['deleteDistFolder','optimizeImages', 'useminTrigger']);
+gulp.task('build', [
+    'deleteDistFolder',
+    'optimizeImages',
+    'useminTrigger',
+    'minifyHTML',
+    'hashHTML',
+    'cleanHTML'
+  ]);
 // ============================================================================
 gulp.task('deleteDistFolder', ['icons'], function(){
   return del('./docs')
@@ -44,6 +53,23 @@ gulp.task('usemin', ['styles', 'scripts'], function(){
       js: [function(){return rev()}, function(){return uglify()}]
     }))
     .pipe(gulp.dest('./docs'));
+});
+// ===============================================================Minify html
+
+gulp.task('minifyHTML', ['usemin'], function(){
+  return gulp.src('./app/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./docs'));
+});
+// ===============================================================Hashing html
+gulp.task('hashHTML', ['minifyHTML'], function(){
+  return gulp.src('./docs/*.html')
+    .pipe(hash())
+    .pipe(gulp.dest('./docs'));
+});
+// ================================================================Clean old-html
+gulp.task('cleanHTML', [ 'minifyHTML', 'hashHTML'], function(){
+  return del(['./docs/index.html', './docs/house.html'])
 });
 // ============================================================================
 gulp.task('previewDist', function(){

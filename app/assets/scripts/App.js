@@ -4,10 +4,11 @@ import $ from 'jquery';
 import Carousel from './modules/Carousel';
 import BurgerToggle from './modules/toggleMenu';
 import StickyNav from './modules/StickyNav';
-import SmoothScroll from './modules/smoothScroll';
+import smoothScroll from "jquery-smooth-scroll";
 
 
-
+var stickyNav = new StickyNav("#nav-wrapper", ".nav", "stickyNav");
+stickyNav.attach();
 
 var toggleMenu = new BurgerToggle();
 
@@ -24,10 +25,17 @@ if($("body").data("pages") === "indexPage") {
     // slides.next();
     slides.next(5000);
   });
-  // end CAROUSEL ================================================================
+  // end CAROUSEL ===============================================================
 };
 
 // this if statement is to run for house.html only
 if($("body").data("pages") === "housePage") {
 
 };
+
+
+// ================================================================ SmoothScroll
+$(".smoothScroll").smoothScroll({
+  easing: 'swing',
+  speed: 900
+});

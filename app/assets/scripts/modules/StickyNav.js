@@ -1,20 +1,32 @@
 
+class StickyNav {
+  constructor(wrapperSelector, navSelector, stickyClass){
+    this.wrapperElement = document.querySelector(wrapperSelector);
+    this.navElement = document.querySelector(navSelector);
+    this.stickyClass = stickyClass;
 
-const navWrapper = document.querySelector("#nav-wrapper");
-const nav = document.querySelector(".nav");
+    const that = this;
+    this.scrollHandler = function(){
+      const TopOfNav = that.wrapperElement.offsetTop;
+      if (window.scrollY >= TopOfNav) {
+        //add class stickyNav
+        that.wrapperElement.style.minHeight = that.navElement.clientHeight + "px";
+        that.navElement.classList.add(that.stickyClass);
+      } else {
+        // remove class stickyNav
+        that.wrapperElement.style.minHeight = 0;
+        that.navElement.classList.remove(that.stickyClass);
+      }
+    }
+  }
 
+  attach() {
+    addEventListener("scroll", this.scrollHandler);
+  }
 
-function stickyNav() {
-  const TopOfNav = navWrapper.offsetTop;
-  if (window.scrollY >= TopOfNav) {
-    //add class stickyNav
-    navWrapper.style.minHeight = nav.clientHeight + "px";
-    nav.classList.add("stickyNav");
-  } else {
-    // remove class stickyNav
-    navWrapper.style.minHeight = 0;
-    nav.classList.remove("stickyNav");
+  detach() {
+    removeEventListener("scroll", this.scrollHandler);
   }
 }
-addEventListener("scroll", stickyNav);
-// ============================================================================
+
+export default StickyNav;
