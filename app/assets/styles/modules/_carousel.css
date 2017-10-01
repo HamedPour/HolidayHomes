@@ -1,21 +1,29 @@
-.slides{
-  // z-index: 50;
-  width: 100%;
 
+.carousel picture > * {
+  width: 100vw;
+  min-width: 340px;
+  // min-height: 100%;
+  @mixin atMedium {
+    min-height: 40vh;
+  }
+  @mixin atLarge {
+    height: 80vh;
+  }
+}
+
+
+
+.slides{
+  width: 100%;
   height: 300px;
   overflow: hidden;
   position: relative;
-
-
   @mixin atMedium {
-    height: 80vh;
-    & picture > * {
-      height:80%;
-      width: 100%;
-    }
+    min-height: 40vh;
   }
-
-
+  @mixin atLarge {
+    min-height: 80vh;
+  }
 
   &-arrow {
     user-select: none;
@@ -44,7 +52,6 @@
   &-arrowLeft{
     left: 10px;
   }
-
 }
 
 .fade {
