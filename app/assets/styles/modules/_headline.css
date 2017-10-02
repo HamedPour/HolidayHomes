@@ -1,7 +1,9 @@
 .headline {
   font-variant: small-caps;
 
-
+  &--centered{
+    text-align: center;
+  }
 
   @mixin atMedium {
 
@@ -14,4 +16,16 @@
   }
 
 
+}.headline--marginBottom {
+  margin-bottom: 50px;
+
+  @mixin atMedium {
+    margin-bottom: 55px
+
+  }
+
+  @mixin atLarge {
+    margin-bottom: 60px
+
+  }
 }

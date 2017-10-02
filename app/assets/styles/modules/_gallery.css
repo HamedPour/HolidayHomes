@@ -1,0 +1,24 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  @mixin atMedium {
+
+  }
+
+  &--imgContainer{
+    border: 1px solid red;
+    flex-basis: 100vw;
+    @mixin atMedium {
+      flex-basis: auto;
+      flex-grow: 1;
+      padding: 5px;
+      // &:last-child{padding-right: 0px;}
+    }
+  }
+
+  &--imgContainer img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}

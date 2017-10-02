@@ -31,3 +31,7 @@ files before us in any new projects=========================================*/
 
 /*house.html styling*/
 @import "modules/_houseDetails";
+
+
+/*gallery.html styling*/
+@import "modules/_gallery.css";

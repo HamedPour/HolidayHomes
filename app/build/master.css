@@ -998,6 +998,9 @@ files before us in any new projects=========================================*/
 
 
 }
+.headline--centered{
+    text-align: center;
+  }
 @media (min-width: 641px){
 .headline {
 
@@ -1011,6 +1014,19 @@ files before us in any new projects=========================================*/
     font-size: 2.2rem
 
 
+}
+  }
+.headline--marginBottom {
+  margin-bottom: 50px;
+}
+@media (min-width: 641px){
+.headline--marginBottom {
+    margin-bottom: 55px
+}
+  }
+@media (min-width: 1025px){
+.headline--marginBottom {
+    margin-bottom: 60px
 }
   }
 .para {
@@ -1753,3 +1769,34 @@ files before us in any new projects=========================================*/
 .buffer--bottom {
   margin-bottom: 30px;
 }
+/*gallery.html styling*/
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (min-width: 641px){
+  }
+.gallery--imgContainer{
+    border: 1px solid red;
+    -ms-flex-preferred-size: 100vw;
+        flex-basis: 100vw;
+  }
+@media (min-width: 641px){
+.gallery--imgContainer{
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      padding: 5px
+  }
+      // .gallery--imgContainer:last-child{padding-right: 0px;}
+  }
+.gallery--imgContainer img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
