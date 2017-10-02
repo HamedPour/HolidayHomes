@@ -1,24 +1,30 @@
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  @mixin atMedium {
-
+  &--imgContainer {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &--imgContainer{
-    border: 1px solid red;
+  &--imgContainer a  {
     flex-basis: 100vw;
     @mixin atMedium {
       flex-basis: auto;
       flex-grow: 1;
       padding: 5px;
-      // &:last-child{padding-right: 0px;}
+    }
+    & img {
+      width: 100%;
+      height: auto;
+      transition: all 2s ease;
+
+      &:hover{
+        transform: scale(1.06);
+      }
     }
   }
+}
 
-  &--imgContainer img {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
+.galleryContent .headline {
+  font-size: 3.4rem;
+  font-weight: 300;
+
 }
