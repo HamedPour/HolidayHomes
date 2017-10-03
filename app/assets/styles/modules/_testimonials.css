@@ -19,10 +19,8 @@
 
 
   &--box{
-    // border: 1px solid $mainGold;
-    background-color: $lightGold;
+    border: 1px solid $mainGold;
     border-radius: 10px;
-    height: 350px;
     margin-left: 60px;
     margin-right: 60px;
     @mixin atMedium {

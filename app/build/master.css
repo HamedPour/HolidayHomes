@@ -2007,10 +2007,8 @@ body.lb-disable-scrolling {
     top: 40px;
   }
 .testimonials--box{
-    // border: 1px solid #ccbe9a;
-    background-color: #f3efe4;
+    border: 1px solid #ccbe9a;
     border-radius: 10px;
-    height: 350px;
     margin-left: 60px;
     margin-right: 60px;
   }
