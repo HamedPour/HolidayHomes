@@ -11,7 +11,7 @@ If the problem persists, I'll fall back on using fonts instead despite the minor
 ```
 I decided to halt progress on styling the rest of the page until I had implemented some necessary
 JavaScript before the file became too crowded. Added js for the dynamic sticky Nav as well as
-readjusted the carousel setting to get a crisper picture resolution in smaller viewports.
+readjusted the carousel Septing to get a crisper picture resolution in smaller viewports.
 The Nav gave us a hard time with it’s “position: fixed” since it seemed to have a bug with
 chrome. It has been resolved.  
 ```
@@ -28,7 +28,7 @@ for the second html without it flagging errors.
 
 ```
 
-## Set 22, 2017 - Dev Notes:
+## Sep 22, 2017 - Dev Notes:
 ```
 The Parallax gave us a very hard time. It was an issue with the docs folder not
 rendering the images for some reason. It was mostly an issue with relative referencing.
@@ -36,11 +36,19 @@ In the end after consulting with the client we decided not to include the parall
 It was nonetheless a valuable learning experience.  
 ```
 
-## Set 28, 2017 - Dev Notes:
+## Sep 28, 2017 - Dev Notes:
 ```
 We've completed the second and last html for our holiday home. Distancing from
 the Parallax module and using a more traditional, comfy style instead.
 Due to RL issues it took longer than expected and the grid system gave us a lot
 of trouble when it came to resizing for mobile rotation. Once the client is
 satisfied with the design, we'll begin optimization.
+```
+
+## Oct 03, 2017 - Dev Notes:
+```
+Completed gallery using lightbox as well as optimized the other static pages.
+Our Google pageSpeed Insights is very good on all three esp with the addition
+of lazyload.
+What remains next is further polish and content addition. 
 ```
