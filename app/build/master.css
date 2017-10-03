@@ -982,13 +982,13 @@ files before us in any new projects=========================================*/
 @media (min-width: 641px){
 .priceSection-rightContainer--houseLink > h2 > a{
         position: relative;
-        right: -30px;
-        top: 200px
+        right: -40px;
+        top: 100px
     }
   }
 @media (min-width: 1025px){
 .priceSection-rightContainer--houseLink > h2 > a{
-        right: 100px;
+        right: 70px;
         top: 100px;
         font-size: 1.8rem
     }
@@ -1056,6 +1056,7 @@ files before us in any new projects=========================================*/
   }
 @media (min-width: 641px){
 .houseSection{
+    height: 660px;
     text-align: left
 
 
@@ -1079,7 +1080,11 @@ files before us in any new projects=========================================*/
     }
   }
 @media (min-width: 1025px){
+.houseSection{
+    height: 923px
 
+
+}
     .houseSection--title{
       width: 40%;
       font-size: 1.6rem;
@@ -1973,3 +1978,72 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 641px){
+.testimonials {
+    height: 650px
+}
+  }
+@media (min-width: 641px){
+.testimonials {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row
+}
+  }
+.testimonials img {
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+  }
+.testimonials--box{
+    // border: 1px solid #ccbe9a;
+    background-color: #f3efe4;
+    border-radius: 10px;
+    height: 350px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+@media (min-width: 641px){
+.testimonials--box{
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 450px
+  }
+  }
+@media (min-width: 1025px){
+.testimonials--box{
+      height: 450px;
+      margin-left: 40px;
+      margin-right: 40px
+  }
+  }
+.testimonials--para {
+    line-height: 2rem;
+    font-size: 1.4rem;
+
+    padding-top: 40px;
+  }
+@media (min-width: 641px){
+.testimonials--para {
+      padding-top: 50px
+  }
+  }
+@media (min-width: 1025px){
+.testimonials--para {
+      padding: 35px
+  }
+  }
+.testimonials--quoteMark{
+    font-size: 1.6rem;
+  }

@@ -1,0 +1,57 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @mixin atMedium {
+    height: 650px;
+
+  }
+
+  @mixin atMedium {
+    flex-direction: row;
+  }
+
+  & img {
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+  }
+
+
+  &--box{
+    // border: 1px solid $mainGold;
+    background-color: $lightGold;
+    border-radius: 10px;
+    height: 350px;
+    margin-left: 60px;
+    margin-right: 60px;
+    @mixin atMedium {
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 450px;
+    }
+    @mixin atLarge {
+      height: 450px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+
+  &--para {
+    line-height: 2rem;
+    font-size: 1.4rem;
+
+    padding-top: 40px;
+    @mixin atMedium {
+      padding-top: 50px;
+    }
+    @mixin atLarge {
+      padding: 35px;
+
+    }
+  }
+
+  &--quoteMark{
+    font-size: 1.6rem;
+  }
+}
