@@ -11029,9 +11029,12 @@ var BurgerToggle = function BurgerToggle() {
   });
 
   (0, _jquery2.default)(".menu_burger_Button").click(function () {
-    console.log("burgerBottonClicked");
     (0, _jquery2.default)(this).addClass("hideBurger");
     (0, _jquery2.default)(".side_menu").toggleClass("side_menu_open");
+  });
+  //remove the menu div once user has clicked on something
+  document.querySelector(".side_menu--list").addEventListener("click", function () {
+    (0, _jquery2.default)(".side_menu").removeClass("side_menu_open");
   });
 };
 

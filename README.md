@@ -50,5 +50,11 @@ satisfied with the design, we'll begin optimization.
 Completed gallery using lightbox as well as optimized the other static pages.
 Our Google pageSpeed Insights is very good on all three esp with the addition
 of lazyload.
-What remains next is further polish and content addition. 
+What remains next is further polish and content addition.
+```
+## Oct 04, 2017 - Dev Notes:
+```
+Today marks the completion of the website layout and styling. All that remains is
+to optimize for mobile, slow connections and latency browsers. As well as sort
+out meta tags and hashing.
 ```

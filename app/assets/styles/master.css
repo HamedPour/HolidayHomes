@@ -29,6 +29,10 @@ files before us in any new projects=========================================*/
 @import "modules/_footer";
 
 
+
+@import "modules/_404";
+
+
 /*house.html styling*/
 @import "modules/_houseDetails";
 

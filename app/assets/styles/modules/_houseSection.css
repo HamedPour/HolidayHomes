@@ -1,6 +1,5 @@
 
 .houseSection{
-  background-color: $backgroundGold;
   text-align: center;
 
   &--title{
@@ -14,6 +13,7 @@
   }
 
   @mixin atMedium {
+    background-color: $backgroundGold;
     height: 660px;
     text-align: left;
 

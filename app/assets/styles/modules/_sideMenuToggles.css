@@ -1,12 +1,11 @@
 .menu_burger_Button {
   z-index: 999;
-  right: 5px;
-  top: 5px;
-  opacity: 0.3;
+  right: 10px;
+  top: 10px;
+  opacity: 1;
   position: fixed;
   font-size: 1.6rem;
   color: #000;
-  // margin: 10px 20px;
   transform: scale(0.9);
   transition: ALL .8s;
   cursor: pointer;
@@ -20,8 +19,8 @@
 
 .menu_burger_closeButton{
   color: #000;
-  font-size: 1.7rem;
-  margin: 5px 5px;
+  font-size: 1.9rem;
+  margin: 5px 10px;
   float: right;
   transition: ALL .8s;
   opacity: 0.8;
