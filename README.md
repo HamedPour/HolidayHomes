@@ -21,10 +21,9 @@ chrome. It has been resolved.
 ```
 The bulk of the main page styling is finished. Notable changes were made to font
 sizes and margins - After having a chat with the client we decided to increase
-the size by 20% for better readability. From here I’ll be focusing on the second
-html page for room details. After which comes mobile optimization. Notable issues
-to overcome are currently section heights, navbar hrefs, and failure to use App.js
-for the second html without it flagging errors.
+the size by 20% for better readability for our older viewers. From here I’ll
+be focusing on the second html page for room details. After which comes mobile optimization. Notable issues to overcome are currently section heights, navbar
+hrefs, and failure to use App.js for the second html without it flagging errors.
 
 ```
 
@@ -57,4 +56,10 @@ What remains next is further polish and content addition.
 Today marks the completion of the website layout and styling. All that remains is
 to optimize for mobile, slow connections and latency browsers. As well as sort
 out meta tags and hashing.
+```
+## Oct 09, 2017 - Dev Notes:
+```
+Today marks the end of the development of this website. Meta tags and img alts
+are all placed and the site is ready for distribution. Still waiting on further
+images and text detail from the client and photographer.  
 ```
