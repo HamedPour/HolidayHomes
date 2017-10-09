@@ -16,13 +16,13 @@ var toggleMenu = new BurgerToggle();
 if($("body").data("pages") === "indexPage") {
   // START CAROUSEL ==============================================================
   var slides = new Carousel("siteSlides")
-  // slides.next(5000);
+  slides.next(5000);
   document.querySelector(".slides-arrowLeft").addEventListener("click", function(){
-    // slides.prev();
+    slides.prev();
     slides.prev(5000);
   });
   document.querySelector(".slides-arrowRight").addEventListener("click", function(){
-    // slides.next();
+    slides.next();
     slides.next(5000);
   });
   // end CAROUSEL ===============================================================
