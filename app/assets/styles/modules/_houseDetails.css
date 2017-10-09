@@ -36,8 +36,7 @@
       margin: 0 auto;
     }
     @mixin atLarge {
-      font-size: 1.5rem;
-      line-height: 27px;
+      line-height:32px;
     }
   }
 }
