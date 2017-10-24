@@ -455,7 +455,6 @@ files before us in any new projects=========================================*/
 .carousel picture > * {
   width: 100vw;
   min-width: 340px;
-  // min-height: 100%;
 }
 @media (min-width: 641px){
 .carousel picture > * {
@@ -690,7 +689,7 @@ files before us in any new projects=========================================*/
 .directArrow-down--carousel{
         border: 3px solid #000;
         display: block;
-        top: 93%;
+        top: 90%;
         left: 48.5%
     }
         .directArrow-down--carousel:hover{

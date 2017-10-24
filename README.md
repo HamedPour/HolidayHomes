@@ -22,8 +22,9 @@ chrome. It has been resolved.
 The bulk of the main page styling is finished. Notable changes were made to font
 sizes and margins - After having a chat with the client we decided to increase
 the size by 20% for better readability for our older viewers. From here I’ll
-be focusing on the second html page for room details. After which comes mobile optimization. Notable issues to overcome are currently section heights, navbar
-hrefs, and failure to use App.js for the second html without it flagging errors.
+be focusing on the second html page for room details.
+After which comes mobile optimization. Notable issues to overcome are currently section heights, navbar hrefs, and failure to use App.js for the second html without it 
+flagging errors.
 
 ```
 
