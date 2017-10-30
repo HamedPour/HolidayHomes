@@ -67,5 +67,6 @@ images and text detail from the client and photographer.
 ```
 ## Oct 28, 2017 - Dev Notes:
 ```
-Still waiting on the photographer for new photos. However, had a constructive chat with the copywriter and will look forward to adding her content to the site.     
+Still waiting on the photographer for new photos. However, had a constructive chat 
+with the copywriter and will look forward to adding her content to the site.     
 ```
