@@ -23,7 +23,8 @@ The bulk of the main page styling is finished. Notable changes were made to font
 sizes and margins - After having a chat with the client we decided to increase
 the size by 20% for better readability for our older viewers. From here I’ll
 be focusing on the second html page for room details.
-After which comes mobile optimization. Notable issues to overcome are currently section heights, navbar hrefs, and failure to use App.js for the second html without it 
+After which comes mobile optimization. Notable issues to overcome are currently 
+section heights, navbar hrefs, and failure to use App.js for the second html without it 
 flagging errors.
 
 ```
@@ -63,4 +64,8 @@ out meta tags and hashing.
 Today marks the end of the development of this website. Meta tags and img alts
 are all placed and the site is ready for distribution. Still waiting on further
 images and text detail from the client and photographer.  
+```
+## Oct 28, 2017 - Dev Notes:
+```
+Still waiting on the photographer for new photos. However, had a constructive chat with the copywriter and will look forward to adding her content to the site.     
 ```
