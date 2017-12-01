@@ -1,6 +1,5 @@
 .footer {
-  background-color: $mainGold;
-  background: linear-gradient(0deg, rgba(#ccbe9a, 0.85) 0%, rgba(#ccbe9a, 1) 100%);
+  /*background-color: $mainGold;*/
   text-align: center;
   height: 150px;
   padding-top: 40px;
@@ -26,7 +25,6 @@
     padding-top: 2px;
     width: 100%;
     margin: 0 auto;
-    // border: 1px solid blue;
     & ul {
       display: inline-block;
       & li {

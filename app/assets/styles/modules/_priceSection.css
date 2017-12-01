@@ -2,7 +2,11 @@
 
 .priceSection {
   overflow: hidden;
-  background-color: $lightGold;
+  // background-color: $lightGold;
+  @mixin atLarge {
+    margin-top: 50px;
+
+  }
 
 
   &-leftContainer{
@@ -22,12 +26,12 @@
         text-align: justify;
         margin-top: 30px;
         margin-bottom: 20px;
-        margin-left: 70px;
+        margin-left: 100px;
 
       }
       @mixin atLarge {
         margin-top: 50px;
-        margin-left: 90px;
+        // margin-left: 90px;
         margin-bottom: 35px;
       }
     }
@@ -106,16 +110,18 @@
 
 
     &--viewImage{
-      z-index: 100;
       display: none;
-      width: 400px;
-      height: auto;
-      margin-top: 20px;
       @mixin atMedium {
+        height: auto;
+        z-index: 100;
+        margin-top: 110px;
+        margin-bottom: 50px;
+        width: 350px;
         display: block;
         margin-left: 100px;
       }
       @mixin atLarge {
+        margin-top: 120px;
         margin-left: 150px;
       }
     }
@@ -126,14 +132,12 @@
     /*opacity: 0.9;*/
 
     &--islandImage{
+      width: 70%;
       @mixin atMedium {
         z-index: 12;
         position: static;
-        /*opacity: 0.7;*/
-        margin-top: 30px;
       }
       @mixin atLarge {
-        margin-top: 50px;
       }
 
     }
@@ -155,26 +159,21 @@
         }
       }
       @mixin atLarge {
-        left: 90px;
+        left: 50px;
         top: -120px;
       }
     }
 
-    &--houseLink > h2 > a{
-      font-size: 1.3rem;
-      font-weight: 300;
-      text-shadow: 1px 1px 3px rgba(#000, 0.8);
-      letter-spacing: 8px;
+    &--textBox{
+      /*border: 1px dotted black;*/
 
       @mixin atMedium {
-        position: relative;
-        right: -40px;
-        top: 100px;
+        margin-top: 100px;
+        // position: relative;
+        // right: -40px;
+        // top: 100px;
       }
       @mixin atLarge {
-        right: 70px;
-        top: 100px;
-        font-size: 1.8rem;
       }
     }
   }

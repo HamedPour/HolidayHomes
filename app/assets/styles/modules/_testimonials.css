@@ -3,7 +3,7 @@
   flex-direction: column;
   text-align: center;
   @mixin atMedium {
-    height: 650px;
+    height: 500px;
 
   }
 
@@ -26,10 +26,10 @@
     @mixin atMedium {
       margin-left: 10px;
       margin-right: 10px;
-      height: 450px;
+      height: 350px;
     }
     @mixin atLarge {
-      height: 450px;
+      height: 350px;
       margin-left: 40px;
       margin-right: 40px;
     }

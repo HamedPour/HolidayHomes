@@ -1,6 +1,6 @@
 .services {
   text-align: center;
-  background-color: $lightGold;
+  /*background-color: $lightGold;*/
   @mixin atMedium {
 
   }

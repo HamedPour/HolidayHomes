@@ -4,5 +4,8 @@ $mainGold: #ccbe9a;
 $mistyGold: rgba(#ccbe9a, 0.8);
 $lightGold: #f3efe4;
 $lighterGold: #f9f7ef;
-$backgroundGold: #e5decc;
+/*$backgroundGold: #e5decc;*/
+$backgroundGold: #fff;
 $darkGold: #ad9f7c;
+$turquoise: #c4f2f2;
+$dark_turquoise: #9ae2e2;

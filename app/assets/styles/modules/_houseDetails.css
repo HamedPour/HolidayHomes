@@ -2,43 +2,32 @@
 
 .houseTopContent{
   font-family: 'Oswald', sans-serif;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   & img {
     width: 100%;
+    border-radius: 10px;
+    @mixin atMedium {
+      margin-top: 45px;
+    }
   }
   &--title {
     text-align: center;
-    font-size: 2rem;
     @mixin atLarge {
-      // border: 1px solid red;
-    }
-  }
-  &--second-title{
-    text-align: center;
-    font-size: 2rem;
-    background: linear-gradient(155deg, $mainGold, $lightGold);
-    color: #000;
-    margin-top: 20px;
-    padding: 10px;
-    @mixin atLarge {
-      margin-top: 25px;
-      padding: 20px;
-    }
-  }
-  &--para{
-    font-size: 1.1rem;
-    text-align: center;
-    padding: 10px;
-    @mixin atMedium {
       font-size: 1.3rem;
-      padding: 20px;
-      width: 85%;
-      margin: 0 auto;
-    }
-    @mixin atLarge {
-      line-height:32px;
     }
   }
+  &--para {
+    text-align: justify;
+    margin-bottom: 10px;
+    @mixin atMedium {
+      width: 400px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+    }
+  }
+
+
 }
 
 
@@ -87,7 +76,6 @@
     }
     &--textContent{
       padding-left: 5px;
-      background-color: $lighterGold;
       position: static;
       width: 100%;
       text-align: left;

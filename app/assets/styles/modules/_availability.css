@@ -1,10 +1,10 @@
 .availability {
-  background-color: $lightGold;
+  /*background-color: $lightGold;*/
   margin-top: 70px;
   height: 800px;
 
   @mixin atMedium {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   @mixin atLarge {
     height: 800px;

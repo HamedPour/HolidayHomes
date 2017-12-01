@@ -20,9 +20,9 @@ files before us in any new projects=========================================*/
 @import "modules/_headline";
 @import "modules/_para";
 @import "modules/_link";
-@import "modules/_houseSection";
+/*@import "modules/_houseSection";*/
 @import "modules/_detailBubble";
-@import "modules/_roomFeatures";
+/*@import "modules/_roomFeatures";*/
 @import "modules/_availability";
 @import "modules/_contactUS";
 @import "modules/_services";
@@ -30,7 +30,6 @@ files before us in any new projects=========================================*/
 
 
 
-@import "modules/_404";
 
 
 /*house.html styling*/

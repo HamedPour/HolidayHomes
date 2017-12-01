@@ -10,8 +10,8 @@
   <meta http-equiv="expires" content="0" />
   <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
   <meta http-equiv="pragma" content="no-cache" />
-  <meta name="distribution" content="global"/>
-  <meta name="robots" content="all"/>
+  <meta name="distribution" content="global" />
+  <meta name="robots" content="all" />
   <meta name="keywords" content="accommodation, hotels, holidays, Berwickshire,
     Eyemouth, Northumbria, Northumberland, Self Catering, Island House">
   <meta name="description" content="A spacious, well equipped and comfortable detached
@@ -36,7 +36,7 @@
   <div class="wrapper">
 
     <!-- Start header -->
-    <div id="header"class="header">
+    <div id="header" class="header">
       <div class="header-title">
         Island House
       </div>
@@ -60,11 +60,18 @@
     <div id="nav-wrapper">
       <div class="nav">
         <ul class="nav-menu">
-          <a class="smoothScroll" href="index.html"><li>Home</li></a>
-          <a class="smoothScroll" href="index.html#houseSection"><li>The House</li></a>
-          <a class="activeNav" href="#"><li>Room Details</li></a>
-          <a class="smoothScroll" href="index.html#availabilitySection"><li>Availability</li></a>
-          <a class="smoothScroll" href="gallery.html"><li>Gallery</li></a>
+          <a class="smoothScroll" href="index.html">
+            <li>Home</li>
+          </a>
+          <a class="activeNav" href="#">
+            <li>The House</li>
+          </a>
+          <a href="availability.html">
+            <li>Availability</li>
+          </a>
+          <a class="smoothScroll" href="gallery.html">
+            <li>Gallery</li>
+          </a>
         </ul>
       </div>
     </div>
@@ -73,231 +80,285 @@
 
 
     <!-- Start mainContent -->
-<div class="houseTopContent">
-  <picture>
-    <source srcset="assets/images/house1200by350.jpg" media="(min-width: 1280px)">
-    <source srcset="assets/images/house800by350.jpg" media="(min-width: 760px)">
-    <img src="assets/images/house500by250.jpg" alt="view of island house - welcome dear viewer">
-  </picture>
-  <h1 class="houseTopContent--title headline">Welcome to Island House</h1>
-  <p class="houseTopContent--para para">
-    Newly refurbished with all the comforts of home,<br>
-    full oil fired central heating,<br> double glazing.
-  </p>
-  <h2 class="houseTopContent--second-title headline">House Tour</h2>
-  <p class="houseTopContent--para para">
-    Come in, relax and enjoy the outstanding sea views! <br>
-    On your arrival at the house park up to three cars in our private drive.<br>
-    From the front door enter into the lobby with a useful coat cupboard, shoe and boot racks and cloakroom WC.
-  </p>
-</div>
 
-<div class="houseDetails">
-  <div class="row" id="sittingRoom">
-    <div class="row_medium-5 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/sittingRoom450.jpg" alt="sitting room with lots of space and a warm fireplace">
-      </picture>
-    </div>
-    <div class="row__medium-5 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        Sitting room
+    <!-- Start Bubble Details -->
+    <div class="row">
+      <div class="detailBubble">
+        <ul>
+          <li>
+            <div class="icon icon--person-small"></div>
+            <p class="detailBubble--title">Sleeps</p>
+            <span class="detailBubble--subtitle">1 - 6</span>
+          </li>
+          <li>
+            <div class="icon icon--bed-small"></div>
+            <p class="detailBubble--title">Bedrooms</p>
+            <span class="detailBubble--subtitle">3</span>
+          </li>
+          <li>
+            <div class="icon icon--bathtub-small"></div>
+            <p class="detailBubble--title">Bathrooms</p>
+            <span class="detailBubble--subtitle">2</span>
+          </li>
+          <li>
+            <div class="icon icon--moon-small"></div>
+            <p class="detailBubble--title">Min Stay</p>
+            <span class="detailBubble--subtitle">3 Nights</span>
+          </li>
+          <li>
+            <div class="icon icon--minAge-small"></div>
+            <p class="detailBubble--title">Min Age</p>
+            <span class="detailBubble--subtitle">10 Years</span>
+          </li>
+        </ul>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        The light filled sitting room has a superb view of the sea with French
-        windows to the garden and terrace. Relax on the comfortable sofas,
-        and toast your toes in front of the open fire. A wifi router,
-        Bluetooth stereo system, TV DVD are provided for you to keep up with
-        the world.
-      </p>
-    </div>
-  </div>
-
-  <div class="row" id="library">
-    <div class="row_medium-9 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/Library450.jpg" alt="spacious study with tall windows looking out into the sea">
-      </picture>
-    </div>
-    <div class="row__medium-3 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        Library
+      <!-- MOBILE ONLY SECTION -->
+      <div class="MobileBubble">
+        <ul>
+          <li>
+            <div class="icon icon--person-Xsmall"></div>
+            <p class="MobileBubble--title">Sleeps</p>
+            <span class="MobileBubble--subtitle">1 - 6</span>
+          </li>
+          <li>
+            <div class="icon icon--bed-Xsmall"></div>
+            <p class="MobileBubble--title">Bedrooms</p>
+            <span class="MobileBubble--subtitle">3</span>
+          </li>
+          <li>
+            <div class="icon icon--bathtub-Xsmall"></div>
+            <p class="MobileBubble--title">Bathrooms</p>
+            <span class="MobileBubble--subtitle">2</span>
+          </li>
+          <li>
+            <div class="icon icon--moon-Xsmall"></div>
+            <p class="MobileBubble--title">Min Stay</p>
+            <span class="MobileBubble--subtitle">3 Nights</span>
+          </li>
+          <li>
+            <div class="icon icon--minAge-Xsmall"></div>
+            <p class="MobileBubble--title">Min Age</p>
+            <span class="MobileBubble--subtitle">10 Years</span>
+          </li>
+        </ul>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        Off the lounge is a cosy library with hundreds of books. A perfect cosy
-        space to discover your new favourite read, or simply to snuggle down
-        and watch the seals on the sandbanks.
-      </p>
     </div>
-  </div>
+    <!-- End Bubble Details -->
 
-  <div class="row" id="kitchen">
-    <div class="row_medium-9 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/kitchen450.jpg" alt="beautiful dinning Kitchen with a wonderful seaside view">
-      </picture>
-    </div>
-    <div class="row__medium-3 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        Dining kitchen
+
+    <!-- Start HouseTopContent -->
+
+    <div class="houseTopContent">
+      <div class="row">
+        <div class="row__medium-7">
+          <h1 class="houseTopContent--title headline">TEXT BOX</h1>
+          <p class="houseTopContent--para para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,  Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="row__medium-4">
+          <picture>
+            <!-- <source srcset="assets/images/house1200by350.jpg" media="(min-width: 1280px)"> -->
+            <source srcset="assets/images/house800by350.jpg" media="(min-width: 760px)">
+            <img src="assets/images/house500by250.jpg" alt="view of island house - welcome dear viewer">
+          </picture>
+        </div>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        With spectacular panoramic views, watch the tides change and do a spot
-        of bird watching from the spacious, well equipped, dining kitchen with
-        dishwasher, double oven and hob and all the equipment you could need.
-        The floor length windows with huge sliding doors lead to the terrace
-        and private sunny garden.
-      </p>
     </div>
-  </div>
 
-  <div class="row" id="utilityRoom">
-    <div class="row_medium-9 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/kitchen450.jpg" alt="utility room for all your storage needs">
-      </picture>
-    </div>
-    <div class="row__medium-3 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        Utility room
+    <!-- END HouseTopContent -->
+
+
+    <!-- Start house/room details -->
+
+    <div class="houseDetails">
+      <div class="row" id="sittingRoom">
+        <div class="row_medium-5 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/sittingRoom450.jpg" alt="sitting room with lots of space and a warm fireplace">
+          </picture>
+        </div>
+        <div class="row__medium-5 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            Sitting room
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            The light filled sitting room has a superb view of the sea with French windows to the garden and terrace. Relax on the comfortable sofas, and toast your toes in front of the open fire. A wifi router, Bluetooth stereo system, TV DVD are provided for you
+            to keep up with the world.
+          </p>
+        </div>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        A washer and separate tumble dryer, extra fridge and freezer, ironing
-        board make it easy to do any laundry and store extra food supplies.
-      </p>
-    </div>
-  </div>
 
-  <div class="row" id="doubleBedroom">
-    <div class="row_medium-9 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/doubleRoom450.jpg" alt="Huge Double Bedroom with loads of space and comfy bed">
-      </picture>
-    </div>
-    <div class="row__medium-3 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        Downstairs Double Bedroom
+      <div class="row" id="library">
+        <div class="row_medium-9 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/Library450.jpg" alt="spacious study with tall windows looking out into the sea">
+          </picture>
+        </div>
+        <div class="row__medium-3 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            Library
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            Off the lounge is a cosy library with hundreds of books. A perfect cosy space to discover your new favourite read, or simply to snuggle down and watch the seals on the sandbanks.
+          </p>
+        </div>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        A cosy room with a comfortable pocket sprung 4’6”double bed.
-        An open tread staircase leads from the lounge to the first floor
-        with views of The Priory and St Mary’s Church from the landing.
-      </p>
-    </div>
-  </div>
 
-  <div class="row" id="KingBedroom">
-    <div class="row_medium-9 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/kingBedroom450.jpg" alt="King size Bedroom with en-suite bathroom and lovely view to the ocean">
-      </picture>
-    </div>
-    <div class="row__medium-3 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        King size en-suite bedroom
+      <div class="row" id="kitchen">
+        <div class="row_medium-9 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/kitchen450.jpg" alt="beautiful dinning Kitchen with a wonderful seaside view">
+          </picture>
+        </div>
+        <div class="row__medium-3 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            Dining kitchen
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            With spectacular panoramic views, watch the tides change and do a spot of bird watching from the spacious, well equipped, dining kitchen with dishwasher, double oven and hob and all the equipment you could need. The floor length windows with huge sliding
+            doors lead to the terrace and private sunny garden.
+          </p>
+        </div>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        Fabulous panoramic sea views to the mainland, causeway, St Cuthbert’s
-        Island, Cheviot Hills and sand dunes. Sink into the king size pocket
-        sprung bed and enjoy the peace and quiet of Holy Island.
-        Ensuite bathroom with Villeroy and Boch suite.
-      </p>
-    </div>
-  </div>
 
-  <div class="row" id="ensuiteBathroom">
-    <div class="row_medium-9 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/ensuiteBathroom450.jpg" alt="Ensuite Bathroom part of the king bedroom. Spacious, bright and clean">
-      </picture>
-    </div>
-    <div class="row__medium-3 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        Ensuite bathroom
+      <div class="row" id="utilityRoom">
+        <div class="row_medium-9 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/kitchen450.jpg" alt="utility room for all your storage needs">
+          </picture>
+        </div>
+        <div class="row__medium-3 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            Utility room
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            A washer and separate tumble dryer, extra fridge and freezer, ironing board make it easy to do any laundry and store extra food supplies.
+          </p>
+        </div>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        Bathroom Details Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </p>
-    </div>
-  </div>
 
-  <div class="row" id="twinBedroom">
-    <div class="row_medium-9 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/twinRoom450.jpg" alt="Twin Bedroom sleep 2 people - clean, comfy with lots of space">
-      </picture>
-    </div>
-    <div class="row__medium-3 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        Twin bedroom
+      <div class="row" id="doubleBedroom">
+        <div class="row_medium-9 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/doubleRoom450.jpg" alt="Huge Double Bedroom with loads of space and comfy bed">
+          </picture>
+        </div>
+        <div class="row__medium-3 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            Downstairs Double Bedroom
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            A cosy room with a comfortable pocket sprung 4’6”double bed. An open tread staircase leads from the lounge to the first floor with views of The Priory and St Mary’s Church from the landing.
+          </p>
+        </div>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        With two comfortable 3’6” single beds and
-        fantastic panoramic sea views to the causeway, mainland and Cheviot Hills.
-        All bedrooms have ample clothes <b>storage and hairdryers</b>. The comfortable pocket sprung beds are made up with pure cotton bedding, down duvets and a selection of down or hypoallergenic pillows.
 
-      </p>
-    </div>
-  </div>
-
-  <div class="row" id="houseBathroom">
-    <div class="row_medium-9 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/wetRoom450.jpg" alt="large Wet Room with shower and space">
-      </picture>
-    </div>
-    <div class="row__medium-3 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        House bathroom
+      <div class="row" id="KingBedroom">
+        <div class="row_medium-9 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/kingBedroom450.jpg" alt="King size Bedroom with en-suite bathroom and lovely view to the ocean">
+          </picture>
+        </div>
+        <div class="row__medium-3 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            King size en-suite bedroom
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            Fabulous panoramic sea views to the mainland, causeway, St Cuthbert’s Island, Cheviot Hills and sand dunes. Sink into the king size pocket sprung bed and enjoy the peace and quiet of Holy Island. Ensuite bathroom with Villeroy and Boch suite.
+          </p>
+        </div>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        A luxurious fully tiled walk in wet room with underfloor heating
-        and towel warmer.
-      </p>
-    </div>
-  </div>
 
-  <div class="row" id="garden">
-    <div class="row_medium-9 houseDetails--imageHolder">
-      <picture>
-        <img class="lazyload" data-srcset="assets/images/wetRoom450.jpg" alt="large Garden overlooking the ocean. Excellent sitting space to enjoy a drink with the view">
-      </picture>
-    </div>
-    <div class="row__medium-3 houseDetails--textContent">
-      <div class="houseDetails--textContent-title headline">
-        Garden
+      <div class="row" id="ensuiteBathroom">
+        <div class="row_medium-9 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/ensuiteBathroom450.jpg" alt="Ensuite Bathroom part of the king bedroom. Spacious, bright and clean">
+          </picture>
+        </div>
+        <div class="row__medium-3 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            Ensuite bathroom
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            Bathroom Details Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
       </div>
-      <hr class="houseDetails--textContent-line">
-      <p class="houseDetails--textContent-para para">
-        The west south west facing private, well stocked lawned rear garden
-        has fabulous panoramic sea views and is sunny from mid-morning until
-        the sun sets. Help yourselves to fresh herbs in the herb bed, relax
-        and enjoy the views and the sunsets.
-        A private secure yard to the side of the house houses the coal bunker
-        and provides a safe storage space for bikes.
+
+      <div class="row" id="twinBedroom">
+        <div class="row_medium-9 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/twinRoom450.jpg" alt="Twin Bedroom sleep 2 people - clean, comfy with lots of space">
+          </picture>
+        </div>
+        <div class="row__medium-3 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            Twin bedroom
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            With two comfortable 3’6” single beds and fantastic panoramic sea views to the causeway, mainland and Cheviot Hills. All bedrooms have ample clothes <b>storage and hairdryers</b>. The comfortable pocket sprung beds are made up with pure cotton
+            bedding, down duvets and a selection of down or hypoallergenic pillows.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="row" id="houseBathroom">
+        <div class="row_medium-9 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/wetRoom450.jpg" alt="large Wet Room with shower and space">
+          </picture>
+        </div>
+        <div class="row__medium-3 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            House bathroom
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            A luxurious fully tiled walk in wet room with underfloor heating and towel warmer.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" id="garden">
+        <div class="row_medium-9 houseDetails--imageHolder">
+          <picture>
+            <img class="lazyload" data-srcset="assets/images/wetRoom450.jpg" alt="large Garden overlooking the ocean. Excellent sitting space to enjoy a drink with the view">
+          </picture>
+        </div>
+        <div class="row__medium-3 houseDetails--textContent">
+          <div class="houseDetails--textContent-title headline">
+            Garden
+          </div>
+          <hr class="houseDetails--textContent-line">
+          <p class="houseDetails--textContent-para para">
+            The west south west facing private, well stocked lawned rear garden has fabulous panoramic sea views and is sunny from mid-morning until the sun sets. Help yourselves to fresh herbs in the herb bed, relax and enjoy the views and the sunsets. A private
+            secure yard to the side of the house houses the coal bunker and provides a safe storage space for bikes.
+          </p>
+        </div>
+      </div>
+
+      <h1 class="houseTopContent--title headline">General</h1>
+      <p class="houseTopContent--para buffer--bottom">
+        The house has full oil fired central heating and is fully double glazed. All fuel inclusive. <br> There is also a safe storage area for bikes and off road parking in drive. All bed linen provided. <br> No smoking - No pets.
       </p>
+
     </div>
-  </div>
 
-  <h1 class="houseTopContent--title headline">General</h1>
-  <p class="houseTopContent--para buffer--bottom">
-    The house has full oil fired central heating and is fully double glazed. All fuel inclusive. <br>
-    There is also a safe storage area for bikes and off road parking in drive.
-    All bed linen provided. <br>
-    No smoking - No pets.
-  </p>
+    <!-- END house/room details -->
 
-</div>
     <!-- End mainContent -->
 
     <!-- footer -->
@@ -315,13 +376,10 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a class="smoothScroll" href="index.html#houseSection">The house</a>
+            <a href="house.html">The House</a>
           </li>
           <li>
-            <a href="house.html">Room details</a>
-          </li>
-          <li>
-            <a class="smoothScroll" href="index.html#availabilitySection">Availability</a>
+            <a href="availability.html">Availability</a>
           </li>
           <li>
             <a href="gallery.html">Gallery</a>
@@ -364,13 +422,10 @@
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="index.html#houseSection">The house</a>
+          <a href="house.html">The House</a>
         </li>
         <li>
-          <a href="house.html">Room details</a>
-        </li>
-        <li>
-          <a href="index.html#availabilitySection">Availability</a>
+          <a href="availability.html">Availability</a>
         </li>
         <li>
           <a href="gallery.html">Gallery</a>
