@@ -341,7 +341,7 @@ files before us in any new projects=========================================*/
   }
 .header-title {
     padding-top: 20px;
-    font-size: 2rem;
+    font-size: 2.3rem;
     letter-spacing: .6rem;
     font-variant: small-caps;
   }
@@ -349,7 +349,7 @@ files before us in any new projects=========================================*/
 @media (min-width: 641px){
 .header-title {
       padding-top: 13px;
-      font-size: 2.7rem;
+      font-size: 3.4rem;
       letter-spacing: 1rem
   }
   }
@@ -371,7 +371,7 @@ files before us in any new projects=========================================*/
     font-size: 1rem;
     letter-spacing: .1rem;
     font-weight: bold;
-    font-style: italic;
+    /*font-style: italic;*/
     opacity: 0.8;
   }
 @media (min-width: 641px){
@@ -400,31 +400,36 @@ files before us in any new projects=========================================*/
     }
       .nav-menu a {
         font-weight: bold;
-        //: 0px 0px 2px rgba(0,0,0, 0.4);
         border-bottom: 1px solid rgba(0,0,0, 0.6);
         border-top: 1px solid rgba(0,0,0, 0.6);
         border-left: 1px solid rgba(0,0,0, 0.6);
         font-variant: small-caps;
         -webkit-transition: All 0.5s ease-in-out;
         transition: All 0.5s ease-in-out;
-        padding-top: 5px;
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
         font-size: 1rem;
       }
         .nav-menu a:last-child {border-right: 1px solid rgba(0,0,0, 0.6);}
+        @media (min-width: 641px){
+      .nav-menu a {
+          padding-top: 7px;
+          font-size: 1.2rem
+      }
+  }
         @media (min-width: 1025px){
       .nav-menu a {
+          padding-top: 5px;
           font-size: 1.5rem
       }
   }
 
         .nav-menu a:hover{
-          // font-weight: bold;
+
           letter-spacing: 1px;
           font-size: 1.6rem;
-          //: rgba(255,255,255, 0.3);
+
         }
   }
 .stickyNav {
