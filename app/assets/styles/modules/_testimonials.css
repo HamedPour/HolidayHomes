@@ -3,7 +3,6 @@
   flex-direction: column;
   text-align: center;
   @mixin atMedium {
-    height: 500px;
 
   }
 
@@ -23,33 +22,33 @@
     border-radius: 10px;
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 10px;
     @mixin atMedium {
+      margin-bottom: 0px;
       margin-left: 10px;
       margin-right: 10px;
-      height: 350px;
     }
     @mixin atLarge {
-      height: 350px;
-      margin-left: 40px;
-      margin-right: 40px;
+
     }
   }
 
   &--para {
     line-height: 2rem;
-    font-size: 1.4rem;
-
-    padding-top: 40px;
+    font-size: 1.1rem;
+    padding: 20px;
     @mixin atMedium {
-      padding-top: 50px;
+      padding-top: 30px;
+      font-size: 1.3rem;
     }
     @mixin atLarge {
-      padding: 35px;
+      font-size: 1.4rem;
+      padding: 40px;
 
     }
   }
 
   &--quoteMark{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }

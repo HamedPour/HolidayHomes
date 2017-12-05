@@ -9,11 +9,11 @@
 
 
   @mixin atMedium {
-    height: 150px;
+    max-height: none;
+    height: 170px;
   }
   @mixin atLarge {
-    max-height: none;
-    height: 17vh;
+    /*height: 17vh;*/
   }
 
 

@@ -15,6 +15,11 @@
     font-size: 2.2rem;
   }
 
+  &--large {
+    @mixin atMedium {
+      font-size: 3rem;
+    }
+  }
 
 
 }
