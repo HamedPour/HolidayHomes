@@ -2,6 +2,38 @@
   @mixin clearfix;
 
 
+  @mixin atSmall {
+
+    &__small-3 {
+      float: left;
+      width: 25%;
+    }
+    &__small-4 {
+      float: left;
+      width: 33%;
+    }
+    &__small-5 {
+      float: left;
+      width: 41.65%;
+    }
+    &__small-6 {
+      float: left;
+      width: 50%;
+    }
+    &__small-7 {
+      float: left;
+      width: 58.31%;
+    }
+    &__small-8 {
+      float: left;
+      width: 67%;
+    }
+    &__small-9 {
+      float: left;
+      width: 75%;
+    }
+  }
+
   @mixin atMedium {
 
     &__medium-3 {
@@ -20,7 +52,6 @@
       float: left;
       width: 50%;
     }
-
     &__medium-7 {
       float: left;
       width: 58.31%;
@@ -35,6 +66,37 @@
     }
   }
 
+  @mixin atLarge {
+
+    &__large-3 {
+      float: left;
+      width: 25%;
+    }
+    &__large-4 {
+      float: left;
+      width: 33%;
+    }
+    &__large-5 {
+      float: left;
+      width: 41.65%;
+    }
+    &__large-6 {
+      float: left;
+      width: 50%;
+    }
+    &__large-7 {
+      float: left;
+      width: 58.31%;
+    }
+    &__large-8 {
+      float: left;
+      width: 67%;
+    }
+    &__large-9 {
+      float: left;
+      width: 75%;
+    }
+  }
 
 
 

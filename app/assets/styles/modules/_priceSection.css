@@ -1,8 +1,17 @@
 
 
+<div class=" textAnimate--red">
+  <h2 class="link"><a href="availability.html">Check Availability</a></h2>
+</div>
+
+<a class="link" href="https://www.google.co.uk/maps/place/Holy+Island,+Berwick-upon-Tweed+TD15+2RZ/@55.6700762,-1.8046508,513m/data=!3m1!1e3!4m5!3m4!1s0x48874d427a6499bf:0x2f0585c9789c448a!8m2!3d55.6702393!4d-1.8030567">
+  Take Me There
+</a>
+
+
+
 .priceSection {
   overflow: hidden;
-  // background-color: $lightGold;
   @mixin atLarge {
     margin-top: 50px;
 
