@@ -1,58 +1,68 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .houseTopContent{
-  font-family: 'Oswald', sans-serif;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+
+  @mixin atMedium {
+    margin-bottom: 60px;
+  }
+  @mixin atLarge {
+    margin-bottom: 130px;
+  }
+
   & img {
-    width: 100%;
-    border-radius: 10px;
-    @mixin atMedium {
-      margin-top: 45px;
+    display: none;
+    @mixin atLarge {
+      display: block;
+      width: 90%;
+      border-radius: 5px;
+      margin-top: 15px;
+      box-shadow: 4px 4px 5px rgba(0,0,0,0.6);
     }
   }
   &--title {
     text-align: center;
+    @mixin atMedium {
+      font-size: 1.9rem;
+    }
     @mixin atLarge {
-      font-size: 1.3rem;
+      font-size: 2rem;
     }
   }
   &--para {
     text-align: justify;
-    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 450px;
+    font-weight: 400;
+    font-size: 1.2rem;
     @mixin atMedium {
-      width: 400px;
-      margin: 0 auto;
-      font-size: 1.2rem;
+      width: 600px;
+      font-size: 1.4rem;
     }
   }
-
 
 }
 
 
 .houseDetails{
-  font-family: 'Oswald', sans-serif;
-  padding-top: 30px;
-
-  &--imageHolder{
-
+  & .row {
+    margin-bottom: 50px;
   }
+
   & img {
     width: 100%;
-    float: left;
     margin-bottom: 20px;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.6);
   }
 
   &--textContent{
-    display: inline-block;
-    z-index: 22;
-    position: relative;
+    // position: relative;
     text-align: center;
+    padding: 0px 20px 0px 20px;
 
     &-title{
       color: $darkGold;
-      font-size: 1.8rem;
+      font-size: 2.8rem;
       font-weight: bold;
     }
     &-line{
@@ -61,28 +71,22 @@
     &-para{
       margin-top: 10px;
       font-size: 1.2rem;
-      width: 100%;
       text-align: justify;
       margin-bottom: 25px;
     }
   }
 
   @mixin atMedium {
-    & img {
-      position: static;
-      width: 100%;
-      margin-bottom: 0px;
 
+    & img {
+      width: 100%;
+      min-height: 280px;
+      border-radius: 5px;
     }
     &--textContent{
-      padding-left: 5px;
-      position: static;
-      width: 100%;
       text-align: left;
       &-title{
-        width: 260px;
-        padding-right: 10px;
-        padding-bottom: 10px;
+        font-size: 1.8rem;
       }
       &-line{
         display: block;
@@ -91,36 +95,30 @@
       }
       &-para{
         font-weight: normal;
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        padding-right: 20px;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
       }
     }
   }
   @mixin atLarge {
-    & img {
-      width: 450px;
-      height: 300px;
-      border-radius: 5%;
 
+    & img {
     }
     &--textContent{
-      margin-left: 50px;
-      height: 350px;
-      width: 50%;
+      margin-left: 30px;
+      width: 90%;
 
       &-title{
-        width: 340px;
+        font-size: 2.3rem;
       }
       &-line{
         margin-top: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
 
       }
       &-para{
         font-size: 1.5rem;
         line-height: 1.8rem;
-        padding-right: 0px;
       }
     }
   }

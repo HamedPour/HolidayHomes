@@ -16,26 +16,24 @@ files before us in any new projects=========================================*/
 @import "modules/_directionArrows";
 @import "modules/_sideMenu";
 @import "modules/_sideMenuToggles";
-/* @import "modules/_priceSection"; */
-@import "modules/_homepage";
+
+@import "modules/_link";
 @import "modules/_headline";
 @import "modules/_para";
-@import "modules/_link";
-/*@import "modules/_houseSection";*/
+
 @import "modules/_detailBubble";
-/*@import "modules/_roomFeatures";*/
-@import "modules/_availability";
 @import "modules/_contactUS";
 @import "modules/_services";
 @import "modules/_footer";
 
-
-
-
+/* Homepage Styling */
+@import "modules/_homepage";
 
 /*house.html styling*/
 @import "modules/_houseDetails";
 
+/* Availability Styling */
+@import "modules/_availability";
 
 /*gallery.html styling*/
 @import "modules/_gallery.css";

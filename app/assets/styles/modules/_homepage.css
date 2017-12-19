@@ -5,15 +5,17 @@
     margin-top: 20px;
     margin-bottom: 10px;
     @mixin atMedium {
-      text-align: justify;
-      margin-top: 30px;
-      margin-bottom: 20px;
+      font-size: 1.8rem;
+      margin-top: 50px;
+      margin-bottom: 40px;
       margin-left: 50px;
     }
     @mixin atLarge {
-      margin-top: 50px;
-      margin-bottom: 35px;
+      font-size: 2.3rem;
+      margin-top: 70px;
+      margin-bottom: 55px;
     }
+
   }
 
   &--para {
@@ -56,16 +58,14 @@
     @mixin atMedium {
       z-index: 1;
       position: relative;
-      top: 140px;
-      border: 1px solid purple;
+      top: 60px;
       display: block;
       & > img {
         width: 85%;
-        border: 1px solid red;
       }
     }
     @mixin atLarge {
-      top: 100px;
+      top: 10px;
     }
 
     &--toLocation {
@@ -103,7 +103,7 @@
     z-index: 3;
     width: 420px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: justify;
     margin-left: auto;
     margin-right: auto;
     @mixin atMedium {
@@ -117,15 +117,47 @@
     }
   }
 
+  &--link {
+    font-weight: 500;
+  }
 
   &-middleImage {
     display: none;
     @mixin atMedium {
+      & > picture > img {
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+      }
+    }
+    @mixin atLarge {
+      display: block;
+      margin-top: 130px;
+      margin-left: 70px;
+    }
+  }
+}
+
+
+
+.bottomSection {
+  margin-top: 40px;
+  &--headline {
+    text-align: center;
+  }
+
+  &-bottomImage {
+    display: none;
+    @mixin atMedium {
+      & > picture > img {
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+      }
     }
     @mixin atLarge {
       display: block;
       margin-top: 100px;
-      margin-left: 70px;
+      margin-right: 70px;
     }
   }
+
 }
