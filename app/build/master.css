@@ -318,8 +318,8 @@ files before us in any new projects=========================================*/.w
         border-top: 1px solid rgba(0,0,0, 0.6);
         border-left: 1px solid rgba(0,0,0, 0.6);
         font-variant: small-caps;
-        -webkit-transition: All 0.5s ease-in-out;
-        transition: All 0.5s ease-in-out;
+        -webkit-transition: All 0.6s ease-in-out;
+        transition: All 0.6s ease-in-out;
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
@@ -331,20 +331,21 @@ files before us in any new projects=========================================*/.w
           padding-top: 7px;
           font-size: 1.2rem
       }
+          .nav-menu a:hover{
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+          }
   }
         @media (min-width: 1025px){
       .nav-menu a {
           padding-top: 5px;
           font-size: 1.5rem
       }
+          .nav-menu a:hover{
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+          }
   }
-
-        .nav-menu a:hover{
-
-          letter-spacing: 1px;
-          font-size: 1.6rem;
-
-        }
   }.stickyNav {
   -webkit-transition: All 0.5s ease-in;
   transition: All 0.5s ease-in;
@@ -811,9 +812,7 @@ files before us in any new projects=========================================*/.w
       }@media (min-width: 700px){.MobileBubble{
     display: none
 }
-  }.contactUS{
-  // border: 1px solid red;
-}@media (min-width: 700px){
+  }@media (min-width: 700px){
   }@media (min-width: 1025px){
   }.contactUS--title{
     text-align: center;
@@ -825,9 +824,14 @@ files before us in any new projects=========================================*/.w
       font-size: 2rem;
       padding-bottom: 20px
   }
+  }.contactUS--container {
+    padding-left: 20px;
   }.contactUS--mail{
+
     display: -webkit-box;
+
     display: -ms-flexbox;
+
     display: flex;
   }.contactUS--mail p {
       cursor: pointer;
@@ -864,57 +868,53 @@ files before us in any new projects=========================================*/.w
       top: -10px;
     }.services {
   text-align: center;
-}/*background-color: $lightGold;*/@media (min-width: 700px){
+
+}.services--row {
+    margin: 25px 0;
+  }@media (min-width: 1025px){.services--row {
+      margin-top: 70px;
+      margin-bottom: 50px
+  }
   }.services--header{
     background-color: #000;
-    color: #ccbe9a;
+    color: #9ae2e2;
     padding: 8px 0px 8px 0px;
     margin-bottom: 40px;
   }@media (min-width: 700px){
       .services--header h2 {
         padding-left: 40px;
-        text-align: left;
+        text-align: center;
         font-size: 2rem;
         font-weight: 300;
-        border-bottom: 3px solid #ccbe9a;
-        border-top: 3px solid #ccbe9a;
+        border-bottom: 3px solid #9ae2e2;
+        border-top: 3px solid #9ae2e2;
       }
-  }.services--list ul li {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      width: 80%;
-      margin: 0 auto;
-    }.services--list ul li h2 {
-        font-size: 1.6rem;
-        letter-spacing: 2px;
-        padding-bottom: 15px;
-      }.services--list ul li p {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        margin-bottom: 20px;
-      }@media (min-width: 700px){
-      .services--list ul {
-        margin-top: 50px;
-        padding-bottom: 50px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-      }
-        .services--list ul li {
-          padding: 0px 20px 20px 20px;
-        }
-          .services--list ul li h2  {
-            padding-bottom: 15px;
-            margin-top: 10px;
-          }
-            @media (min-width: 1025px){
-          .services--list ul li h2  {
-              font-size: 2rem
-          }
+  }.services--subheader{
+    padding: 0 40px;
+    margin-bottom: 20px;
+  }@media (min-width: 700px){.services--subheader{
+      font-size: 1.3rem;
+      padding: 0 150px
   }
-          .services--list ul li p {
-            margin-bottom: 0px;
-          }
+  }@media (min-width: 1025px){.services--subheader{
+      font-size: 1.5rem;
+      padding: 0 180px
+  }
+  }.services--para {
+    padding: 0 20px;
+  }@media (min-width: 1025px){.services--para {
+      padding: 0 120px
+  }
+  }.services--images {
+    display: none;
+  }@media (min-width: 700px){.services--images {
+      display: block
+  }
+      .services--images > img{
+        border-radius: 5px;
+        -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+                box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+      }
   }.footer {
   /*background-color: $mainGold;*/
   text-align: center;
@@ -1202,7 +1202,7 @@ files before us in any new projects=========================================*/.w
 }/* Availability Styling */.availability {
   /*background-color: $lightGold;*/
   margin-top: 70px;
-  height: 800px;
+  margin-bottom: 70px;
 
 
 }@media (min-width: 700px){.availability {
@@ -1210,19 +1210,17 @@ files before us in any new projects=========================================*/.w
 
 
 }
-  }@media (min-width: 1025px){.availability {
-    height: 800px
-
-
-}
+  }@media (min-width: 1025px){
   }.availability .textContent {
     // border: 1px solid black;
   }@media (min-width: 700px){.availability .textContent {
-      padding-top: 70px;
-      padding-left: 30px
+      margin-top: 130px;
+      padding-left: 30px;
+      padding-right: 30px
   }
   }@media (min-width: 1025px){.availability .textContent {
-      padding: 120px 0px 0px 130px
+      margin-top: 70px;
+      padding: 60px 20px 0px 60px
   }
   }.availability--leftTitle{
     padding-bottom: 10px;
@@ -1242,25 +1240,22 @@ files before us in any new projects=========================================*/.w
     font-size: 1.2rem;
     font-weight: bold;
   }@media (min-width: 700px){.availability--leftSubtitle{
-      text-align: left;
-      font-size: 1.7rem;
-      width: 200px
+      text-align: left
   }
   }@media (min-width: 1025px){.availability--leftSubtitle{
-      font-size: 2.3rem
+      font-size: 1.7rem
   }
   }.availability--leftPara{
     margin-top: 10px;
     padding-bottom: 50px;
     text-align: center;
   }@media (min-width: 700px){.availability--leftPara{
-      text-align: left;
+      text-align: justify;
       margin-top: 35px
   }
   }@media (min-width: 1025px){.availability--leftPara{
-
       text-shadow: none;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       line-height: 1.8rem;
       font-weight: bold;
       margin-top: 40px;
@@ -1305,6 +1300,42 @@ files before us in any new projects=========================================*/.w
 }@media (min-width: 1025px){.SmallerCalendar {
     display: none
 }
+  }.availabilityMiddleSection {
+  margin-bottom: 70px;
+}@media (min-width: 700px){
+  }.availabilityMiddleSection--headline {
+    text-align: center;
+  }.availabilityMiddleSection--para {
+    z-index: 3;
+    width: 420px;
+    margin-bottom: 10px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+  }@media (min-width: 700px){.availabilityMiddleSection--para {
+      width: 650px;
+      margin-bottom: 30px;
+      font-size: 1.2rem
+  }
+  }@media (min-width: 1025px){.availabilityMiddleSection--para {
+      font-size: 1.4rem;
+      width: 600px
+  }
+  }.availabilityMiddleSection--link {
+    font-weight: 500;
+  }.availabilityMiddleSection-middleImage {
+    display: none;
+  }@media (min-width: 700px){
+      .availabilityMiddleSection-middleImage > picture > img {
+        border-radius: 5px;
+        -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+                box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+      }
+  }@media (min-width: 1025px){.availabilityMiddleSection-middleImage {
+      display: block;
+      margin-top: 130px;
+      margin-left: 70px
+  }
   }/*gallery.html styling*/.gallery--imgContainer {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1,24 +1,25 @@
 .availability {
   /*background-color: $lightGold;*/
   margin-top: 70px;
-  height: 800px;
+  margin-bottom: 70px;
 
   @mixin atMedium {
     margin-top: 0px;
   }
   @mixin atLarge {
-    height: 800px;
 
   }
   & .textContent {
     // border: 1px solid black;
     @mixin atMedium {
-      padding-top: 70px;
+      margin-top: 130px;
       padding-left: 30px;
+      padding-right: 30px;
 
     }
     @mixin atLarge {
-      padding: 120px 0px 0px 130px;
+      margin-top: 70px;
+      padding: 60px 20px 0px 60px;
     }
   }
   &--leftTitle{
@@ -45,13 +46,9 @@
     font-weight: bold;
     @mixin atMedium {
       text-align: left;
-      font-size: 1.7rem;
-      width: 200px;
-
     }
     @mixin atLarge {
-      font-size: 2.3rem;
-
+      font-size: 1.7rem;
     }
   }
 
@@ -60,14 +57,13 @@
     padding-bottom: 50px;
     text-align: center;
     @mixin atMedium {
-      text-align: left;
+      text-align: justify;
       margin-top: 35px;
 
     }
     @mixin atLarge {
-
       text-shadow: none;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       line-height: 1.8rem;
       font-weight: bold;
       margin-top: 40px;
@@ -127,5 +123,54 @@
   height: 250px;
   @mixin atLarge {
     display: none;
+  }
+}
+
+
+.availabilityMiddleSection {
+  margin-bottom: 70px;
+
+  @mixin atMedium {
+
+  }
+  &--headline {
+    text-align: center;
+  }
+
+  &--para {
+    z-index: 3;
+    width: 420px;
+    margin-bottom: 10px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    @mixin atMedium {
+      width: 650px;
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+    }
+    @mixin atLarge {
+      font-size: 1.4rem;
+      width: 600px;
+    }
+  }
+
+  &--link {
+    font-weight: 500;
+  }
+
+  &-middleImage {
+    display: none;
+    @mixin atMedium {
+      & > picture > img {
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+      }
+    }
+    @mixin atLarge {
+      display: block;
+      margin-top: 130px;
+      margin-left: 70px;
+    }
   }
 }

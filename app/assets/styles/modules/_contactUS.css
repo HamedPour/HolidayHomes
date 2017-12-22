@@ -1,5 +1,4 @@
 .contactUS{
-  // border: 1px solid red;
   @mixin atMedium {
 
   }
@@ -18,7 +17,12 @@
     }
   }
 
+  &--container {
+    padding-left: 20px;
+  }
+
   &--mail{
+
     display: flex;
     & p {
       cursor: pointer;

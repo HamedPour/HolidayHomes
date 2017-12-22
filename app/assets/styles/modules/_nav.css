@@ -1,6 +1,4 @@
 
-
-
 .nav {
   display: none;
 
@@ -20,23 +18,24 @@
         border-left: 1px solid rgba(#000, 0.6);
         font-variant: small-caps;
         &:last-child {border-right: 1px solid rgba(#000, 0.6);}
-        transition: All 0.5s ease-in-out;
+        transition: All 0.6s ease-in-out;
         flex: 1;
         font-size: 1rem;
         @mixin atMedium {
           padding-top: 7px;
           font-size: 1.2rem;
+          &:hover{
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+          }
         }
         @mixin atLarge {
           padding-top: 5px;
           font-size: 1.5rem;
-        }
-
-        &:hover{
-
-          letter-spacing: 1px;
-          font-size: 1.6rem;
-
+          &:hover{
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+          }
         }
       }
     }
