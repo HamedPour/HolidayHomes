@@ -1364,6 +1364,7 @@ files before us in any new projects=========================================*/.w
       }.galleryContent .headline {
   font-size: 3.4rem;
   font-weight: 300;
+  margin: 80px 0px;
 
 }/* Preload images */body:after {
   content: url("../../assets/images/close.png") url(../../assets/images/loading.gif) url("../../assets/images/prev.png") url(../../assets/images/next.png);
