@@ -39,9 +39,9 @@
   }
 
   &--para {
-    padding: 0 20px;
+    padding: 20px 20px;
     @mixin atLarge {
-      padding: 0 120px;
+      padding: 40px 110px;
     }
   }
 

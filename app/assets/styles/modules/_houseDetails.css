@@ -1,13 +1,13 @@
 
 .houseTopContent{
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 
   @mixin atMedium {
-    margin-bottom: 60px;
+    margin-bottom: 120px;
   }
   @mixin atLarge {
-    margin-bottom: 130px;
+    margin-bottom: 150px;
   }
 
   & img {
@@ -61,8 +61,9 @@
     padding: 0px 20px 0px 20px;
 
     &-title{
-      color: $darkGold;
+      color: $dark_turquoise;
       font-size: 2.8rem;
+      padding-bottom: 10px;
       font-weight: bold;
     }
     &-line{
@@ -86,12 +87,12 @@
     &--textContent{
       text-align: left;
       &-title{
-        font-size: 1.8rem;
+        font-size: 2.3rem;
       }
       &-line{
-        display: block;
+        // display: block;
         width: 170px;
-        border: 1px solid $mainGold;
+        border: 1px solid $dark_turquoise;
       }
       &-para{
         font-weight: normal;

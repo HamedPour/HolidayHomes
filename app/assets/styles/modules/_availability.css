@@ -30,7 +30,7 @@
     @mixin atMedium {
       letter-spacing: 5px;
       text-align: left;
-      color: $darkGold;
+      color: $dark_turquoise;
 
     }
     @mixin atLarge {

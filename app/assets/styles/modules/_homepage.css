@@ -73,8 +73,8 @@
       display: inline-block;
       position: relative;
       @mixin atMedium {
-        text-shadow: 2px 2px 2px rgba(#000, 0.8);
-        color: $mainGold;
+        text-shadow: 2px 2px 2px rgba(#000, 0.9);
+        color: $dark_turquoise;
         font-size: 1.7rem;
         letter-spacing: 2px;
         left: 100px;

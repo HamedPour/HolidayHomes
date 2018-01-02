@@ -2,11 +2,11 @@
 Instead edit gulp/templates/sprite.css */
 
     .icon {
-      background-image: url('../../assets/images/sprites/sprite-4a9b0352.svg');
+      background-image: url('../../assets/images/sprites/sprite-15f520d3.svg');
     }
 
     .no-svg . icon {
-      background-image: url('../../assets/images/sprites/sprite-4a9b0352.png');
+      background-image: url('../../assets/images/sprites/sprite-15f520d3.png');
     }
   .icon--arrowDown {
     width: 68px;
@@ -16,17 +16,17 @@ Instead edit gulp/templates/sprite.css */
   .icon--bathtub-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 90.47619047619048% 53.89221556886228%
+    background-position: 91% 53.89221556886228%
   }
   .icon--bathtub-small {
     width: 42px;
     height: 42px;
-    background-position: 49.12280701754386% 83.89261744966443%
+    background-position: 46.15384615384615% 83.89261744966443%
   }
   .icon--bed-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 90.47619047619048% 39.52095808383233%
+    background-position: 91% 39.52095808383233%
   }
   .icon--bed-small {
     width: 42px;
@@ -36,32 +36,32 @@ Instead edit gulp/templates/sprite.css */
   .icon--camera {
     width: 57px;
     height: 57px;
-    background-position: 36.53846153846154% 50.74626865671642%
+    background-position: 74.8502994011976% 42.53731343283582%
   }
   .icon--coffeeCup {
     width: 57px;
     height: 57px;
-    background-position: 0 50.74626865671642%
+    background-position: 74.8502994011976% 0
   }
   .icon--compass {
     width: 57px;
     height: 57px;
-    background-position: 43.58974358974359% 0
+    background-position: 34.131736526946106% 50.74626865671642%
   }
   .icon--mail-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 90.47619047619048% 82.63473053892216%
+    background-position: 91% 82.63473053892216%
   }
   .icon--mail-small {
-    width: 46px;
-    height: 46px;
-    background-position: 74.8502994011976% 31.724137931034484%
+    width: 57px;
+    height: 57px;
+    background-position: 40.7185628742515% 0
   }
   .icon--minAge-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 90.47619047619048% 25.149700598802394%
+    background-position: 91% 25.149700598802394%
   }
   .icon--minAge-small {
     width: 42px;
@@ -71,30 +71,30 @@ Instead edit gulp/templates/sprite.css */
   .icon--moon-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 0 100%
+    background-position: 12% 100%
   }
   .icon--moon-small {
     width: 42px;
     height: 42px;
-    background-position: 73.6842105263158% 83.89261744966443%
+    background-position: 69.23076923076923% 83.89261744966443%
   }
   .icon--oldPhone-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 90.47619047619048% 68.26347305389221%
+    background-position: 91% 68.26347305389221%
   }
   .icon--oldPhone-small {
-    width: 46px;
-    height: 46px;
-    background-position: 74.8502994011976% 0
+    width: 57px;
+    height: 57px;
+    background-position: 0 50.74626865671642%
   }
   .icon--person-Xsmall {
     width: 24px;
     height: 24px;
-    background-position: 66.13756613756614% 55.08982035928144%
+    background-position: 0 100%
   }
   .icon--person-small {
     width: 42px;
     height: 42px;
-    background-position: 24.56140350877193% 83.89261744966443%
+    background-position: 23.076923076923077% 83.89261744966443%
   }
