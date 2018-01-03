@@ -164,9 +164,9 @@ select{
   list-style: none;
 }/*Do not edit mdoules/_sprite directly as it is generated automatically by Gulp
 Instead edit gulp/templates/sprite.css */.icon {
-      background-image: url('../../assets/images/sprites/sprite-15f520d3.svg');
+      background-image: url('../../assets/images/sprites/sprite-c5fc75bc.svg');
     }.no-svg . icon {
-      background-image: url('../../assets/images/sprites/sprite-15f520d3.png');
+      background-image: url('../../assets/images/sprites/sprite-c5fc75bc.png');
     }.icon--arrowDown {
     width: 68px;
     height: 68px;
@@ -655,7 +655,7 @@ files before us in any new projects=========================================*/.w
   text-align: center;
   width: 100%;
   height: 425px;
-  background-color: #ccbe9a;
+  background-color: #9ae2e2;
   -webkit-transition: ALL 0.2s linear;
   transition: ALL 0.2s linear;
   -webkit-user-select: none;
@@ -822,7 +822,6 @@ files before us in any new projects=========================================*/.w
     padding-bottom: 10px;
     font-weight: 400;
     font-size: 1.4rem;
-    color: #9ae2e2;
   }@media (min-width: 700px){.contactUS--title{
       font-size: 2rem;
       padding-bottom: 20px
@@ -1204,7 +1203,6 @@ files before us in any new projects=========================================*/.w
   }.buffer--bottom {
   margin-bottom: 30px;
 }/* Availability Styling */.availability {
-  /*background-color: $lightGold;*/
   margin-top: 70px;
   margin-bottom: 70px;
 
@@ -1215,8 +1213,6 @@ files before us in any new projects=========================================*/.w
 
 }
   }@media (min-width: 1025px){
-  }.availability .textContent {
-    // border: 1px solid black;
   }@media (min-width: 700px){.availability .textContent {
       margin-top: 130px;
       padding-left: 30px;
@@ -1231,19 +1227,22 @@ files before us in any new projects=========================================*/.w
     text-align: center;
     font-weight: bold;
     letter-spacing: 3px;
+    font-size: 1.7rem;
   }@media (min-width: 700px){.availability--leftTitle{
-      letter-spacing: 5px;
-      text-align: left;
-      color: #9ae2e2
+      font-size: 2rem;
+      text-align: left
   }
-  }@media (min-width: 1025px){
+  }@media (min-width: 1025px){.availability--leftTitle{
+      font-size: 2.4rem
+  }
   }.availability--leftSubtitle{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
   }@media (min-width: 700px){.availability--leftSubtitle{
+      font-size: 1.4rem;
       text-align: left
   }
   }@media (min-width: 1025px){.availability--leftSubtitle{
@@ -1253,6 +1252,7 @@ files before us in any new projects=========================================*/.w
     margin-top: 10px;
     padding-bottom: 50px;
     text-align: center;
+    font-weight: bold;
   }@media (min-width: 700px){.availability--leftPara{
       text-align: justify;
       margin-top: 35px
@@ -1261,7 +1261,6 @@ files before us in any new projects=========================================*/.w
       text-shadow: none;
       font-size: 1.3rem;
       line-height: 1.8rem;
-      font-weight: bold;
       margin-top: 40px;
       max-width: 470px
   }

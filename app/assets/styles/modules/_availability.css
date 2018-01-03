@@ -1,5 +1,4 @@
 .availability {
-  /*background-color: $lightGold;*/
   margin-top: 70px;
   margin-bottom: 70px;
 
@@ -10,7 +9,6 @@
 
   }
   & .textContent {
-    // border: 1px solid black;
     @mixin atMedium {
       margin-top: 130px;
       padding-left: 30px;
@@ -27,14 +25,13 @@
     text-align: center;
     font-weight: bold;
     letter-spacing: 3px;
+    font-size: 1.7rem;
     @mixin atMedium {
-      letter-spacing: 5px;
+      font-size: 2rem;
       text-align: left;
-      color: $dark_turquoise;
-
     }
     @mixin atLarge {
-
+      font-size: 2.4rem;
     }
   }
 
@@ -42,9 +39,10 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     @mixin atMedium {
+      font-size: 1.4rem;
       text-align: left;
     }
     @mixin atLarge {
@@ -56,6 +54,7 @@
     margin-top: 10px;
     padding-bottom: 50px;
     text-align: center;
+    font-weight: bold;
     @mixin atMedium {
       text-align: justify;
       margin-top: 35px;
@@ -65,7 +64,6 @@
       text-shadow: none;
       font-size: 1.3rem;
       line-height: 1.8rem;
-      font-weight: bold;
       margin-top: 40px;
       max-width: 470px;
     }
