@@ -28,30 +28,22 @@
   &--subheader{
     padding: 0 40px;
     margin-bottom: 20px;
+    font-size: 1.3rem;
     @mixin atMedium {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       padding: 0 150px;
     }
     @mixin atLarge {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       padding: 0 180px;
     }
   }
 
-  &--para {
-    padding: 20px 20px;
-    @mixin atLarge {
-      padding: 40px 110px;
-    }
-  }
-
-  &--images {
-    display: none;
-    @mixin atMedium {
-      display: block;
-      & > img{
-        border-radius: 5px;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+  &--list {
+    li {
+      margin: 10px 0;
+      @mixin atLarge {
+        font-size: 1.4rem;
       }
     }
   }

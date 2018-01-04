@@ -11454,7 +11454,7 @@ var toggleMenu = new _toggleMenu2.default();
 if ((0, _jquery2.default)("body").data("pages") === "indexPage") {
   // START CAROUSEL ==============================================================
   var slides = new _Carousel2.default("siteSlides");
-  // slides.next(5000);
+  slides.next(5000);
   document.querySelector(".slides-arrowLeft").addEventListener("click", function () {
     slides.prev();
     slides.prev(5000);
