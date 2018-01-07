@@ -28,11 +28,6 @@ if($("body").data("pages") === "indexPage") {
   // end CAROUSEL ===============================================================
 };
 
-// this if statement is to run for house.html only
-if($("body").data("pages") === "housePage") {
-
-};
-
 
 // ================================================================ SmoothScroll
 $(".smoothScroll").smoothScroll({

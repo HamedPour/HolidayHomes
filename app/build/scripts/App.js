@@ -11466,9 +11466,6 @@ if ((0, _jquery2.default)("body").data("pages") === "indexPage") {
   // end CAROUSEL ===============================================================
 };
 
-// this if statement is to run for house.html only
-if ((0, _jquery2.default)("body").data("pages") === "housePage") {};
-
 // ================================================================ SmoothScroll
 (0, _jquery2.default)(".smoothScroll").smoothScroll({
   easing: 'swing',
