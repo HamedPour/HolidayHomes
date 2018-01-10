@@ -32,11 +32,11 @@
   &--para {
     text-align: justify;
     margin: 0 auto;
-    width: 450px;
+    padding: 0 20px;
+    max-width: 750px;
     font-weight: 400;
     font-size: 1.2rem;
     @mixin atMedium {
-      width: 600px;
       font-size: 1.4rem;
     }
   }

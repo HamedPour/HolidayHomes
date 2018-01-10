@@ -956,7 +956,9 @@ files before us in any new projects=========================================*/.w
     max-width: 420px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
   }@media (min-width: 700px){.topSection--para {
+      padding: 0;
       margin-bottom: 30px;
       font-size: 1.2rem
   }
@@ -1101,11 +1103,11 @@ files before us in any new projects=========================================*/.w
   }.houseTopContent--para {
     text-align: justify;
     margin: 0 auto;
-    width: 450px;
+    padding: 0 20px;
+    max-width: 750px;
     font-weight: 400;
     font-size: 1.2rem;
   }@media (min-width: 700px){.houseTopContent--para {
-      width: 600px;
       font-size: 1.4rem
   }
   }.houseDetails .row {
@@ -1285,19 +1287,19 @@ files before us in any new projects=========================================*/.w
     text-align: center;
   }.availabilityMiddleSection--para {
     z-index: 3;
-    width: 420px;
+    max-width: 620px;
+    padding: 0 20px;
     margin-bottom: 10px;
     text-align: justify;
     margin-left: auto;
     margin-right: auto;
   }@media (min-width: 700px){.availabilityMiddleSection--para {
-      width: 650px;
+      padding: 0;
       margin-bottom: 30px;
       font-size: 1.2rem
   }
   }@media (min-width: 1025px){.availabilityMiddleSection--para {
-      font-size: 1.4rem;
-      width: 600px
+      font-size: 1.4rem
   }
   }.availabilityMiddleSection--link {
     font-weight: 500;
