@@ -107,8 +107,8 @@
     display: none;
     @mixin atLarge {
       display: block;
-      width: 430px;
-      padding-left: 15px;
+      width: 450px;
+      padding-left: 25px;
       margin-left: auto;
       margin-right: auto;
     }
