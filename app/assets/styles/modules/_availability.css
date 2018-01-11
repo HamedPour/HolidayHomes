@@ -107,23 +107,24 @@
     display: none;
     @mixin atLarge {
       display: inline-block;
-      padding-left: 25px;
+      padding-left: 45px;
     }
   }
 
-
 }
 
-
 .SmallerCalendar {
-  display: inline-block;
-  width: 204px;
-  height: 250px;
+  width: 205px;
+
   @mixin atLarge {
     display: none;
   }
+  &--legend{
+    @mixin atMedium {
+      display: none;
+    }
+  }
 }
-
 
 .availabilityMiddleSection {
   margin-bottom: 70px;
