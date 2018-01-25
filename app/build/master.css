@@ -546,10 +546,10 @@ files before us in any new projects=========================================*/.w
     content: "";
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(255,0,0, 0.8);
+    background-color: rgba(255,0,0, 0.6);
     visibility: hidden;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -578,55 +578,6 @@ files before us in any new projects=========================================*/.w
     visibility: visible;
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
-  }.directArrow{
-  width: 25px;
-  height: auto;
-  font-size: 1.3rem;
-  border-radius: 50%;
-  position: absolute;
-  opacity: 0.6;
-  text-align: center;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transition: All 0.3s ease-in;
-  transition: All 0.3s ease-in;
-
-}.directArrow:hover{
-    /*background-color: #000;*/
-    opacity: 1;
-    color: #ccbe9a;
-
-  }.directArrow-up{
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    padding-right: 2px;
-    margin-left: 30px;
-  }.directArrow-down{
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    padding-right: 2px;
-  }.directArrow-down--carousel{
-      display: none;
-    }@media (min-width: 700px){.directArrow-down--carousel{
-        border: 3px solid #000;
-        display: block;
-        top: 90%;
-        left: 48.5%
-    }
-        .directArrow-down--carousel:hover{
-          background-color: #000;
-          color: #ccbe9a;
-          -webkit-transform: scale(1.1) rotate(-90deg);
-                  transform: scale(1.1) rotate(-90deg);
-        }
-  }.arrowGroup{
-  display: none;
-}@media (min-width: 700px){.arrowGroup{
-    display: inline-block
-}
   }.side_menu{
   z-index: 1000;
 
@@ -932,6 +883,7 @@ files before us in any new projects=========================================*/.w
 
     }/* Homepage Styling */.topSection {
   margin-top: 30px;
+
 }.topSection--headline {
     text-align: center;
     margin-top: 20px;
@@ -953,7 +905,7 @@ files before us in any new projects=========================================*/.w
   }.topSection--para {
     z-index: 123;
     margin-bottom: 10px;
-    max-width: 420px;
+    max-width: 620px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
@@ -963,8 +915,9 @@ files before us in any new projects=========================================*/.w
       font-size: 1.2rem
   }
   }@media (min-width: 1025px){.topSection--para {
+      line-height: 1.86rem;
       font-size: 1.4rem;
-      width: 500px
+      width: 560px
   }
   }.topSection--checkAvailability {
     text-align: center;
@@ -976,99 +929,8 @@ files before us in any new projects=========================================*/.w
       margin-top: 10px;
       padding-left: 0
   }
-
-      .topSection--checkAvailability .textAnimate--red {}
   }@media (min-width: 1025px){.topSection--checkAvailability {
       padding-left: 0
-  }
-  }.topSection-topImage {
-    display: none;
-  }@media (min-width: 700px){.topSection-topImage {
-      z-index: 1;
-      position: relative;
-      top: 60px;
-      display: block
-  }
-      .topSection-topImage > img {
-        width: 85%;
-      }
-  }@media (min-width: 1025px){.topSection-topImage {
-      top: 10px
-  }
-  }.topSection-topImage--toLocation {
-      -webkit-transition: All 0.5s ease-in;
-      transition: All 0.5s ease-in;
-      display: inline-block;
-      position: relative;
-    }@media (min-width: 700px){.topSection-topImage--toLocation {
-        text-shadow: 2px 2px 2px rgba(0,0,0, 0.9);
-        color: #9ae2e2;
-        font-size: 1.7rem;
-        letter-spacing: 2px;
-        left: 100px;
-        top: -80px
-    }
-
-        .topSection-topImage--toLocation:hover {
-          -webkit-transform: scale(1.1);
-                  transform: scale(1.1);
-        }
-  }@media (min-width: 1025px){.topSection-topImage--toLocation {
-        left: 240px;
-        top: -150px
-    }
-  }.middleSection {
-  margin-top: 50px;
-}.middleSection--headline {
-    text-align: center;
-  }.middleSection--para {
-    z-index: 3;
-    width: 420px;
-    margin-bottom: 10px;
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-  }@media (min-width: 700px){.middleSection--para {
-      width: 650px;
-      margin-bottom: 30px;
-      font-size: 1.2rem
-  }
-  }@media (min-width: 1025px){.middleSection--para {
-      font-size: 1.4rem;
-      width: 600px
-  }
-  }.middleSection--link {
-    font-weight: 500;
-  }.middleSection-middleImage {
-    display: none;
-  }@media (min-width: 700px){
-      .middleSection-middleImage > picture > img {
-        border-radius: 5px;
-        -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-                box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-      }
-  }@media (min-width: 1025px){.middleSection-middleImage {
-      display: block;
-      margin-top: 130px;
-      margin-left: 70px
-  }
-  }.bottomSection {
-  margin-top: 40px;
-
-}.bottomSection--headline {
-    text-align: center;
-  }.bottomSection-bottomImage {
-    display: none;
-  }@media (min-width: 700px){
-      .bottomSection-bottomImage > picture > img {
-        border-radius: 5px;
-        -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-                box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-      }
-  }@media (min-width: 1025px){.bottomSection-bottomImage {
-      display: block;
-      margin-top: 100px;
-      margin-right: 70px
   }
   }/*house.html styling*/.houseTopContent{
   margin-top: 30px;
@@ -1496,7 +1358,7 @@ files before us in any new projects=========================================*/.w
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-}.testimonials {
+}/*testimonials.html styling*/.testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -13,7 +13,6 @@ files before us in any new projects=========================================*/
 @import "modules/_carousel";
 @import "modules/_row";
 @import "modules/_textAnimation";
-@import "modules/_directionArrows";
 @import "modules/_sideMenu";
 @import "modules/_sideMenuToggles";
 
@@ -38,4 +37,6 @@ files before us in any new projects=========================================*/
 /*gallery.html styling*/
 @import "modules/_gallery.css";
 @import "modules/_lightbox.css";
+
+/*testimonials.html styling*/
 @import "modules/_testimonials.css";

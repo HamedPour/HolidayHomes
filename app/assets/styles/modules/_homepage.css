@@ -21,7 +21,7 @@
   &--para {
     z-index: 123;
     margin-bottom: 10px;
-    max-width: 420px;
+    max-width: 620px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
@@ -31,8 +31,9 @@
       font-size: 1.2rem;
     }
     @mixin atLarge {
+      line-height: 1.86rem;
       font-size: 1.4rem;
-      width: 500px;
+      width: 560px;
     }
   }
 
@@ -48,117 +49,9 @@
       margin-top: 10px;
       padding-left: 0;
 
-      & .textAnimate--red {}
     }
     @mixin atLarge {
       padding-left: 0;
-    }
-  }
-
-  &-topImage {
-    display: none;
-    @mixin atMedium {
-      z-index: 1;
-      position: relative;
-      top: 60px;
-      display: block;
-      & > img {
-        width: 85%;
-      }
-    }
-    @mixin atLarge {
-      top: 10px;
-    }
-
-    &--toLocation {
-      transition: All 0.5s ease-in;
-      display: inline-block;
-      position: relative;
-      @mixin atMedium {
-        text-shadow: 2px 2px 2px rgba(#000, 0.9);
-        color: $dark_turquoise;
-        font-size: 1.7rem;
-        letter-spacing: 2px;
-        left: 100px;
-        top: -80px;
-
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-      @mixin atLarge {
-        left: 240px;
-        top: -150px;
-      }
-    }
-  }
-}
-
-
-.middleSection {
-  margin-top: 50px;
-  &--headline {
-    text-align: center;
-  }
-
-  &--para {
-    z-index: 3;
-    width: 420px;
-    margin-bottom: 10px;
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-    @mixin atMedium {
-      width: 650px;
-      margin-bottom: 30px;
-      font-size: 1.2rem;
-    }
-    @mixin atLarge {
-      font-size: 1.4rem;
-      width: 600px;
-    }
-  }
-
-  &--link {
-    font-weight: 500;
-  }
-
-  &-middleImage {
-    display: none;
-    @mixin atMedium {
-      & > picture > img {
-        border-radius: 5px;
-        box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-      }
-    }
-    @mixin atLarge {
-      display: block;
-      margin-top: 130px;
-      margin-left: 70px;
-    }
-  }
-}
-
-
-
-.bottomSection {
-  margin-top: 40px;
-  &--headline {
-    text-align: center;
-  }
-
-  &-bottomImage {
-    display: none;
-    @mixin atMedium {
-      & > picture > img {
-        border-radius: 5px;
-        box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-      }
-    }
-    @mixin atLarge {
-      display: block;
-      margin-top: 100px;
-      margin-right: 70px;
     }
   }
 
