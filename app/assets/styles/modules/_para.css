@@ -4,8 +4,6 @@
   word-spacing: 2px;
   line-height: 26px;
 
-  @mixin atMedium {
-  }
 
   @mixin atLarge {
     line-height: 22px;

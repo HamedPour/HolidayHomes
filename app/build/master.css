@@ -225,16 +225,13 @@ Instead edit gulp/templates/sprite.css */.icon {
     background-position: 82.6086956521739% 42.42424242424242%
   }.icon {
   display: inline-block;
-
-  
 }/*Everything else can be linked from modules below - Make sure to edit the old
 files before us in any new projects=========================================*/.wrapper {
-  min-width: 340px;
+  min-width: 380px;
   height: 100vh;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-
 }.header {
   height: 120px;
   width: 100%;
@@ -247,15 +244,12 @@ files before us in any new projects=========================================*/.w
     max-height: none;
     height: 170px
 }
-  }@media (min-width: 1025px){.header {
-    /*height: 17vh;*/
-}
   }.header-title {
     padding-top: 20px;
     font-size: 2.3rem;
     letter-spacing: .6rem;
     font-variant: small-caps;
-  }/*text-shadow: 1px 1px 4px #000;*/@media (min-width: 700px){.header-title {
+  }@media (min-width: 700px){.header-title {
       padding-top: 13px;
       font-size: 3.4rem;
       letter-spacing: 1rem
@@ -264,17 +258,15 @@ files before us in any new projects=========================================*/.w
     font-size: 1.2rem;
     font-variant: small-caps;
     letter-spacing: .4rem;
-  }/*text-shadow: 1px 1px 4px rgba(#000, 0.8);*/@media (min-width: 700px){.header-subtitle{
+  }@media (min-width: 700px){.header-subtitle{
       font-size: 1.8rem;
       letter-spacing: .6rem
   }
   }.header-email{
-    /*text-shadow: 1px 1px 4px rgba(#000, 1);*/
     padding-top: 8px;
     font-size: 1rem;
     letter-spacing: .1rem;
     font-weight: bold;
-    /*font-style: italic;*/
     opacity: 0.8;
   }@media (min-width: 700px){.header-email{
       padding-top: 10px;
@@ -307,19 +299,10 @@ files before us in any new projects=========================================*/.w
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
-        font-size: 1rem;
+        font-size: 16px;
       }
         .nav-menu a:last-child {border-right: 1px solid rgba(0,0,0, 0.6);}
-        @media (min-width: 700px){
-      .nav-menu a {
-          padding-top: 7px;
-          font-size: 1.2rem
-      }
-          .nav-menu a:hover{
-            letter-spacing: 2px;
-            font-size: 1.2rem;
-          }
-  }
+
         @media (min-width: 1025px){
       .nav-menu a {
           padding-top: 5px;
@@ -330,6 +313,15 @@ files before us in any new projects=========================================*/.w
             font-size: 1.5rem;
           }
   }
+  }@media (min-width: 700px){.nav > .nav-menu > a {
+    padding-top: 7px;
+    font-size: 1.2rem;
+    // font-size: 2px
+}
+    .nav > .nav-menu > a:hover{
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+    }
   }.stickyNav {
   -webkit-transition: All 0.5s ease-in;
   transition: All 0.5s ease-in;
@@ -348,33 +340,26 @@ files before us in any new projects=========================================*/.w
   background-color: #9ae2e2;
 }.activeNav li {
     font-weight: bold;
-  }.carousel picture > * {
+  }.carousel picture img {
   width: 100vw;
+  max-width: 800px;
   min-width: 340px;
-}@media (min-width: 700px){.carousel picture > * {
-    // min-height: 40vh
-}
-  }@media (min-width: 1025px){.carousel picture > * {
-    // width: 70vw;
-    // height: 400px
-}
-  }.slides{
+}.slides{
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   overflow: hidden;
   position: relative;
 }@media (min-width: 700px){.slides{
     height: 450px;
     min-height: 400px;
     width: 800px;
-    /*margin: 0 auto;*/
+
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto
 }
   }@media (min-width: 1025px){.slides{
-    margin-top: 50px;
-    // min-height: 80vh
+    margin-top: 50px
 }
   }.slides-arrow {
     -webkit-user-select: none;
@@ -607,8 +592,6 @@ files before us in any new projects=========================================*/.w
     margin-top: 30px;
     font-size: 2.4rem;
     font-weight: 100;
-    // padding: 10px 10px 10px 10px;
-    // border-bottom: 2px solid #000;
   }.side_menu--list ul li {
   list-style: none;
   padding-top: 30px;
@@ -680,8 +663,7 @@ files before us in any new projects=========================================*/.w
   text-align: justify;
   word-spacing: 2px;
   line-height: 26px;
-}@media (min-width: 700px){
-  }@media (min-width: 1025px){.para {
+}@media (min-width: 1025px){.para {
     line-height: 22px
 }
   }.detailBubble{
@@ -980,7 +962,6 @@ files before us in any new projects=========================================*/.w
     -webkit-box-shadow: 3px 3px 2px rgba(0,0,0,0.6);
             box-shadow: 3px 3px 2px rgba(0,0,0,0.6);
   }.houseDetails--textContent{
-    // position: relative;
     text-align: center;
     padding: 0px 20px 0px 20px;
   }.houseDetails--textContent-title{
@@ -1009,7 +990,6 @@ files before us in any new projects=========================================*/.w
         font-size: 2.3rem;
       }
       .houseDetails--textContent-line{
-        // display: block;
         width: 170px;
         border: 1px solid #9ae2e2;
       }
@@ -1367,8 +1347,7 @@ files before us in any new projects=========================================*/.w
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-}@media (min-width: 700px){
-  }@media (min-width: 700px){.testimonials {
+}@media (min-width: 700px){.testimonials {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

@@ -12,9 +12,6 @@
     max-height: none;
     height: 170px;
   }
-  @mixin atLarge {
-    /*height: 17vh;*/
-  }
 
 
   &-title {
@@ -22,7 +19,7 @@
     font-size: 2.3rem;
     letter-spacing: .6rem;
     font-variant: small-caps;
-    /*text-shadow: 1px 1px 4px #000;*/
+
 
     @mixin atMedium {
       padding-top: 13px;
@@ -35,7 +32,6 @@
     font-size: 1.2rem;
     font-variant: small-caps;
     letter-spacing: .4rem;
-    /*text-shadow: 1px 1px 4px rgba(#000, 0.8);*/
 
     @mixin atMedium {
       font-size: 1.8rem;
@@ -44,12 +40,10 @@
   }
 
   &-email{
-    /*text-shadow: 1px 1px 4px rgba(#000, 1);*/
     padding-top: 8px;
     font-size: 1rem;
     letter-spacing: .1rem;
     font-weight: bold;
-    /*font-style: italic;*/
     opacity: 0.8;
 
 

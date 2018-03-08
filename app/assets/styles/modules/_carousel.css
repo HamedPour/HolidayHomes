@@ -1,38 +1,27 @@
 
-.carousel picture > * {
+.carousel picture img {
   width: 100vw;
+  max-width: 800px;
   min-width: 340px;
-
-  @mixin atMedium {
-    // min-height: 40vh;
-
-
-  }
-  @mixin atLarge {
-    // width: 70vw;
-    // height: 400px;
-  }
 }
 
 
 .slides{
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   overflow: hidden;
   position: relative;
   @mixin atMedium {
     height: 450px;
     min-height: 400px;
     width: 800px;
-    /*margin: 0 auto;*/
+
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
   }
   @mixin atLarge {
     margin-top: 50px;
-    // min-height: 80vh;
-
   }
 
   &-arrow {
